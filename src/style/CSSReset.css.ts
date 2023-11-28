@@ -17,7 +17,6 @@ globalStyle('body', {
 })
 
 globalStyle(':root', {
-    lineHeight: 1.5,
     fontFamily:
         '-apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji',
     fontWeight: 400,
