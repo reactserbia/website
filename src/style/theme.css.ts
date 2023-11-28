@@ -2,7 +2,12 @@ import { createTheme, createThemeContract } from '@vanilla-extract/css'
 
 import { cyan } from '@radix-ui/colors'
 
+const contentMaxWidth = '672px'
+
 export const theme = createThemeContract({
+    dimensions: {
+        contentMaxWidth: null
+    },
     colors: {
         no1appBackground: null,
         no2subtleBackground: null,
@@ -24,6 +29,9 @@ export const theme = createThemeContract({
 })
 
 export const lightTheme = createTheme(theme, {
+    dimensions: {
+        contentMaxWidth
+    },
     colors: {
         no1appBackground: cyan.cyan1,
         no2subtleBackground: cyan.cyan2,
