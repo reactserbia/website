@@ -2,11 +2,13 @@ import { createTheme, createThemeContract } from '@vanilla-extract/css'
 
 import { cyan } from '@radix-ui/colors'
 
+const spacingUnit = '4px'
 const contentMaxWidth = '672px'
 const headerHeight = '64px'
 
 export const theme = createThemeContract({
     dimensions: {
+        spacingUnit: null,
         contentMaxWidth: null,
         headerHeight: null
     },
@@ -32,6 +34,7 @@ export const theme = createThemeContract({
 
 export const lightTheme = createTheme(theme, {
     dimensions: {
+        spacingUnit,
         contentMaxWidth,
         headerHeight
     },

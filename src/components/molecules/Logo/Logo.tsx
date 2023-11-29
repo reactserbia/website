@@ -6,7 +6,7 @@ export function Logo() {
     return (
         <div>
             <Heading>REACT</Heading>
-            <Heading variant={HEADING_VARIANTS.SECONDARY}>SERBIA</Heading>
+            <Heading variant={HEADING_VARIANTS.BIG_SECONDARY}>SERBIA</Heading>
         </div>
     )
 }

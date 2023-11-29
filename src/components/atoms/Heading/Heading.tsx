@@ -11,12 +11,12 @@ type HeadingProps = {
 
 export function Heading({
     children,
-    variant = HEADING_VARIANTS.PRIMARY
+    variant = HEADING_VARIANTS.BIG_PRIMARY
 }: HeadingProps) {
     return (
         <h1 className={heading[variant]}>
             {children}
-            <span className={span}>{children}</span>
+            <span className={span[variant]}>{children}</span>
         </h1>
     )
 }
