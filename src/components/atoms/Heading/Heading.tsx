@@ -4,15 +4,15 @@ import { HEADING_VARIANTS } from '@/constants'
 
 import { heading, span } from './Heading.css'
 
-type TextProps = {
+type HeadingProps = {
     children: ReactNode
     variant?: HEADING_VARIANTS
 }
 
-export function Text({
+export function Heading({
     children,
     variant = HEADING_VARIANTS.PRIMARY
-}: TextProps) {
+}: HeadingProps) {
     return (
         <h1 className={heading[variant]}>
             {children}
