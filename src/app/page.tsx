@@ -1,3 +1,9 @@
+import { Logo } from '@/components'
+
 export default function Home() {
-    return <main>Home</main>
+    return (
+        <main>
+            <Logo />
+        </main>
+    )
 }
