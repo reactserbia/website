@@ -7,6 +7,8 @@ import { content } from './layout.css'
 
 const rubik = Rubik({ subsets: ['latin'] })
 
+import { Header } from '@/components'
+
 import { lightTheme } from '@/style/theme.css'
 
 export const metadata: Metadata = {
@@ -22,6 +24,7 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body className={`${rubik.className} ${lightTheme}`}>
+                <Header />
                 <div className={content}>{children}</div>
             </body>
         </html>

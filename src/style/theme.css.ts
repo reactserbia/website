@@ -3,10 +3,12 @@ import { createTheme, createThemeContract } from '@vanilla-extract/css'
 import { cyan } from '@radix-ui/colors'
 
 const contentMaxWidth = '672px'
+const headerHeight = '64px'
 
 export const theme = createThemeContract({
     dimensions: {
-        contentMaxWidth: null
+        contentMaxWidth: null,
+        headerHeight: null
     },
     colors: {
         no1appBackground: null,
@@ -30,7 +32,8 @@ export const theme = createThemeContract({
 
 export const lightTheme = createTheme(theme, {
     dimensions: {
-        contentMaxWidth
+        contentMaxWidth,
+        headerHeight
     },
     colors: {
         no1appBackground: cyan.cyan1,
