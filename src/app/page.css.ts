@@ -9,6 +9,7 @@ export const container = style({
 export const content = style({
     width: '100%',
     maxWidth: theme.dimensions.contentMaxWidth,
+    textAlign: 'center',
     margin: '0 auto'
 })
 

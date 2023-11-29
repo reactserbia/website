@@ -4,6 +4,7 @@ import { style, styleVariants } from '@vanilla-extract/css'
 import { HEADING_VARIANTS } from '@/constants'
 
 const headingBase = style({
+    display: 'inline-block',
     position: 'relative',
     lineHeight: 1,
     fontSize: '4rem',
@@ -17,7 +18,8 @@ export const span = style({
     left: 4,
     top: 4,
     zIndex: -1,
-    color: theme.colors.no12textContrastHigh
+    color: theme.colors.no12textContrastHigh,
+    whiteSpace: 'nowrap'
 })
 
 export const heading = styleVariants({

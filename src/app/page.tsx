@@ -1,4 +1,5 @@
-import { Logo } from '@/components'
+import { Logo, SectionHeading } from '@/components'
+
 import { container, content, banner } from './page.css'
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
             <div className={banner} />
             <div className={content}>
                 <Logo />
+                <SectionHeading>WHO ARE WE?</SectionHeading>
             </div>
         </main>
     )
