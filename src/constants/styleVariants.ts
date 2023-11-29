@@ -1,0 +1,4 @@
+export enum HEADING_VARIANTS {
+    PRIMARY = 'PRIMARY',
+    SECONDARY = 'SECONDARY'
+}
