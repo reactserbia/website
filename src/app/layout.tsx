@@ -3,8 +3,6 @@ import '@/style/CSSReset.css'
 import type { Metadata } from 'next'
 import { Rubik } from 'next/font/google'
 
-import { content } from './layout.css'
-
 const rubik = Rubik({ subsets: ['latin'] })
 
 import { Header } from '@/components'
