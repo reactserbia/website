@@ -12,3 +12,9 @@ export const header = style({
     boxShadow: `0 4px 0 ${theme.colors.no4elementBackgroundHovered}`,
     backgroundColor: theme.colors.no2subtleBackground
 })
+
+export const headerContent = style({
+    width: '100%',
+    maxWidth: theme.dimensions.contentMaxWidth,
+    margin: '0 auto'
+})
