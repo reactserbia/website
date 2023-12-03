@@ -1,111 +1,36 @@
 import { theme } from '@/style/theme.css'
 import { style, styleVariants } from '@vanilla-extract/css'
 
-import { HEADING_VARIANTS } from '@/constants'
-
-const headingBase = style({
+export const base = style({
     display: 'inline-block',
     position: 'relative',
     lineHeight: 1,
-    fontSize: '4rem',
     fontWeight: 900,
-    WebkitTextStroke: `1px ${theme.colors.primary.no12}`,
-    margin: 0
+    WebkitTextStrokeWidth: '1px',
+    margin: 0,
+
+    WebkitTextStrokeColor: theme.colors.primary.no12,
+    color: 'white'
+})
+
+export const textColor = styleVariants({
+    primary: {
+        color: theme.colors.primary.no03
+    },
+    secondary: {
+        color: theme.colors.primary.no06
+    },
+    tertiary: {
+        color: theme.colors.primary.no09
+    }
 })
 
 export const spanBase = style({
     position: 'absolute',
+    left: 3,
+    top: 3,
     zIndex: -1,
     color: theme.colors.primary.no12,
-    whiteSpace: 'nowrap'
-})
-
-export const heading = styleVariants({
-    [HEADING_VARIANTS.SMALL_PRIMARY]: [
-        headingBase,
-        {
-            color: theme.colors.primary.no03,
-            fontSize: `calc(${theme.dimensions.spacingUnit} * 8)`
-        }
-    ],
-    [HEADING_VARIANTS.SMALL_SECONDARY]: [
-        headingBase,
-        {
-            color: theme.colors.primary.no06,
-            fontSize: `calc(${theme.dimensions.spacingUnit} * 8)`
-        }
-    ],
-    [HEADING_VARIANTS.MEDIUM_PRIMARY]: [
-        headingBase,
-        {
-            color: theme.colors.primary.no03,
-            fontSize: `calc(${theme.dimensions.spacingUnit} * 8)`
-        }
-    ],
-    [HEADING_VARIANTS.MEDIUM_SECONDARY]: [
-        headingBase,
-        {
-            color: theme.colors.primary.no06,
-            fontSize: `calc(${theme.dimensions.spacingUnit} * 8)`
-        }
-    ],
-    [HEADING_VARIANTS.BIG_PRIMARY]: [
-        headingBase,
-        {
-            color: theme.colors.primary.no03,
-            fontSize: '4rem'
-        }
-    ],
-    [HEADING_VARIANTS.BIG_SECONDARY]: [
-        headingBase,
-        {
-            color: theme.colors.primary.no06,
-            fontSize: '4rem'
-        }
-    ]
-})
-
-export const span = styleVariants({
-    [HEADING_VARIANTS.SMALL_PRIMARY]: [
-        spanBase,
-        {
-            top: `calc(${theme.dimensions.spacingUnit} * 0.5)`,
-            left: `calc(${theme.dimensions.spacingUnit} * 0.5)`
-        }
-    ],
-    [HEADING_VARIANTS.SMALL_SECONDARY]: [
-        spanBase,
-        {
-            top: `calc(${theme.dimensions.spacingUnit} * 0.5)`,
-            left: `calc(${theme.dimensions.spacingUnit} * 0.5)`
-        }
-    ],
-    [HEADING_VARIANTS.MEDIUM_PRIMARY]: [
-        spanBase,
-        {
-            top: `calc(${theme.dimensions.spacingUnit} * 0.75)`,
-            left: `calc(${theme.dimensions.spacingUnit} * 0.75)`
-        }
-    ],
-    [HEADING_VARIANTS.MEDIUM_SECONDARY]: [
-        spanBase,
-        {
-            top: `calc(${theme.dimensions.spacingUnit} * 0.75)`,
-            left: `calc(${theme.dimensions.spacingUnit} * 0.75)`
-        }
-    ],
-    [HEADING_VARIANTS.BIG_PRIMARY]: [
-        spanBase,
-        {
-            top: theme.dimensions.spacingUnit,
-            left: theme.dimensions.spacingUnit
-        }
-    ],
-    [HEADING_VARIANTS.BIG_SECONDARY]: [
-        spanBase,
-        {
-            top: theme.dimensions.spacingUnit,
-            left: theme.dimensions.spacingUnit
-        }
-    ]
+    whiteSpace: 'nowrap',
+    userSelect: 'none'
 })

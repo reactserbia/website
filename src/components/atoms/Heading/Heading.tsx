@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 import { HEADING_VARIANTS } from '@/constants'
 
-import { heading, span } from './Heading.css'
+import { base, spanBase, textColor } from './Heading.css'
 
 type HeadingProps = {
     children: ReactNode
@@ -14,9 +14,9 @@ export function Heading({
     variant = HEADING_VARIANTS.BIG_PRIMARY
 }: HeadingProps) {
     return (
-        <h1 className={heading[variant]}>
+        <h1 className={`${base} ${textColor.secondary}`}>
             {children}
-            {/* <span className={span[variant]}>{children}</span> */}
+            <span className={spanBase}>{children}</span>
         </h1>
     )
 }
