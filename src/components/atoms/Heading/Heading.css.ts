@@ -9,14 +9,14 @@ const headingBase = style({
     lineHeight: 1,
     fontSize: '4rem',
     fontWeight: 900,
-    WebkitTextStroke: `2px ${theme.colors.no12textContrastHigh}`,
+    WebkitTextStroke: `2px ${theme.colors.primary.no12}`,
     margin: 0
 })
 
 export const spanBase = style({
     position: 'absolute',
     zIndex: -1,
-    color: theme.colors.no12textContrastHigh,
+    color: theme.colors.primary.no12,
     whiteSpace: 'nowrap'
 })
 
@@ -24,42 +24,42 @@ export const heading = styleVariants({
     [HEADING_VARIANTS.SMALL_PRIMARY]: [
         headingBase,
         {
-            color: theme.colors.no3elementBackground,
+            color: theme.colors.primary.no03,
             fontSize: `calc(${theme.dimensions.spacingUnit} * 8)`
         }
     ],
     [HEADING_VARIANTS.SMALL_SECONDARY]: [
         headingBase,
         {
-            color: theme.colors.no6bordersNonInteractive,
+            color: theme.colors.primary.no06,
             fontSize: `calc(${theme.dimensions.spacingUnit} * 8)`
         }
     ],
     [HEADING_VARIANTS.MEDIUM_PRIMARY]: [
         headingBase,
         {
-            color: theme.colors.no3elementBackground,
+            color: theme.colors.primary.no03,
             fontSize: '3rem'
         }
     ],
     [HEADING_VARIANTS.MEDIUM_SECONDARY]: [
         headingBase,
         {
-            color: theme.colors.no6bordersNonInteractive,
+            color: theme.colors.primary.no06,
             fontSize: '3rem'
         }
     ],
     [HEADING_VARIANTS.BIG_PRIMARY]: [
         headingBase,
         {
-            color: theme.colors.no3elementBackground,
+            color: theme.colors.primary.no03,
             fontSize: '4rem'
         }
     ],
     [HEADING_VARIANTS.BIG_SECONDARY]: [
         headingBase,
         {
-            color: theme.colors.no6bordersNonInteractive,
+            color: theme.colors.primary.no06,
             fontSize: '4rem'
         }
     ]
