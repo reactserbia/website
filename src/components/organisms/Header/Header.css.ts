@@ -4,6 +4,8 @@ import { theme } from '@/style/theme.css'
 
 export const header = style({
     height: theme.dimensions.headerHeight,
+    display: 'flex',
+    alignItems: 'center',
     position: 'fixed',
     top: 0,
     left: 0,
