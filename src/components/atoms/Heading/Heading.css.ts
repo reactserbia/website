@@ -9,7 +9,7 @@ const headingBase = style({
     lineHeight: 1,
     fontSize: '4rem',
     fontWeight: 900,
-    WebkitTextStroke: `2px ${theme.colors.primary.no12}`,
+    WebkitTextStroke: `1px ${theme.colors.primary.no12}`,
     margin: 0
 })
 
@@ -39,14 +39,14 @@ export const heading = styleVariants({
         headingBase,
         {
             color: theme.colors.primary.no03,
-            fontSize: '3rem'
+            fontSize: `calc(${theme.dimensions.spacingUnit} * 8)`
         }
     ],
     [HEADING_VARIANTS.MEDIUM_SECONDARY]: [
         headingBase,
         {
             color: theme.colors.primary.no06,
-            fontSize: '3rem'
+            fontSize: `calc(${theme.dimensions.spacingUnit} * 8)`
         }
     ],
     [HEADING_VARIANTS.BIG_PRIMARY]: [

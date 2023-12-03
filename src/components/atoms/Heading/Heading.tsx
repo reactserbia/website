@@ -16,7 +16,7 @@ export function Heading({
     return (
         <h1 className={heading[variant]}>
             {children}
-            <span className={span[variant]}>{children}</span>
+            {/* <span className={span[variant]}>{children}</span> */}
         </h1>
     )
 }

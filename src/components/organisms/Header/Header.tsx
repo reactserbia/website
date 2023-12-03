@@ -10,9 +10,6 @@ export function Header() {
                 <Heading variant={HEADING_VARIANTS.MEDIUM_PRIMARY}>
                     REACT
                 </Heading>
-                <Heading variant={HEADING_VARIANTS.MEDIUM_SECONDARY}>
-                    SERBIA
-                </Heading>
             </div>
         </header>
     )
