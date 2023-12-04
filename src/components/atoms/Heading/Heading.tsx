@@ -4,11 +4,12 @@ import { COLOR_VARIANTS, LAYERS_VARIANTS, SIZE_VARIANTS } from '@/constants'
 
 import {
     base,
-    spanOneVariants,
-    spanTwoVariants,
+    spanOneSizeVariants,
+    spanTwoSizeVariants,
     textColorVariants,
     sizeVariants,
-    spanColorVariants
+    spanOneColorVariants,
+    spanTwoColorVariants
 } from './Heading.css'
 
 type HeadingProps = {
@@ -30,17 +31,17 @@ export function Heading({
         >
             {children}
             <span
-                className={`${spanOneVariants[sizeVariant]} ${
-                    spanColorVariants[
-                        layers === LAYERS_VARIANTS.TWO ? 'last' : 'first'
-                    ]
+                className={`${spanOneSizeVariants[sizeVariant]} ${
+                    (layers === LAYERS_VARIANTS.TWO
+                        ? spanTwoColorVariants
+                        : spanOneColorVariants)[colorVariant]
                 }`}
             >
                 {children}
             </span>
             {layers >= LAYERS_VARIANTS.THREE && (
                 <span
-                    className={`${spanTwoVariants[sizeVariant]} ${spanColorVariants.last}`}
+                    className={`${spanTwoSizeVariants[sizeVariant]} ${spanTwoColorVariants[colorVariant]}`}
                 >
                     {children}
                 </span>

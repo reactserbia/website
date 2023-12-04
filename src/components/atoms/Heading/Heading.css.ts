@@ -45,18 +45,37 @@ export const spanBase = style({
     userSelect: 'none'
 })
 
-export const spanColorVariants = styleVariants({
-    first: {
+export const spanOneColorVariants = styleVariants({
+    [COLOR_VARIANTS.PRIMARY]: {
         zIndex: -1,
         color: theme.colors.primary.no11
     },
-    last: {
-        zIndex: -2,
-        color: theme.colors.primary.no12
+    [COLOR_VARIANTS.SECONDARY]: {
+        zIndex: -1,
+        color: theme.colors.secondary.no11
+    },
+    [COLOR_VARIANTS.TERTIARY]: {
+        zIndex: -1,
+        color: theme.colors.tertiary.no11
     }
 })
 
-export const spanOneVariants = styleVariants({
+export const spanTwoColorVariants = styleVariants({
+    [COLOR_VARIANTS.PRIMARY]: {
+        zIndex: -2,
+        color: theme.colors.primary.no12
+    },
+    [COLOR_VARIANTS.SECONDARY]: {
+        zIndex: -2,
+        color: theme.colors.secondary.no12
+    },
+    [COLOR_VARIANTS.TERTIARY]: {
+        zIndex: -2,
+        color: theme.colors.tertiary.no12
+    }
+})
+
+export const spanOneSizeVariants = styleVariants({
     [SIZE_VARIANTS.SMALL]: [
         spanBase,
         {
@@ -80,7 +99,7 @@ export const spanOneVariants = styleVariants({
     ]
 })
 
-export const spanTwoVariants = styleVariants({
+export const spanTwoSizeVariants = styleVariants({
     [SIZE_VARIANTS.SMALL]: [
         spanBase,
         {
