@@ -19,3 +19,10 @@ export const headerContent = style({
     maxWidth: theme.dimensions.contentMaxWidth,
     margin: '0 auto'
 })
+
+export const logoContainer = style({
+    position: 'absolute',
+    bottom: 0,
+    left: '50%',
+    transform: 'translate(-50%, 50%)'
+})

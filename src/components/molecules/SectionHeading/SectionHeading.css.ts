@@ -4,7 +4,7 @@ import { style } from '@vanilla-extract/css'
 export const container = style({
     display: 'inline-block',
     padding: '0.5rem 2rem',
-    border: `1px solid ${theme.colors.no12textContrastHigh}`,
+    border: `1px solid ${theme.colors.primary.no12}`,
     borderRadius: '4rem',
-    boxShadow: `8px 8px 0 ${theme.colors.no4elementBackgroundHovered}`
+    boxShadow: `8px 8px 0 ${theme.colors.primary.no04}`
 })
