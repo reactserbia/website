@@ -18,7 +18,7 @@ import {
     spanTwoColorVariants
 } from './Heading.css'
 
-type HeadingProps = {
+export type HeadingProps = {
     children: ReactNode
     colorVariant?: COLOR_VARIANTS
     sizeVariant?: SIZE_VARIANTS

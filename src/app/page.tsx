@@ -9,6 +9,7 @@ import {
     SHADE_VARIANTS,
     SIZE_VARIANTS
 } from '@/constants'
+import { BoxedHeading } from '@/components'
 
 export default function Home() {
     return (
@@ -25,6 +26,14 @@ export default function Home() {
             </div>
             <div className={infoContainer}>
                 <div className={content}>
+                    <BoxedHeading
+                        colorVariant={COLOR_VARIANTS.TERTIARY}
+                        shadeVariant={SHADE_VARIANTS.DARK}
+                        layers={LAYERS_VARIANTS.THREE}
+                        sizeVariant={SIZE_VARIANTS.LARGE}
+                    >
+                        WELCOME!
+                    </BoxedHeading>
                     <Heading
                         colorVariant={COLOR_VARIANTS.TERTIARY}
                         shadeVariant={SHADE_VARIANTS.DARK}

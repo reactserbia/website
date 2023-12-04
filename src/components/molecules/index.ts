@@ -1,1 +1,1 @@
-export * from './SectionHeading/SectionHeading'
+export * from './BoxedHeading/BoxedHeading'
