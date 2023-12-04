@@ -28,5 +28,6 @@ export const infoContainer = style({
     width: '100%',
     display: 'flex',
     justifyContent: 'space-between',
-    padding: '64px 0'
+    padding: '64px 0',
+    backgroundColor: theme.colors.primary.no07
 })

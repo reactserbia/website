@@ -15,6 +15,7 @@ export const container = styleVariants({
         containerBase,
         {
             borderColor: theme.colors.primary.no12,
+            backgroundColor: theme.colors.primary.no02,
             boxShadow: `6px 6px ${theme.colors.primary.no12}`
         }
     ],
@@ -22,6 +23,7 @@ export const container = styleVariants({
         containerBase,
         {
             borderColor: theme.colors.secondary.no12,
+            backgroundColor: theme.colors.secondary.no02,
             boxShadow: `6px 6px ${theme.colors.secondary.no12}`
         }
     ],
@@ -29,6 +31,7 @@ export const container = styleVariants({
         containerBase,
         {
             borderColor: theme.colors.tertiary.no12,
+            backgroundColor: theme.colors.tertiary.no02,
             boxShadow: `6px 6px ${theme.colors.tertiary.no12}`
         }
     ]

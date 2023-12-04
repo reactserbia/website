@@ -11,6 +11,7 @@ import {
 export const base = style({
     display: 'inline-block',
     position: 'relative',
+    zIndex: 3,
     lineHeight: 1,
     fontWeight: 900,
     WebkitTextStrokeWidth: '1px',
