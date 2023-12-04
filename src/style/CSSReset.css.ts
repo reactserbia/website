@@ -12,7 +12,7 @@ globalStyle('body', {
     width: '100vw',
     minHeight: '100vh',
     position: 'relative',
-    background: theme.colors.no1appBackground,
+    background: theme.colors.primary.no01,
     overflowX: 'hidden'
 })
 
