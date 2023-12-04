@@ -7,8 +7,8 @@ export function Logo() {
         <div className={container}>
             <div className={logoContainer}>
                 <Image
-                    width={54}
-                    height={54}
+                    width={46}
+                    height={46}
                     src='/images/logo.svg'
                     alt='Logo'
                     className={logoImage}

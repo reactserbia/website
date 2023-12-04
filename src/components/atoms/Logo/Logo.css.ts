@@ -17,6 +17,9 @@ const circleBase = style({
 export const logoContainer = style([
     circleBase,
     {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: theme.colors.tertiary.no03
     }
 ])
