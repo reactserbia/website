@@ -3,7 +3,7 @@ import { style } from '@vanilla-extract/css'
 import { theme } from '@/style/theme.css'
 
 export const container = style({
-    paddingTop: theme.dimensions.headerHeight
+    paddingTop: `calc(${theme.dimensions.headerHeight} + 40px)`
 })
 
 export const content = style({

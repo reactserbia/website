@@ -10,8 +10,8 @@ export const header = style({
     top: 0,
     left: 0,
     right: 0,
-    borderBottom: `1px solid ${theme.colors.primary.no12}`,
-    boxShadow: `0 4px 0 ${theme.colors.primary.no04}`
+    borderBottom: `2px solid ${theme.colors.primary.no12}`,
+    boxShadow: `0 6px 0 ${theme.colors.primary.no04}`
 })
 
 export const headerContent = style({
