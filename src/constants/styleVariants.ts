@@ -3,3 +3,9 @@ export enum COLOR_VARIANTS {
     SECONDARY = 'SECONDARY',
     TERTIARY = 'TERTIARY'
 }
+
+export enum SIZE_VARIANTS {
+    SMALL = 'SMALL',
+    MEDIUM = 'MEDIUM',
+    LARGE = 'LARGE'
+}
