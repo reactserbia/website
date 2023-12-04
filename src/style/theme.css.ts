@@ -3,7 +3,7 @@ import { createTheme, createThemeContract } from '@vanilla-extract/css'
 import { mint, sky, yellow } from '@radix-ui/colors'
 
 const spacingUnit = '4px'
-const contentMaxWidth = '672px'
+const contentMaxWidth = '1024px'
 const headerHeight = '64px'
 
 export const theme = createThemeContract({

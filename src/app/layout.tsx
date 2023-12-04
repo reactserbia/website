@@ -22,6 +22,7 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body className={`${rubik.className} ${lightTheme}`}>
+                <Header />
                 {children}
             </body>
         </html>
