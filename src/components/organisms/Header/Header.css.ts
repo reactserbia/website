@@ -11,6 +11,7 @@ export const header = style({
     left: 0,
     right: 0,
     borderBottom: `2px solid ${theme.colors.primary.no12}`,
+    backgroundColor: '#fff',
     boxShadow: `0 6px 0 ${theme.colors.primary.no04}`
 })
 
