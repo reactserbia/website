@@ -1,7 +1,6 @@
-export enum COLOR_VARIANTS {
-    PRIMARY = 'PRIMARY',
-    SECONDARY = 'SECONDARY',
-    TERTIARY = 'TERTIARY'
+export enum LAYERS_VARIANTS {
+    TWO = 2,
+    THREE = 3
 }
 
 export enum SIZE_VARIANTS {
@@ -10,7 +9,13 @@ export enum SIZE_VARIANTS {
     LARGE = 'LARGE'
 }
 
-export enum LAYERS_VARIANTS {
-    TWO = 2,
-    THREE = 3
+export enum COLOR_VARIANTS {
+    PRIMARY = 'PRIMARY',
+    SECONDARY = 'SECONDARY',
+    TERTIARY = 'TERTIARY'
+}
+
+export enum SHADE_VARIANTS {
+    LIGHT = 'LIGHT',
+    DARK = 'DARK'
 }

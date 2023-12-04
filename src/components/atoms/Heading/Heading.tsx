@@ -1,6 +1,11 @@
 import { ReactNode } from 'react'
 
-import { COLOR_VARIANTS, LAYERS_VARIANTS, SIZE_VARIANTS } from '@/constants'
+import {
+    COLOR_VARIANTS,
+    LAYERS_VARIANTS,
+    SHADE_VARIANTS,
+    SIZE_VARIANTS
+} from '@/constants'
 
 import {
     base,
@@ -18,19 +23,23 @@ type HeadingProps = {
     colorVariant?: COLOR_VARIANTS
     sizeVariant?: SIZE_VARIANTS
     layers?: LAYERS_VARIANTS
+    shadeVariant?: SHADE_VARIANTS
 }
 
 export function Heading({
     children,
     colorVariant = COLOR_VARIANTS.PRIMARY,
     sizeVariant = SIZE_VARIANTS.SMALL,
-    layers = LAYERS_VARIANTS.TWO
+    layers = LAYERS_VARIANTS.TWO,
+    shadeVariant = SHADE_VARIANTS.LIGHT
 }: HeadingProps) {
     return (
         <h1
-            className={`${base} ${textColorVariants[colorVariant]} ${
-                sizeVariants[sizeVariant]
-            } ${strokeColorVariants[`${colorVariant}-${layers}`]}`}
+            className={`${base} ${
+                textColorVariants[`${colorVariant}-${shadeVariant}`]
+            } ${sizeVariants[sizeVariant]} ${
+                strokeColorVariants[`${colorVariant}-${layers}`]
+            }`}
         >
             {children}
             <span

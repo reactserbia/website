@@ -1,7 +1,12 @@
 import { theme } from '@/style/theme.css'
 import { style, styleVariants } from '@vanilla-extract/css'
 
-import { COLOR_VARIANTS, LAYERS_VARIANTS, SIZE_VARIANTS } from '@/constants'
+import {
+    COLOR_VARIANTS,
+    LAYERS_VARIANTS,
+    SHADE_VARIANTS,
+    SIZE_VARIANTS
+} from '@/constants'
 
 export const base = style({
     display: 'inline-block',
@@ -25,14 +30,23 @@ export const sizeVariants = styleVariants({
 })
 
 export const textColorVariants = styleVariants({
-    [COLOR_VARIANTS.PRIMARY]: {
+    [`${COLOR_VARIANTS.PRIMARY}-${SHADE_VARIANTS.LIGHT}`]: {
         color: theme.colors.primary.no03
     },
-    [COLOR_VARIANTS.SECONDARY]: {
+    [`${COLOR_VARIANTS.PRIMARY}-${SHADE_VARIANTS.DARK}`]: {
+        color: theme.colors.primary.no06
+    },
+    [`${COLOR_VARIANTS.SECONDARY}-${SHADE_VARIANTS.LIGHT}`]: {
         color: theme.colors.secondary.no03
     },
-    [COLOR_VARIANTS.TERTIARY]: {
+    [`${COLOR_VARIANTS.SECONDARY}-${SHADE_VARIANTS.DARK}`]: {
+        color: theme.colors.secondary.no06
+    },
+    [`${COLOR_VARIANTS.TERTIARY}-${SHADE_VARIANTS.LIGHT}`]: {
         color: theme.colors.tertiary.no03
+    },
+    [`${COLOR_VARIANTS.TERTIARY}-${SHADE_VARIANTS.DARK}`]: {
+        color: theme.colors.tertiary.no06
     }
 })
 
