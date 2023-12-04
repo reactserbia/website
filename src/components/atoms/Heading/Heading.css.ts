@@ -18,10 +18,10 @@ export const textColor = styleVariants({
         color: theme.colors.primary.no03
     },
     secondary: {
-        color: theme.colors.primary.no06
+        color: theme.colors.secondary.no06
     },
     tertiary: {
-        color: theme.colors.primary.no09
+        color: theme.colors.tertiary.no09
     }
 })
 
