@@ -29,19 +29,10 @@ export default function Home() {
                     <BoxedHeading
                         colorVariant={COLOR_VARIANTS.TERTIARY}
                         shadeVariant={SHADE_VARIANTS.DARK}
-                        layers={LAYERS_VARIANTS.THREE}
                         sizeVariant={SIZE_VARIANTS.LARGE}
                     >
                         WELCOME!
                     </BoxedHeading>
-                    <Heading
-                        colorVariant={COLOR_VARIANTS.TERTIARY}
-                        shadeVariant={SHADE_VARIANTS.DARK}
-                        layers={LAYERS_VARIANTS.THREE}
-                        sizeVariant={SIZE_VARIANTS.LARGE}
-                    >
-                        WELCOME!
-                    </Heading>
                 </div>
             </div>
         </main>

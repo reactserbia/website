@@ -11,7 +11,7 @@ export function BoxedHeading({
     shadeVariant
 }: BoxedHeadingProps) {
     return (
-        <ShadeBox>
+        <ShadeBox colorVariant={colorVariant}>
             <Heading
                 colorVariant={colorVariant}
                 sizeVariant={sizeVariant}
