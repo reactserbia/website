@@ -7,7 +7,8 @@ import {
     spanOneVariants,
     spanTwoVariants,
     textColorVariants,
-    sizeVariants
+    sizeVariants,
+    spanColorVariants
 } from './Heading.css'
 
 type HeadingProps = {
@@ -28,9 +29,21 @@ export function Heading({
             className={`${base} ${textColorVariants[colorVariant]} ${sizeVariants[sizeVariant]}`}
         >
             {children}
-            <span className={spanOneVariants[sizeVariant]}>{children}</span>
+            <span
+                className={`${spanOneVariants[sizeVariant]} ${
+                    spanColorVariants[
+                        layers === LAYERS_VARIANTS.TWO ? 'last' : 'first'
+                    ]
+                }`}
+            >
+                {children}
+            </span>
             {layers >= LAYERS_VARIANTS.THREE && (
-                <span className={spanTwoVariants[sizeVariant]}>{children}</span>
+                <span
+                    className={`${spanTwoVariants[sizeVariant]} ${spanColorVariants.last}`}
+                >
+                    {children}
+                </span>
             )}
         </h1>
     )
