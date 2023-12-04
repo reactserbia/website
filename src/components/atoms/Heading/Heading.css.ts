@@ -26,16 +26,34 @@ export const sizeVariants = styleVariants({
 
 export const textColorVariants = styleVariants({
     [COLOR_VARIANTS.PRIMARY]: {
-        color: theme.colors.primary.no03,
-        WebkitTextStrokeColor: theme.colors.primary.no12
+        color: theme.colors.primary.no03
     },
     [COLOR_VARIANTS.SECONDARY]: {
-        color: theme.colors.secondary.no03,
-        WebkitTextStrokeColor: theme.colors.secondary.no12
+        color: theme.colors.secondary.no03
     },
     [COLOR_VARIANTS.TERTIARY]: {
-        color: theme.colors.tertiary.no03,
+        color: theme.colors.tertiary.no03
+    }
+})
+
+export const strokeColorVariants = styleVariants({
+    [`${COLOR_VARIANTS.PRIMARY}-${LAYERS_VARIANTS.TWO}`]: {
+        WebkitTextStrokeColor: theme.colors.primary.no12
+    },
+    [`${COLOR_VARIANTS.PRIMARY}-${LAYERS_VARIANTS.THREE}`]: {
+        WebkitTextStrokeColor: theme.colors.primary.no11
+    },
+    [`${COLOR_VARIANTS.SECONDARY}-${LAYERS_VARIANTS.TWO}`]: {
+        WebkitTextStrokeColor: theme.colors.secondary.no12
+    },
+    [`${COLOR_VARIANTS.SECONDARY}-${LAYERS_VARIANTS.THREE}`]: {
+        WebkitTextStrokeColor: theme.colors.secondary.no11
+    },
+    [`${COLOR_VARIANTS.TERTIARY}-${LAYERS_VARIANTS.TWO}`]: {
         WebkitTextStrokeColor: theme.colors.tertiary.no12
+    },
+    [`${COLOR_VARIANTS.TERTIARY}-${LAYERS_VARIANTS.THREE}`]: {
+        WebkitTextStrokeColor: theme.colors.tertiary.no11
     }
 })
 

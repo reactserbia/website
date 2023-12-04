@@ -8,6 +8,7 @@ import {
     spanTwoSizeVariants,
     textColorVariants,
     sizeVariants,
+    strokeColorVariants,
     spanOneColorVariants,
     spanTwoColorVariants
 } from './Heading.css'
@@ -27,7 +28,9 @@ export function Heading({
 }: HeadingProps) {
     return (
         <h1
-            className={`${base} ${textColorVariants[colorVariant]} ${sizeVariants[sizeVariant]}`}
+            className={`${base} ${textColorVariants[colorVariant]} ${
+                sizeVariants[sizeVariant]
+            } ${strokeColorVariants[`${colorVariant}-${layers}`]}`}
         >
             {children}
             <span
