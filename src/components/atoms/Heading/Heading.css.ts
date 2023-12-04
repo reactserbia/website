@@ -66,30 +66,36 @@ export const spanBase = style({
 export const spanOneColorVariants = styleVariants({
     [COLOR_VARIANTS.PRIMARY]: {
         zIndex: -1,
-        color: theme.colors.primary.no11
+        color: theme.colors.primary.no11,
+        WebkitTextStrokeColor: theme.colors.primary.no11
     },
     [COLOR_VARIANTS.SECONDARY]: {
         zIndex: -1,
-        color: theme.colors.secondary.no11
+        color: theme.colors.secondary.no11,
+        WebkitTextStrokeColor: theme.colors.secondary.no11
     },
     [COLOR_VARIANTS.TERTIARY]: {
         zIndex: -1,
-        color: theme.colors.tertiary.no11
+        color: theme.colors.tertiary.no11,
+        WebkitTextStrokeColor: theme.colors.tertiary.no11
     }
 })
 
 export const spanTwoColorVariants = styleVariants({
     [COLOR_VARIANTS.PRIMARY]: {
         zIndex: -2,
-        color: theme.colors.primary.no12
+        color: theme.colors.primary.no12,
+        WebkitTextStrokeColor: theme.colors.primary.no12
     },
     [COLOR_VARIANTS.SECONDARY]: {
         zIndex: -2,
-        color: theme.colors.secondary.no12
+        color: theme.colors.secondary.no12,
+        WebkitTextStrokeColor: theme.colors.secondary.no12
     },
     [COLOR_VARIANTS.TERTIARY]: {
         zIndex: -2,
-        color: theme.colors.tertiary.no12
+        color: theme.colors.tertiary.no12,
+        WebkitTextStrokeColor: theme.colors.tertiary.no12
     }
 })
 

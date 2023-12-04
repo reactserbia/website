@@ -24,7 +24,7 @@ export function Heading({
     children,
     colorVariant = COLOR_VARIANTS.PRIMARY,
     sizeVariant = SIZE_VARIANTS.SMALL,
-    layers = LAYERS_VARIANTS.THREE
+    layers = LAYERS_VARIANTS.TWO
 }: HeadingProps) {
     return (
         <h1
