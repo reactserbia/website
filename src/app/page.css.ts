@@ -13,10 +13,8 @@ export const content = style({
     margin: '0 auto'
 })
 
-export const banner = style({
+export const bannerContainer = style({
     width: '100%',
-    height: '300px',
-    backgroundImage: 'url(/images/clouds.jpg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'bottom'
+    display: 'flex',
+    justifyContent: 'center'
 })

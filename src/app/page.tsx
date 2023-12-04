@@ -1,6 +1,8 @@
+import Image from 'next/image'
+
 import { Heading } from '@/components/atoms'
 
-import { container, content, banner } from './page.css'
+import { container, content, bannerContainer } from './page.css'
 import {
     COLOR_VARIANTS,
     LAYERS_VARIANTS,
@@ -11,6 +13,16 @@ import {
 export default function Home() {
     return (
         <main className={container}>
+            <div className={bannerContainer}>
+                <div className={content}>
+                    <Image
+                        width={450}
+                        height={211}
+                        src='/images/banner.svg'
+                        alt='banner'
+                    />
+                </div>
+            </div>
             <div className={content}>
                 <Heading sizeVariant={SIZE_VARIANTS.LARGE}>WHO ARE WE?</Heading>
                 <hr />
