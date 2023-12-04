@@ -10,9 +10,9 @@ export const header = style({
     top: 0,
     left: 0,
     right: 0,
-    borderBottom: `2px solid ${theme.colors.primary.no12}`,
-    backgroundColor: '#fff',
-    boxShadow: `0 6px 0 ${theme.colors.primary.no04}`
+    borderBottom: `2px solid ${theme.colors.secondary.no12}`,
+    backgroundColor: theme.colors.secondary.no02,
+    boxShadow: `0 6px 0 ${theme.colors.secondary.no04}`
 })
 
 export const headerContent = style({
