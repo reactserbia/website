@@ -1,7 +1,7 @@
 import { theme } from '@/style/theme.css'
 import { style, styleVariants } from '@vanilla-extract/css'
 
-import { COLOR_VARIANTS, SIZE_VARIANTS } from '@/constants'
+import { COLOR_VARIANTS, LAYERS_VARIANTS, SIZE_VARIANTS } from '@/constants'
 
 export const base = style({
     display: 'inline-block',
@@ -14,13 +14,22 @@ export const base = style({
 
 export const spanBase = style({
     position: 'absolute',
-    zIndex: -1,
-    color: theme.colors.primary.no12,
     whiteSpace: 'nowrap',
     userSelect: 'none'
 })
 
-export const spanVariants = styleVariants({
+export const spanColorVariants = styleVariants({
+    first: {
+        zIndex: -1,
+        color: theme.colors.primary.no11
+    },
+    last: {
+        zIndex: -2,
+        color: theme.colors.primary.no12
+    }
+})
+
+export const spanOneVariants = styleVariants({
     [SIZE_VARIANTS.SMALL]: [
         spanBase,
         {
@@ -40,6 +49,30 @@ export const spanVariants = styleVariants({
         {
             left: 5,
             top: 5
+        }
+    ]
+})
+
+export const spanTwoVariants = styleVariants({
+    [SIZE_VARIANTS.SMALL]: [
+        spanBase,
+        {
+            left: 6,
+            top: 6
+        }
+    ],
+    [SIZE_VARIANTS.MEDIUM]: [
+        spanBase,
+        {
+            left: 8,
+            top: 8
+        }
+    ],
+    [SIZE_VARIANTS.LARGE]: [
+        spanBase,
+        {
+            left: 10,
+            top: 10
         }
     ]
 })

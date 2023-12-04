@@ -9,3 +9,8 @@ export enum SIZE_VARIANTS {
     MEDIUM = 'MEDIUM',
     LARGE = 'LARGE'
 }
+
+export enum LAYERS_VARIANTS {
+    TWO = 2,
+    THREE = 3
+}
