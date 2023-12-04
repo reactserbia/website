@@ -9,11 +9,13 @@ export default function Home() {
             <div className={content}>
                 <Heading>WHO ARE WE?</Heading>
                 <hr />
-                <Heading variant={COLOR_VARIANTS.SECONDARY}>
+                <Heading colorVariant={COLOR_VARIANTS.SECONDARY}>
                     WHO ARE WE?
                 </Heading>
                 <hr />
-                <Heading variant={COLOR_VARIANTS.TERTIARY}>WHO ARE WE?</Heading>
+                <Heading colorVariant={COLOR_VARIANTS.TERTIARY}>
+                    WHO ARE WE?
+                </Heading>
                 <hr />
             </div>
         </main>
