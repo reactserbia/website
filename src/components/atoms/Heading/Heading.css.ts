@@ -64,9 +64,9 @@ export const sizeVariants = styleVariants({
         fontSize: '2rem'
     },
     [SIZE_VARIANTS.MEDIUM]: {
-        fontSize: '2.5rem'
+        fontSize: '3rem'
     },
     [SIZE_VARIANTS.LARGE]: {
-        fontSize: '3rem'
+        fontSize: '4rem'
     }
 })
