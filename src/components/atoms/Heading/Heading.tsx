@@ -2,7 +2,12 @@ import { ReactNode } from 'react'
 
 import { COLOR_VARIANTS, SIZE_VARIANTS } from '@/constants'
 
-import { base, spanBase, textColorVariants, sizeVariants } from './Heading.css'
+import {
+    base,
+    spanVariants,
+    textColorVariants,
+    sizeVariants
+} from './Heading.css'
 
 type HeadingProps = {
     children: ReactNode
@@ -20,7 +25,7 @@ export function Heading({
             className={`${base} ${textColorVariants[colorVariant]} ${sizeVariants[sizeVariant]}`}
         >
             {children}
-            <span className={spanBase}>{children}</span>
+            <span className={spanVariants[sizeVariant]}>{children}</span>
         </h1>
     )
 }

@@ -14,12 +14,34 @@ export const base = style({
 
 export const spanBase = style({
     position: 'absolute',
-    left: 3,
-    top: 3,
     zIndex: -1,
     color: theme.colors.primary.no12,
     whiteSpace: 'nowrap',
     userSelect: 'none'
+})
+
+export const spanVariants = styleVariants({
+    [SIZE_VARIANTS.SMALL]: [
+        spanBase,
+        {
+            left: 3,
+            top: 3
+        }
+    ],
+    [SIZE_VARIANTS.MEDIUM]: [
+        spanBase,
+        {
+            left: 4,
+            top: 4
+        }
+    ],
+    [SIZE_VARIANTS.LARGE]: [
+        spanBase,
+        {
+            left: 5,
+            top: 5
+        }
+    ]
 })
 
 export const textColorVariants = styleVariants({
