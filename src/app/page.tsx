@@ -7,12 +7,18 @@ import {
     midSectionLogoContainer,
     infoContainer,
     infoSectionsContainer,
-    cloud
+    cloud,
+    billboardContainer
 } from './page.css'
-import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
+import {
+    COLOR_VARIANTS,
+    LAYERS_VARIANTS,
+    SHADE_VARIANTS,
+    SIZE_VARIANTS
+} from '@/constants'
 import { BoxedHeading } from '@/components'
 import { InfoSection } from '@/components/molecules/InfoSection/InfoSection'
-import { Logo } from '@/components/atoms'
+import { Heading, Logo } from '@/components/atoms'
 
 export default function Home() {
     return (
@@ -65,6 +71,15 @@ export default function Home() {
                     alt='cloud'
                     className={cloud}
                 />
+            </div>
+            <div className={billboardContainer}>
+                <Heading
+                    sizeVariant={SIZE_VARIANTS.LARGE}
+                    colorVariant={COLOR_VARIANTS.TERTIARY}
+                    layers={LAYERS_VARIANTS.THREE}
+                >
+                    BILLBOARD
+                </Heading>
             </div>
         </main>
     )

@@ -66,3 +66,11 @@ export const cloud = style({
     zIndex: 0,
     animation: `${moving} 50s linear infinite`
 })
+
+export const billboardContainer = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '2rem',
+    marginTop: '4rem'
+})
