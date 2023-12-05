@@ -1,12 +1,17 @@
-import { COLOR_VARIANTS } from '@/constants'
-import { theme } from '@/style/theme.css'
 import { style, styleVariants } from '@vanilla-extract/css'
 
+import { COLOR_VARIANTS } from '@/constants'
+import { theme } from '@/style/theme.css'
+
 const containerBase = style({
+    width: '100%',
+    maxWidth: '400px',
     display: 'flex',
     justifyContent: 'center',
+    flexDirection: 'column',
+    gap: '1rem',
     padding: '24px',
-    border: `2px solid ${theme.colors.primary.no12}`,
+    borderRadius: 16,
     boxShadow: `6px 6px ${theme.colors.primary.no12}`
 })
 
