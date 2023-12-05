@@ -34,6 +34,14 @@ export const absoluteSpan = style([
         zIndex: 1,
         border: `1px solid ${theme.colors.primary.no11}`,
         backgroundColor: theme.colors.primary.no03,
-        boxShadow: `4px 4px ${theme.colors.primary.no11}`
+        boxShadow: `4px 4px ${theme.colors.primary.no11}`,
+        transition: 'all 0.2s ease-in-out',
+
+        selectors: {
+            [`${button}:hover &`]: {
+                bottom: 8,
+                right: 8
+            }
+        }
     }
 ])
