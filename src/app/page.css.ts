@@ -9,6 +9,11 @@ export const container = style({
 export const content = style({
     width: '100%',
     maxWidth: theme.dimensions.contentMaxWidth,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    gap: '4rem',
     textAlign: 'center',
     margin: '0 auto'
 })
@@ -47,8 +52,7 @@ export const infoSectionsContainer = style({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: '2rem',
-    marginTop: '4rem'
+    gap: '2rem'
 })
 
 const moving = keyframes({
