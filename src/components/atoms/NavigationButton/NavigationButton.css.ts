@@ -1,7 +1,7 @@
 import { theme } from '@/style/theme.css'
 import { style } from '@vanilla-extract/css'
 
-export const buttonBase = style({
+export const button = style({
     position: 'relative',
     border: 'none',
     borderRadius: '0.25rem',
@@ -11,21 +11,29 @@ export const buttonBase = style({
 export const spanBase = style({
     display: 'inline-block',
     padding: '0.5rem',
-    border: `1px solid ${theme.colors.primary.no11}`,
     borderRadius: '0.25rem',
     fontSize: '1rem',
     fontWeight: 600,
-    color: theme.colors.primary.no12,
-    backgroundColor: theme.colors.primary.no03
+    color: theme.colors.primary.no12
 })
+
+export const span = style([
+    spanBase,
+    {
+        border: `1px solid ${theme.colors.primary.no12}`,
+        backgroundColor: theme.colors.primary.no12
+    }
+])
 
 export const absoluteSpan = style([
     spanBase,
     {
         position: 'absolute',
-        top: 4,
-        left: 4,
-        zIndex: -1,
-        backgroundColor: theme.colors.primary.no11
+        bottom: 4,
+        right: 4,
+        zIndex: 1,
+        border: `1px solid ${theme.colors.primary.no11}`,
+        backgroundColor: theme.colors.primary.no03,
+        boxShadow: `4px 4px ${theme.colors.primary.no11}`
     }
 ])

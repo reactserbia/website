@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { absoluteSpan, buttonBase, spanBase } from './NavigationButton.css'
+import { absoluteSpan, button, span } from './NavigationButton.css'
 
 type NavigationButtonProps = {
     children: ReactNode
@@ -7,9 +7,8 @@ type NavigationButtonProps = {
 
 export function NavigationButton({ children }: NavigationButtonProps) {
     return (
-        <button className={buttonBase}>
-            <span className={spanBase}>{children}</span>
-            <span className={absoluteSpan}>{children}</span>
+        <button className={button}>
+            <span className={span}>{children}</span>
             <span className={absoluteSpan}>{children}</span>
         </button>
     )
