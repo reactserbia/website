@@ -6,7 +6,7 @@ export const container = style({
     padding: '2rem',
     border: `2px solid ${theme.colors.tertiary.no12}`,
     backgroundColor: theme.colors.tertiary.no05,
-    boxShadow: `6px 6px ${theme.colors.tertiary.no12}`
+    boxShadow: `8px 8px ${theme.colors.tertiary.no12}`
 })
 
 export const content = style({
