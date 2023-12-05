@@ -17,9 +17,9 @@ export default function Home() {
             <div className={bannerContainer}>
                 <div className={content}>
                     <Image
-                        width={450}
-                        height={211}
-                        src='/images/banner.svg'
+                        width={857}
+                        height={216}
+                        src='/images/big-banner.svg'
                         alt='banner'
                     />
                 </div>
