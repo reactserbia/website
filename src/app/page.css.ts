@@ -77,5 +77,16 @@ export const billboardContainer = style({
     alignItems: 'center',
     flexDirection: 'column',
     gap: '2rem',
-    padding: '64px 0'
+    padding: '64px 0',
+    borderBottom: `2px solid ${theme.colors.primary.no12}`
+})
+
+export const aboutContainer = style({
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    position: 'relative',
+    padding: '64px 0',
+    borderBottom: `2px solid ${theme.colors.primary.no12}`,
+    backgroundColor: theme.colors.primary.no07
 })

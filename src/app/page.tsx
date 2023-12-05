@@ -8,7 +8,8 @@ import {
     infoContainer,
     infoSectionsContainer,
     cloud,
-    billboardContainer
+    billboardContainer,
+    aboutContainer
 } from './page.css'
 import {
     COLOR_VARIANTS,
@@ -74,7 +75,6 @@ export default function Home() {
             </div>
             <div className={billboardContainer}>
                 <div className={content}>
-                    {' '}
                     <Heading
                         sizeVariant={SIZE_VARIANTS.LARGE}
                         colorVariant={COLOR_VARIANTS.TERTIARY}
@@ -92,6 +92,14 @@ export default function Home() {
                             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         />
                     </Billboard>
+                </div>
+            </div>
+            <div className={aboutContainer}>
+                <div className={content}>
+                    <InfoSection
+                        heading='What is React?'
+                        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    />
                 </div>
             </div>
         </main>

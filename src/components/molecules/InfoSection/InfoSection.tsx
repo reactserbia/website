@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 type InfoSectionProps = {
     heading: string
-    content?: string
+    content: string
     colorVariant?: COLOR_VARIANTS
 }
 
