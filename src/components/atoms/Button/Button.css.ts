@@ -7,7 +7,8 @@ const buttonBase = style({
     borderRadius: 999,
     lineHeight: 1,
     fontSize: '1rem',
-    fontWeight: 500
+    fontWeight: 500,
+    cursor: 'pointer'
 })
 
 export const buttonVariants = styleVariants({
@@ -16,7 +17,8 @@ export const buttonVariants = styleVariants({
         {
             border: `1px solid ${theme.colors.primary.no12}`,
             color: theme.colors.primary.no01,
-            backgroundColor: theme.colors.primary.no11
+            backgroundColor: theme.colors.primary.no11,
+            boxShadow: `3px 3px ${theme.colors.primary.no12}`
         }
     ],
     [COLOR_VARIANTS.SECONDARY]: [
@@ -24,7 +26,8 @@ export const buttonVariants = styleVariants({
         {
             border: `1px solid ${theme.colors.secondary.no12}`,
             color: theme.colors.secondary.no01,
-            backgroundColor: theme.colors.secondary.no11
+            backgroundColor: theme.colors.secondary.no11,
+            boxShadow: `3px 3px ${theme.colors.secondary.no12}`
         }
     ],
     [COLOR_VARIANTS.TERTIARY]: [
@@ -32,7 +35,8 @@ export const buttonVariants = styleVariants({
         {
             border: `1px solid ${theme.colors.tertiary.no12}`,
             color: theme.colors.tertiary.no01,
-            backgroundColor: theme.colors.tertiary.no11
+            backgroundColor: theme.colors.tertiary.no11,
+            boxShadow: `3px 3px ${theme.colors.tertiary.no12}`
         }
     ]
 })
