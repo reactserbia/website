@@ -28,3 +28,10 @@ export const logoContainer = style({
     left: '50%',
     transform: 'translate(-50%, 50%)'
 })
+
+export const logo = style({
+    position: 'absolute',
+    bottom: '50%',
+    left: '50%',
+    transform: 'translateX(-50%)'
+})
