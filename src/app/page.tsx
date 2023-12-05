@@ -10,6 +10,7 @@ import {
     SIZE_VARIANTS
 } from '@/constants'
 import { BoxedHeading } from '@/components'
+import { InfoSection } from '@/components/molecules/InfoSection/InfoSection'
 
 export default function Home() {
     return (
@@ -33,6 +34,15 @@ export default function Home() {
                     >
                         WELCOME!
                     </BoxedHeading>
+                    <InfoSection heading='What is React?' />
+                    <InfoSection
+                        heading='What is React?'
+                        colorVariant={COLOR_VARIANTS.SECONDARY}
+                    />
+                    <InfoSection
+                        heading='What is React?'
+                        colorVariant={COLOR_VARIANTS.TERTIARY}
+                    />
                 </div>
             </div>
         </main>
