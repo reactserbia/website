@@ -4,12 +4,14 @@ import {
     container,
     content,
     bannerContainer,
+    bannerLogoContainer,
     infoContainer,
     infoSectionsContainer
 } from './page.css'
 import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { BoxedHeading } from '@/components'
 import { InfoSection } from '@/components/molecules/InfoSection/InfoSection'
+import { Logo } from '@/components/atoms'
 
 export default function Home() {
     return (
@@ -22,6 +24,9 @@ export default function Home() {
                         src='/images/big-banner.svg'
                         alt='banner'
                     />
+                </div>
+                <div className={bannerLogoContainer}>
+                    <Logo />
                 </div>
             </div>
             <div className={infoContainer}>

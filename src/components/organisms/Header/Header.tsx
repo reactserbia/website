@@ -1,7 +1,7 @@
 import { COLOR_VARIANTS } from '@/constants'
 import { header, headerContent, logoContainer } from './Header.css'
 
-import { Heading, Logo } from '@/components/atoms'
+import { Heading } from '@/components/atoms'
 import Image from 'next/image'
 
 export function Header() {
@@ -11,7 +11,6 @@ export function Header() {
                 <Heading colorVariant={COLOR_VARIANTS.TERTIARY}>REACT</Heading>
                 <Heading>SERBIA</Heading>
                 <div className={logoContainer}>
-                    {/* <Logo /> */}
                     <Image
                         width={135}
                         height={85}

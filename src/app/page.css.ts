@@ -17,11 +17,19 @@ export const bannerContainer = style({
     width: '100%',
     display: 'flex',
     justifyContent: 'center',
+    position: 'relative',
     padding: '64px 0',
     borderBottom: `2px solid ${theme.colors.tertiary.no12}`,
     backgroundColor: theme.colors.tertiary.no02,
     backgroundImage: `linear-gradient(180deg, ${theme.colors.tertiary.no01} calc(100% - 1px), ${theme.colors.tertiary.no05} 0)`,
     backgroundSize: `100% calc((100% - 1 * 1px) / 50 + 1px)`
+})
+
+export const bannerLogoContainer = style({
+    position: 'absolute',
+    bottom: 0,
+    left: '50%',
+    transform: 'translate(-50%, 50%)'
 })
 
 export const infoContainer = style({

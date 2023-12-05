@@ -11,7 +11,7 @@ const circleBase = style({
     width: '56px',
     height: '56px',
     borderRadius: '999px',
-    border: `2px solid ${theme.colors.primary.no12}`
+    border: `1px solid ${theme.colors.primary.no12}`
 })
 
 export const logoContainer = style([
