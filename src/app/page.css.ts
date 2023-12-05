@@ -31,3 +31,11 @@ export const infoContainer = style({
     padding: '64px 0',
     backgroundColor: theme.colors.primary.no07
 })
+
+export const infoSectionsContainer = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '2rem',
+    marginTop: '4rem'
+})
