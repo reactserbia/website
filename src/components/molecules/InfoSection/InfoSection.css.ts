@@ -11,6 +11,8 @@ const containerBase = style({
     alignItems: 'center',
     flexDirection: 'column',
     gap: '1rem',
+    position: 'relative',
+    zIndex: 1,
     padding: '24px',
     borderRadius: 16,
     boxShadow: `6px 6px ${theme.colors.primary.no12}`

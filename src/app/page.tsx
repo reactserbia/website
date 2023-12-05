@@ -6,7 +6,8 @@ import {
     bannerContainer,
     midSectionLogoContainer,
     infoContainer,
-    infoSectionsContainer
+    infoSectionsContainer,
+    cloud
 } from './page.css'
 import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { BoxedHeading } from '@/components'
@@ -57,6 +58,13 @@ export default function Home() {
                         alt='react'
                     />
                 </div>
+                <Image
+                    width={359}
+                    height={140}
+                    src='/images/cloud.svg'
+                    alt='cloud'
+                    className={cloud}
+                />
             </div>
         </main>
     )

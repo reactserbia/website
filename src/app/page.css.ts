@@ -1,4 +1,4 @@
-import { style } from '@vanilla-extract/css'
+import { keyframes, style } from '@vanilla-extract/css'
 
 import { theme } from '@/style/theme.css'
 
@@ -18,6 +18,7 @@ export const bannerContainer = style({
     display: 'flex',
     justifyContent: 'center',
     position: 'relative',
+    zIndex: 1,
     padding: '64px 0',
     borderBottom: `2px solid ${theme.colors.tertiary.no12}`,
     backgroundColor: theme.colors.tertiary.no02,
@@ -36,6 +37,7 @@ export const infoContainer = style({
     width: '100%',
     display: 'flex',
     justifyContent: 'space-between',
+    position: 'relative',
     padding: '64px 0',
     borderBottom: `2px solid ${theme.colors.primary.no12}`,
     backgroundColor: theme.colors.primary.no07
@@ -47,4 +49,20 @@ export const infoSectionsContainer = style({
     alignItems: 'center',
     gap: '2rem',
     marginTop: '4rem'
+})
+
+const moving = keyframes({
+    from: {
+        left: -500
+    },
+    to: {
+        left: '100vw'
+    }
+})
+
+export const cloud = style({
+    position: 'absolute',
+    top: '120px',
+    zIndex: 0,
+    animation: `${moving} 50s linear infinite`
 })

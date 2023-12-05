@@ -4,6 +4,8 @@ import { style, styleVariants } from '@vanilla-extract/css'
 
 const containerBase = style({
     display: 'inline-block',
+    position: 'relative',
+    zIndex: 1,
     padding: '12px 40px',
     borderWidth: '2px',
     borderStyle: 'solid',
