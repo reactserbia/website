@@ -71,6 +71,7 @@ export const billboardContainer = style({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    flexDirection: 'column',
     gap: '2rem',
-    marginTop: '4rem'
+    padding: '64px 0'
 })
