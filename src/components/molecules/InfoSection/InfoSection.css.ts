@@ -8,6 +8,7 @@ const containerBase = style({
     maxWidth: '400px',
     display: 'flex',
     justifyContent: 'center',
+    alignItems: 'center',
     flexDirection: 'column',
     gap: '1rem',
     padding: '24px',
