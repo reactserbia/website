@@ -2,6 +2,7 @@ import { theme } from '@/style/theme.css'
 import { style } from '@vanilla-extract/css'
 
 export const container = style({
+    width: '100%',
     padding: '2rem',
     border: `2px solid ${theme.colors.tertiary.no12}`,
     backgroundColor: theme.colors.tertiary.no05,
@@ -12,7 +13,7 @@ export const content = style({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'column',
+    flexWrap: 'wrap',
     padding: '2rem',
     border: `2px solid ${theme.colors.tertiary.no12}`,
     backgroundColor: theme.colors.tertiary.no02,
