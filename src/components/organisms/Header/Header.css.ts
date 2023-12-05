@@ -38,3 +38,8 @@ export const logo = style({
     left: '50%',
     transform: 'translateX(-50%)'
 })
+
+export const navigation = style({
+    display: 'flex',
+    gap: '0.5rem'
+})

@@ -1,8 +1,14 @@
-import { COLOR_VARIANTS } from '@/constants'
-import { header, headerContent, logo, logoContainer } from './Header.css'
-
-import { Heading, NavigationButton } from '@/components/atoms'
 import Image from 'next/image'
+
+import { COLOR_VARIANTS } from '@/constants'
+import { Heading, NavigationButton } from '@/components/atoms'
+import {
+    header,
+    headerContent,
+    logo,
+    logoContainer,
+    navigation
+} from './Header.css'
 
 export function Header() {
     return (
@@ -29,9 +35,10 @@ export function Header() {
                         className={logo}
                     />
                 </div>
-                <div>
+                <nav className={navigation}>
                     <NavigationButton>Home</NavigationButton>
-                </div>
+                    <NavigationButton>About</NavigationButton>
+                </nav>
             </div>
         </header>
     )
