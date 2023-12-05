@@ -4,7 +4,7 @@ import {
     container,
     content,
     bannerContainer,
-    bannerLogoContainer,
+    midSectionLogoContainer,
     infoContainer,
     infoSectionsContainer
 } from './page.css'
@@ -25,7 +25,7 @@ export default function Home() {
                         alt='banner'
                     />
                 </div>
-                <div className={bannerLogoContainer}>
+                <div className={midSectionLogoContainer}>
                     <Logo />
                 </div>
             </div>
@@ -48,6 +48,14 @@ export default function Home() {
                             content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
                         />
                     </div>
+                </div>
+                <div className={midSectionLogoContainer}>
+                    <Image
+                        width={148}
+                        height={64}
+                        src='/images/react.svg'
+                        alt='react'
+                    />
                 </div>
             </div>
         </main>

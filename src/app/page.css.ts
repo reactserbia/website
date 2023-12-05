@@ -25,7 +25,7 @@ export const bannerContainer = style({
     backgroundSize: `100% calc((100% - 1 * 1px) / 50 + 1px)`
 })
 
-export const bannerLogoContainer = style({
+export const midSectionLogoContainer = style({
     position: 'absolute',
     bottom: 0,
     left: '50%',
@@ -37,6 +37,7 @@ export const infoContainer = style({
     display: 'flex',
     justifyContent: 'space-between',
     padding: '64px 0',
+    borderBottom: `2px solid ${theme.colors.primary.no12}`,
     backgroundColor: theme.colors.primary.no07
 })
 
