@@ -19,6 +19,9 @@ export const header = style({
 export const headerContent = style({
     width: '100%',
     maxWidth: theme.dimensions.contentMaxWidth,
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     margin: '0 auto'
 })
 
