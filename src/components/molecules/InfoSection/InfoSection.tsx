@@ -1,4 +1,4 @@
-import { Paragraph, Subheading } from '@/components/atoms'
+import { Button, Paragraph, Subheading } from '@/components/atoms'
 import { containerVariants } from './InfoSection.css'
 import { COLOR_VARIANTS } from '@/constants'
 import Image from 'next/image'
@@ -24,6 +24,7 @@ export function InfoSection({
                 alt='stars'
             />
             <Paragraph>{content}</Paragraph>
+            <Button colorVariant={colorVariant}>Learn More</Button>
         </section>
     )
 }
