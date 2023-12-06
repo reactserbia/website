@@ -13,7 +13,7 @@ export const content = style({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    gap: '4rem',
+    gap: '1rem',
     textAlign: 'center',
     margin: '0 auto'
 })
