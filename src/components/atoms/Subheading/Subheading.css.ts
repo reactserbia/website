@@ -1,4 +1,4 @@
-import { COLOR_VARIANTS } from '@/constants'
+import { COLOR_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { theme } from '@/style/theme.css'
 import { style, styleVariants } from '@vanilla-extract/css'
 
@@ -27,4 +27,16 @@ export const subheadningVariants = styleVariants({
             color: theme.colors.primary.no12
         }
     ]
+})
+
+export const sizeVariants = styleVariants({
+    [SIZE_VARIANTS.SMALL]: {
+        fontSize: '1.5rem'
+    },
+    [SIZE_VARIANTS.MEDIUM]: {
+        fontSize: '2rem'
+    },
+    [SIZE_VARIANTS.LARGE]: {
+        fontSize: '2.5rem'
+    }
 })
