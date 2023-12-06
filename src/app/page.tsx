@@ -17,8 +17,13 @@ import {
     SHADE_VARIANTS,
     SIZE_VARIANTS
 } from '@/constants'
-import { BoxedHeading, InfoSection, NoteEntry } from '@/components'
-import { Heading, Logo, Subheading } from '@/components/atoms'
+import {
+    BoxedHeading,
+    BoxedSubheading,
+    InfoSection,
+    NoteEntry
+} from '@/components'
+import { Heading, Logo } from '@/components/atoms'
 import { Billboard } from '@/components/atoms/Billboard/Billboard'
 
 export default function Home() {
@@ -32,9 +37,9 @@ export default function Home() {
                         src='/images/big-banner.svg'
                         alt='banner'
                     />
-                    <Subheading sizeVariant={SIZE_VARIANTS.SMALL}>
+                    <BoxedSubheading sizeVariant={SIZE_VARIANTS.SMALL}>
                         Super-charging Serbia&apos;s React community
-                    </Subheading>
+                    </BoxedSubheading>
                 </div>
                 <div className={midSectionLogoContainer}>
                     <Logo />
