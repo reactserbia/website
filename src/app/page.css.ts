@@ -2,8 +2,6 @@ import { keyframes, style } from '@vanilla-extract/css'
 
 import { theme } from '@/style/theme.css'
 
-export const container = style({})
-
 export const content = style({
     width: '100%',
     maxWidth: theme.dimensions.contentMaxWidth,
@@ -25,7 +23,6 @@ export const bannerContainer = style({
     flexDirection: 'column',
     padding: '2rem 0',
     border: theme.border,
-    backgroundColor: theme.colors.tertiary.no02,
     background: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no03} 100%)`
 })
 
@@ -39,11 +36,12 @@ export const midSectionLogoContainer = style({
 export const infoContainer = style({
     width: '100%',
     display: 'flex',
-    justifyContent: 'space-between',
-    position: 'relative',
-    padding: '64px 0',
-    borderBottom: `2px solid ${theme.colors.primary.no12}`,
-    backgroundColor: theme.colors.primary.no07
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    padding: '4rem 0',
+    border: theme.border,
+    background: `linear-gradient(180deg, ${theme.colors.tertiary.no03} 0%, rgba(105, 217, 193, 0.00) 100%)`
 })
 
 export const infoSectionsContainer = style({
