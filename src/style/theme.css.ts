@@ -13,6 +13,7 @@ export const theme = createThemeContract({
         headerHeight: null
     },
     colors: {
+        black: null,
         primary: {
             no01: null,
             no02: null,
@@ -65,6 +66,7 @@ export const lightTheme = createTheme(theme, {
         headerHeight
     },
     colors: {
+        black: '#000',
         primary: {
             no01: mint.mint1,
             no02: mint.mint2,
