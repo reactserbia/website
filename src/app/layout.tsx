@@ -8,6 +8,7 @@ const rubik = Rubik({ subsets: ['latin'] })
 import { Header } from '@/components'
 
 import { lightTheme } from '@/style/theme.css'
+import { container } from './layout.css'
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -22,8 +23,10 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body className={`${rubik.className} ${lightTheme}`}>
-                <Header />
-                {children}
+                <main className={container}>
+                    <Header />
+                    {children}
+                </main>
             </body>
         </html>
     )

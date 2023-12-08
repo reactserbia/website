@@ -2,9 +2,7 @@ import { keyframes, style } from '@vanilla-extract/css'
 
 import { theme } from '@/style/theme.css'
 
-export const container = style({
-    paddingTop: theme.dimensions.headerHeight
-})
+export const container = style({})
 
 export const content = style({
     width: '100%',

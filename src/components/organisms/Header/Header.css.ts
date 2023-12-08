@@ -3,7 +3,7 @@ import { style } from '@vanilla-extract/css'
 import { theme } from '@/style/theme.css'
 
 export const header = style({
-    maxWidth: theme.dimensions.contentMaxWidth,
+    width: '100%',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
