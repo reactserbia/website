@@ -30,20 +30,15 @@ export default function Home() {
     return (
         <main className={container}>
             <div className={bannerContainer}>
-                <div className={content}>
-                    <Image
-                        width={857}
-                        height={216}
-                        src='/images/big-banner.svg'
-                        alt='banner'
-                    />
-                    <BoxedSubheading sizeVariant={SIZE_VARIANTS.SMALL}>
-                        Super-charging Serbia&apos;s React community
-                    </BoxedSubheading>
-                </div>
-                <div className={midSectionLogoContainer}>
-                    <Logo />
-                </div>
+                <Image
+                    width={857}
+                    height={216}
+                    src='/images/big-banner.svg'
+                    alt='banner'
+                />
+                <BoxedSubheading sizeVariant={SIZE_VARIANTS.SMALL}>
+                    Super-charging Serbia&apos;s React community
+                </BoxedSubheading>
             </div>
             <div className={infoContainer}>
                 <div className={content}>

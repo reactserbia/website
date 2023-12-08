@@ -20,13 +20,13 @@ export const bannerContainer = style({
     width: '100%',
     display: 'flex',
     justifyContent: 'center',
-    position: 'relative',
-    zIndex: 1,
-    padding: '64px 0',
+    alignItems: 'center',
+    gap: '1rem',
+    flexDirection: 'column',
+    padding: '2rem 0',
     border: theme.border,
     backgroundColor: theme.colors.tertiary.no02,
-    backgroundImage: `linear-gradient(180deg, ${theme.colors.tertiary.no01} calc(100% - 1px), ${theme.colors.tertiary.no05} 0)`,
-    backgroundSize: `100% calc((100% - 1 * 1px) / 50 + 1px)`
+    background: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no03} 100%)`
 })
 
 export const midSectionLogoContainer = style({
