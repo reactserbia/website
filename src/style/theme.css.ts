@@ -5,6 +5,7 @@ import { mint, sky, yellow } from '@radix-ui/colors'
 const spacingUnit = '4px'
 const contentMaxWidth = '1024px'
 const headerHeight = '64px'
+const black = '#000'
 
 export const theme = createThemeContract({
     dimensions: {
@@ -12,6 +13,7 @@ export const theme = createThemeContract({
         contentMaxWidth: null,
         headerHeight: null
     },
+    border: null,
     colors: {
         black: null,
         primary: {
@@ -65,8 +67,9 @@ export const lightTheme = createTheme(theme, {
         contentMaxWidth,
         headerHeight
     },
+    border: `2px solid ${black}`,
     colors: {
-        black: '#000',
+        black,
         primary: {
             no01: mint.mint1,
             no02: mint.mint2,

@@ -8,7 +8,7 @@ export const header = style({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '1rem 1.5rem',
-    border: `2px solid ${theme.colors.black}`,
+    border: theme.border,
     backgroundColor: theme.colors.tertiary.no02,
     margin: '0 auto'
 })
