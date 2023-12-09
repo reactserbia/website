@@ -42,7 +42,21 @@ export default function Home() {
                     </BoxedHeading>
                 </div>
                 <div className={infoRightSide}>
-                    <InfoSection />
+                    <InfoSection
+                        heading='About Us'
+                        content='React Serbia serves as a unifying platform for passionate React enthusiasts, striving to empower and elevate their expertise. Our mission is to establish React Serbia as the definitive one-stop destination for the React community in Serbia.
+ 
+Our objective is to establish a robust framework for:
+community growth
+networking opportunities
+exchange of knowledge
+exchange of ideas
+showcasing talent
+job search
+providing the services for the community.
+
+Through this structured approach, we endeavour to create an environment that not only nurtures individual professional development but also contributes significantly to the collective advancement of our community.'
+                    />
                 </div>
             </div>
             <div className={billboardContainer}>
