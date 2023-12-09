@@ -21,7 +21,7 @@ export const bannerContainer = style({
     alignItems: 'center',
     gap: '1rem',
     flexDirection: 'column',
-    padding: '2rem 0',
+    padding: theme.dimensions.sectionPadding,
     border: theme.border,
     background: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no03} 100%)`
 })

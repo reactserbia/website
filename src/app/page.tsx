@@ -1,26 +1,15 @@
 import Image from 'next/image'
 
-import {
-    content,
-    bannerContainer,
-    infoContainer,
-    billboardContainer,
-    aboutContainer
-} from './page.css'
+import { bannerContainer, infoContainer, billboardContainer } from './page.css'
 import {
     COLOR_VARIANTS,
     LAYERS_VARIANTS,
     SHADE_VARIANTS,
     SIZE_VARIANTS
 } from '@/constants'
-import {
-    BoxedHeading,
-    BoxedSubheading,
-    InfoSection,
-    NoteEntry
-} from '@/components'
+import { BoxedHeading } from '@/components'
 import { Heading } from '@/components/atoms'
-import { Billboard } from '@/components/atoms/Billboard/Billboard'
+import { BoxedSubheading } from '@/comp'
 
 export default function Home() {
     return (
@@ -32,8 +21,8 @@ export default function Home() {
                     src='/images/big-banner.svg'
                     alt='banner'
                 />
-                <BoxedSubheading sizeVariant={SIZE_VARIANTS.SMALL}>
-                    Super-charging Serbia&apos;s React community
+                <BoxedSubheading>
+                    Super-charging React Community
                 </BoxedSubheading>
             </div>
             <div className={infoContainer}>
