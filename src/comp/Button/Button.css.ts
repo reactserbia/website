@@ -9,5 +9,12 @@ export const button = style({
     backgroundColor: theme.colors.tertiary.no02,
     lineHeight: 1,
     fontSize: '1rem',
-    boxShadow: theme.boxShadow.small
+    boxShadow: theme.boxShadow.small,
+    cursor: 'pointer',
+
+    selectors: {
+        '&:hover': {
+            backgroundColor: theme.colors.tertiary.no03
+        }
+    }
 })
