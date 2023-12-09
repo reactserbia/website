@@ -39,7 +39,7 @@ export const infoContainer = style({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    padding: '4rem 0',
+    padding: theme.dimensions.sectionPadding,
     border: theme.border,
     background: `linear-gradient(180deg, ${theme.colors.tertiary.no03} 0%, rgba(105, 217, 193, 0.00) 100%)`
 })
@@ -73,8 +73,8 @@ export const billboardContainer = style({
     alignItems: 'center',
     flexDirection: 'column',
     gap: '2rem',
-    padding: '64px 0',
-    borderBottom: `2px solid ${theme.colors.primary.no12}`
+    padding: theme.dimensions.sectionPadding,
+    border: theme.border
 })
 
 export const aboutContainer = style({

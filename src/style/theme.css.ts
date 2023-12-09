@@ -11,7 +11,8 @@ export const theme = createThemeContract({
     dimensions: {
         spacingUnit: null,
         contentMaxWidth: null,
-        headerHeight: null
+        headerHeight: null,
+        sectionPadding: null
     },
     border: null,
     colors: {
@@ -65,7 +66,8 @@ export const lightTheme = createTheme(theme, {
     dimensions: {
         spacingUnit,
         contentMaxWidth,
-        headerHeight
+        headerHeight,
+        sectionPadding: '4rem 0'
     },
     border: `2px solid ${black}`,
     colors: {
