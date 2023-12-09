@@ -42,21 +42,30 @@ export default function Home() {
                     </BoxedHeading>
                 </div>
                 <div className={infoRightSide}>
-                    <InfoSection
-                        heading='About Us'
-                        content='React Serbia serves as a unifying platform for passionate React enthusiasts, striving to empower and elevate their expertise. Our mission is to establish React Serbia as the definitive one-stop destination for the React community in Serbia.
- 
-Our objective is to establish a robust framework for:
-community growth
-networking opportunities
-exchange of knowledge
-exchange of ideas
-showcasing talent
-job search
-providing the services for the community.
-
-Through this structured approach, we endeavour to create an environment that not only nurtures individual professional development but also contributes significantly to the collective advancement of our community.'
-                    />
+                    <InfoSection heading='About Us'>
+                        React Serbia serves as a unifying platform for
+                        passionate React enthusiasts, striving to empower and
+                        elevate their expertise. Our mission is to establish
+                        React Serbia as the definitive one-stop destination for
+                        the React community in Serbia.
+                        <br />
+                        <br />
+                        Our objective is to establish a robust framework for:
+                        <br />• community growth
+                        <br />• networking opportunities
+                        <br />• exchange of knowledge
+                        <br />• exchange of ideas
+                        <br />• showcasing talent
+                        <br />• job search
+                        <br />• providing the services for the community.
+                        <br />
+                        <br />
+                        Through this structured approach, we endeavour to create
+                        an environment that not only nurtures individual
+                        professional development but also contributes
+                        significantly to the collective advancement of our
+                        community.
+                    </InfoSection>
                 </div>
             </div>
             <div className={billboardContainer}>

@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import Image from 'next/image'
 import localFont from 'next/font/local'
 
@@ -8,10 +9,10 @@ const komikaBold = localFont({ src: '../../assets/fonts/KomikaHandBold.ttf' })
 
 type InfoSectionProps = {
     heading: string
-    content: string
+    children: ReactNode
 }
 
-export function InfoSection({ heading, content }: InfoSectionProps) {
+export function InfoSection({ heading, children }: InfoSectionProps) {
     return (
         <div className={container}>
             <h1 className={`${komikaBold.className}`}>{heading}</h1>
@@ -21,7 +22,7 @@ export function InfoSection({ heading, content }: InfoSectionProps) {
                 src='/images/stars.svg'
                 alt='stars'
             />
-            <p className={`${komika.className}`}>{content}</p>
+            <p className={`${komika.className}`}>{children}</p>
             <Image
                 width={104}
                 height={22}
