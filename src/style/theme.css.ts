@@ -15,6 +15,11 @@ export const theme = createThemeContract({
         sectionPadding: null
     },
     border: null,
+    boxShadow: {
+        small: null,
+        medium: null,
+        large: null
+    },
     colors: {
         black: null,
         primary: {
@@ -70,6 +75,11 @@ export const lightTheme = createTheme(theme, {
         sectionPadding: '4rem 0'
     },
     border: `2px solid ${black}`,
+    boxShadow: {
+        small: `3px 3px ${black}`,
+        medium: `4px 4px ${black}`,
+        large: `6px 6px ${black}`
+    },
     colors: {
         black,
         primary: {
