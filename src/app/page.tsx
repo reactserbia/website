@@ -1,6 +1,12 @@
 import Image from 'next/image'
 
-import { bannerContainer, infoContainer, billboardContainer } from './page.css'
+import {
+    bannerContainer,
+    infoContainer,
+    billboardContainer,
+    infoLeftSide,
+    infoRightSide
+} from './page.css'
 import {
     COLOR_VARIANTS,
     LAYERS_VARIANTS,
@@ -26,13 +32,16 @@ export default function Home() {
                 </BoxedSubheading>
             </div>
             <div className={infoContainer}>
-                <BoxedHeading
-                    colorVariant={COLOR_VARIANTS.TERTIARY}
-                    shadeVariant={SHADE_VARIANTS.DARK}
-                    sizeVariant={SIZE_VARIANTS.LARGE}
-                >
-                    WELCOME!
-                </BoxedHeading>
+                <div className={infoLeftSide}>
+                    <BoxedHeading
+                        colorVariant={COLOR_VARIANTS.TERTIARY}
+                        shadeVariant={SHADE_VARIANTS.DARK}
+                        sizeVariant={SIZE_VARIANTS.LARGE}
+                    >
+                        WELCOME!
+                    </BoxedHeading>
+                </div>
+                <div className={infoRightSide}>Right Side</div>
             </div>
             <div className={billboardContainer}>
                 <Heading

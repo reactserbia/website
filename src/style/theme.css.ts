@@ -72,7 +72,7 @@ export const lightTheme = createTheme(theme, {
         spacingUnit,
         contentMaxWidth,
         headerHeight,
-        sectionPadding: '4rem 0'
+        sectionPadding: '4rem 1.5rem'
     },
     border: `2px solid ${black}`,
     boxShadow: {
