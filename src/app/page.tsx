@@ -3,6 +3,7 @@ import Image from 'next/image'
 import {
     bannerContainer,
     infoContainer,
+    cloudsBackground,
     billboardContainer,
     infoLeftSide,
     infoRightSide,
@@ -33,6 +34,13 @@ export default function Home() {
                 </BoxedSubheading>
             </div>
             <div className={infoContainer}>
+                <Image
+                    width={1024}
+                    height={420}
+                    src='/images/clouds-bg.svg'
+                    alt='clouds'
+                    className={cloudsBackground}
+                />
                 <div className={infoLeftSide}>
                     <BoxedHeading
                         colorVariant={COLOR_VARIANTS.TERTIARY}
