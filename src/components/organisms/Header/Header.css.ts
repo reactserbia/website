@@ -12,3 +12,9 @@ export const header = style({
     backgroundColor: theme.colors.tertiary.no02,
     margin: '0 auto'
 })
+
+export const navigation = style({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem'
+})

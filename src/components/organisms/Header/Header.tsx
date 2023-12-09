@@ -1,6 +1,7 @@
 import { COLOR_VARIANTS } from '@/constants'
-import { Heading, NavigationButton } from '@/components/atoms'
-import { header } from './Header.css'
+import { Heading } from '@/components/atoms'
+import { Button } from '@/comp'
+import { header, navigation } from './Header.css'
 
 export function Header() {
     return (
@@ -9,6 +10,10 @@ export function Header() {
                 <Heading colorVariant={COLOR_VARIANTS.TERTIARY}>REACT</Heading>
                 <Heading>SERBIA</Heading>
             </div>
+            <nav className={navigation}>
+                <Button>Home</Button>
+                <Button>Ideology</Button>
+            </nav>
         </header>
     )
 }
