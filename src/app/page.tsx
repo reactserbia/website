@@ -7,7 +7,8 @@ import {
     billboardContainer,
     infoLeftSide,
     infoRightSide,
-    heroImage
+    heroImage,
+    distantCloudsBackground
 } from './page.css'
 import {
     COLOR_VARIANTS,
@@ -38,6 +39,13 @@ export default function Home() {
                     width={1024}
                     height={420}
                     src='/images/clouds-bg.svg'
+                    alt='clouds'
+                    className={distantCloudsBackground}
+                />
+                <Image
+                    width={655}
+                    height={174}
+                    src='/images/clouds.svg'
                     alt='clouds'
                     className={cloudsBackground}
                 />

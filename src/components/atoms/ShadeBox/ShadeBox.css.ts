@@ -6,7 +6,7 @@ const containerBase = style({
     display: 'inline-block',
     position: 'relative',
     zIndex: 1,
-    padding: '12px 40px',
+    padding: '0.25rem 1.75rem',
     borderWidth: '2px',
     borderStyle: 'solid',
     borderRadius: '999px'

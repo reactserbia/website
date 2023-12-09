@@ -25,11 +25,18 @@ export const infoContainer = style({
     background: `linear-gradient(180deg, ${theme.colors.tertiary.no03} 0%, rgba(105, 217, 193, 0.00) 100%)`
 })
 
-export const cloudsBackground = style({
+export const distantCloudsBackground = style({
     position: 'absolute',
     left: 0,
     top: 0,
     right: 0
+})
+
+export const cloudsBackground = style({
+    position: 'absolute',
+    left: -90,
+    top: 110,
+    zIndex: 3
 })
 
 export const infoSideBase = style({
