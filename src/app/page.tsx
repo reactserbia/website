@@ -15,7 +15,7 @@ import {
 } from '@/constants'
 import { BoxedHeading } from '@/components'
 import { Heading } from '@/components/atoms'
-import { BoxedSubheading } from '@/comp'
+import { BoxedSubheading, InfoSection } from '@/comp'
 
 export default function Home() {
     return (
@@ -41,7 +41,9 @@ export default function Home() {
                         WELCOME!
                     </BoxedHeading>
                 </div>
-                <div className={infoRightSide}>Right Side</div>
+                <div className={infoRightSide}>
+                    <InfoSection />
+                </div>
             </div>
             <div className={billboardContainer}>
                 <Heading
