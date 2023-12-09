@@ -31,9 +31,21 @@ export const infoSideBase = style({
     alignItems: 'flex-start'
 })
 
-export const infoLeftSide = style([infoSideBase, {}])
+export const infoLeftSide = style([
+    infoSideBase,
+    {
+        position: 'relative'
+    }
+])
 
 export const infoRightSide = style([infoSideBase, {}])
+
+export const heroImage = style({
+    position: 'absolute',
+    left: 0,
+    bottom: 0,
+    right: 0
+})
 
 export const billboardContainer = style({
     display: 'flex',

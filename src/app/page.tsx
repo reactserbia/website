@@ -5,7 +5,8 @@ import {
     infoContainer,
     billboardContainer,
     infoLeftSide,
-    infoRightSide
+    infoRightSide,
+    heroImage
 } from './page.css'
 import {
     COLOR_VARIANTS,
@@ -40,6 +41,13 @@ export default function Home() {
                     >
                         WELCOME!
                     </BoxedHeading>
+                    <Image
+                        width={502}
+                        height={436}
+                        src='/images/hero.svg'
+                        alt='hero'
+                        className={heroImage}
+                    />
                 </div>
                 <div className={infoRightSide}>
                     <InfoSection heading='About Us'>
