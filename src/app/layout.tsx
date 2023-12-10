@@ -11,7 +11,7 @@ const komika = localFont({
             style: 'normal'
         },
         {
-            path: '../assets/fonts/KomikaHand.ttf',
+            path: '../assets/fonts/KomikaHandBold.ttf',
             weight: '700',
             style: 'normal'
         }

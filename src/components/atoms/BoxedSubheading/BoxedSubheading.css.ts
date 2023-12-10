@@ -8,6 +8,7 @@ export const subheading = style({
     borderRadius: 999,
     lineHeight: 1,
     fontSize: '1.25rem',
+    fontWeight: 700,
     color: theme.colors.black,
     backgroundColor: theme.colors.tertiary.no02,
     boxShadow: theme.boxShadow.small
