@@ -1,18 +1,6 @@
-import { keyframes, style } from '@vanilla-extract/css'
+import { theme } from '@/style'
 
-import { theme } from '@/style/theme.css'
-
-export const bannerContainer = style({
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: '1rem',
-    flexDirection: 'column',
-    padding: theme.dimensions.sectionPadding,
-    border: theme.border,
-    background: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no03} 100%)`
-})
+import { style } from '@vanilla-extract/css'
 
 export const infoContainer = style({
     width: '100%',
@@ -56,15 +44,4 @@ export const heroImage = style({
     left: 0,
     bottom: 0,
     right: 0
-})
-
-export const billboardContainer = style({
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    gap: '2rem',
-    padding: theme.dimensions.sectionPadding,
-    border: theme.border,
-    backgroundImage: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no04} 100%)`
 })
