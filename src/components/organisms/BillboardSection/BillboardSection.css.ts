@@ -1,6 +1,6 @@
-import { keyframes, style } from '@vanilla-extract/css'
+import { style } from '@vanilla-extract/css'
 
-import { theme } from '@/style/theme.css'
+import { theme } from '@/style'
 
 export const billboardContainer = style({
     display: 'flex',
