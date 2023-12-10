@@ -21,7 +21,7 @@ const komika = localFont({
 import { Header } from '@/components'
 
 import { lightTheme } from '@/style/theme.css'
-import { container } from './layout.css'
+import { body, container } from './layout.css'
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -35,7 +35,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang='en'>
-            <body className={`${komika.className} ${lightTheme}`}>
+            <body className={`${komika.className} ${lightTheme} ${body}`}>
                 <main className={container}>
                     <Header />
                     {children}
