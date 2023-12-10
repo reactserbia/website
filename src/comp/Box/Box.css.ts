@@ -1,10 +1,10 @@
-import { style } from '@vanilla-extract/css'
+import { style, styleVariants } from '@vanilla-extract/css'
 
 import { theme } from '@/style/theme.css'
+import { SIZE_VARIANTS } from '@/constants'
 
-export const container = style({
+export const containerBase = style({
     width: '100%',
-    maxWidth: '450px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -16,4 +16,25 @@ export const container = style({
     backgroundColor: theme.colors.tertiary.no02,
     boxShadow: theme.boxShadow.large,
     textAlign: 'center'
+})
+
+export const sizeVariants = styleVariants({
+    [SIZE_VARIANTS.SMALL]: [
+        containerBase,
+        {
+            maxWidth: '450px'
+        }
+    ],
+    [SIZE_VARIANTS.MEDIUM]: [
+        containerBase,
+        {
+            maxWidth: '640px'
+        }
+    ],
+    [SIZE_VARIANTS.LARGE]: [
+        containerBase,
+        {
+            maxWidth: '800px'
+        }
+    ]
 })
