@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import { bannerContainer } from './Banner.css'
+import { bannerContainer } from './BannerSection.css'
 import { BoxedSubheading } from '@/components'
 
-export function Banner() {
+export function BannerSection() {
     return (
         <div className={bannerContainer}>
             <Image
