@@ -17,10 +17,13 @@ export const container = style({
     textAlign: 'center'
 })
 
-export const heading = style({
+export const headingStyles = style({
     lineHeight: 1,
     fontSize: '2rem',
+    color: theme.colors.black,
     margin: 0
 })
 
-export const paragraph = style({})
+export const paragraph = style({
+    color: theme.colors.black
+})

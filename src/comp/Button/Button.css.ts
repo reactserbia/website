@@ -9,6 +9,7 @@ export const button = style({
     backgroundColor: theme.colors.tertiary.no02,
     lineHeight: 1,
     fontSize: '1rem',
+    color: theme.colors.black,
     boxShadow: theme.boxShadow.small,
     cursor: 'pointer',
 

@@ -9,5 +9,6 @@ export const subheading = style({
     backgroundColor: theme.colors.tertiary.no02,
     lineHeight: 1,
     fontSize: '1.25rem',
+    color: theme.colors.black,
     boxShadow: theme.boxShadow.small
 })
