@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import {
-    bannerContainer,
     infoContainer,
     cloudsBackground,
     billboardContainer,
@@ -12,6 +11,7 @@ import {
 } from './page.css'
 import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import {
+    Banner,
     BoxedHeading,
     BoxedParagraph,
     BoxedSubheading,
@@ -21,17 +21,7 @@ import {
 export default function Home() {
     return (
         <>
-            <div className={bannerContainer}>
-                <Image
-                    width={857}
-                    height={216}
-                    src='/images/big-banner.svg'
-                    alt='banner'
-                />
-                <BoxedSubheading>
-                    Super-charging React Community
-                </BoxedSubheading>
-            </div>
+            <Banner />
             <div className={infoContainer}>
                 <Image
                     width={1024}
