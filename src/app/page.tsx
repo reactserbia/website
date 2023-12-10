@@ -10,15 +10,13 @@ import {
     heroImage,
     distantCloudsBackground
 } from './page.css'
+import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import {
-    COLOR_VARIANTS,
-    LAYERS_VARIANTS,
-    SHADE_VARIANTS,
-    SIZE_VARIANTS
-} from '@/constants'
-import { BoxedHeading } from '@/components'
-import { Heading } from '@/components/atoms'
-import { BoxedSubheading, InfoSection } from '@/comp'
+    BoxedHeading,
+    BoxedParagraph,
+    BoxedSubheading,
+    InfoSection
+} from '@/components'
 
 export default function Home() {
     return (
@@ -93,13 +91,19 @@ export default function Home() {
                 </div>
             </div>
             <div className={billboardContainer}>
-                <Heading
-                    sizeVariant={SIZE_VARIANTS.LARGE}
+                <BoxedHeading
                     colorVariant={COLOR_VARIANTS.TERTIARY}
-                    layers={LAYERS_VARIANTS.THREE}
+                    shadeVariant={SHADE_VARIANTS.DARK}
+                    sizeVariant={SIZE_VARIANTS.LARGE}
                 >
                     BILLBOARD
-                </Heading>
+                </BoxedHeading>
+                <BoxedParagraph>
+                    The billboard section is the place where we will report. We
+                    plan to share information about the ongoing events and
+                    interesting things relevant to the work of the organisation
+                    and our community.
+                </BoxedParagraph>
             </div>
         </>
     )

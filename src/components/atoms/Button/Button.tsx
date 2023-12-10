@@ -1,16 +1,16 @@
-import { COLOR_VARIANTS } from '@/constants'
 import { ReactNode } from 'react'
+import localFont from 'next/font/local'
 
-import { buttonVariants } from './Button.css'
+const komika = localFont({ src: '../../../assets/fonts/KomikaHandBold.ttf' })
+
+import { button } from './Button.css'
 
 type ButtonProps = {
     children: ReactNode
-    colorVariant?: COLOR_VARIANTS
 }
 
-export function Button({
-    children,
-    colorVariant = COLOR_VARIANTS.PRIMARY
-}: ButtonProps) {
-    return <button className={buttonVariants[colorVariant]}>{children}</button>
+export function Button({ children }: ButtonProps) {
+    return (
+        <button className={`${button} ${komika.className}`}>{children}</button>
+    )
 }

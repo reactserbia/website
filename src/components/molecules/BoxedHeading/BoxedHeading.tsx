@@ -1,5 +1,4 @@
 import { Heading, HeadingProps, ShadeBox } from '@/components/atoms'
-import { ReactNode } from 'react'
 
 type BoxedHeadingProps = HeadingProps
 

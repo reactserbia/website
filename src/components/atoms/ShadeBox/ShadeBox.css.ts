@@ -1,6 +1,7 @@
+import { style, styleVariants } from '@vanilla-extract/css'
+
 import { COLOR_VARIANTS } from '@/constants'
 import { theme } from '@/style/theme.css'
-import { style, styleVariants } from '@vanilla-extract/css'
 
 const containerBase = style({
     display: 'inline-block',

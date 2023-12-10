@@ -1,46 +1,29 @@
-import { style, styleVariants } from '@vanilla-extract/css'
-
-import { COLOR_VARIANTS } from '@/constants'
 import { theme } from '@/style/theme.css'
+import { style } from '@vanilla-extract/css'
 
-const containerBase = style({
+export const container = style({
     width: '100%',
-    maxWidth: '400px',
+    maxWidth: '450px',
     display: 'flex',
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'center',
     flexDirection: 'column',
     gap: '1rem',
-    position: 'relative',
-    zIndex: 1,
-    padding: '24px',
-    borderRadius: 16,
-    boxShadow: `6px 6px ${theme.colors.primary.no12}`
+    padding: '1.5rem',
+    borderRadius: '1rem',
+    border: theme.border,
+    backgroundColor: theme.colors.tertiary.no02,
+    boxShadow: theme.boxShadow.large,
+    textAlign: 'center'
 })
 
-export const containerVariants = styleVariants({
-    [COLOR_VARIANTS.PRIMARY]: [
-        containerBase,
-        {
-            border: `2px solid ${theme.colors.primary.no12}`,
-            backgroundColor: theme.colors.primary.no03,
-            boxShadow: `6px 6px ${theme.colors.primary.no12}`
-        }
-    ],
-    [COLOR_VARIANTS.SECONDARY]: [
-        containerBase,
-        {
-            border: `2px solid ${theme.colors.secondary.no12}`,
-            backgroundColor: theme.colors.secondary.no03,
-            boxShadow: `6px 6px ${theme.colors.secondary.no12}`
-        }
-    ],
-    [COLOR_VARIANTS.TERTIARY]: [
-        containerBase,
-        {
-            border: `2px solid ${theme.colors.tertiary.no12}`,
-            backgroundColor: theme.colors.tertiary.no03,
-            boxShadow: `6px 6px ${theme.colors.tertiary.no12}`
-        }
-    ]
+export const headingStyles = style({
+    lineHeight: 1,
+    fontSize: '2rem',
+    color: theme.colors.black,
+    margin: 0
+})
+
+export const paragraph = style({
+    color: theme.colors.black
 })

@@ -1,30 +1,38 @@
-import { Button, Paragraph, Subheading } from '@/components/atoms'
-import { containerVariants } from './InfoSection.css'
-import { COLOR_VARIANTS } from '@/constants'
+import { ReactNode } from 'react'
 import Image from 'next/image'
+import localFont from 'next/font/local'
+
+import { container, headingStyles, paragraph } from './InfoSection.css'
+
+const komika = localFont({ src: '../../../assets/fonts/KomikaHand.ttf' })
+const komikaBold = localFont({
+    src: '../../../assets/fonts/KomikaHandBold.ttf'
+})
 
 type InfoSectionProps = {
     heading: string
-    content: string
-    colorVariant?: COLOR_VARIANTS
+    children: ReactNode
 }
 
-export function InfoSection({
-    heading,
-    content,
-    colorVariant = COLOR_VARIANTS.PRIMARY
-}: InfoSectionProps) {
+export function InfoSection({ heading, children }: InfoSectionProps) {
     return (
-        <section className={containerVariants[colorVariant]}>
-            <Subheading colorVariant={colorVariant}>{heading}</Subheading>
+        <div className={container}>
+            <h1 className={`${komikaBold.className} ${headingStyles}`}>
+                {heading}
+            </h1>
             <Image
                 width={104}
                 height={22}
                 src='/images/stars.svg'
                 alt='stars'
             />
-            <Paragraph>{content}</Paragraph>
-            <Button colorVariant={colorVariant}>Learn More</Button>
-        </section>
+            <p className={`${komika.className} ${paragraph}`}>{children}</p>
+            <Image
+                width={104}
+                height={22}
+                src='/images/stars.svg'
+                alt='stars'
+            />
+        </div>
     )
 }

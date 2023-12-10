@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import localFont from 'next/font/local'
 
-const komika = localFont({ src: '../../assets/fonts/KomikaHandBold.ttf' })
+const komika = localFont({ src: '../../../assets/fonts/KomikaHandBold.ttf' })
 
 import { subheading } from './BoxedSubheading.css'
 

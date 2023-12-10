@@ -1,6 +1,5 @@
 import { COLOR_VARIANTS } from '@/constants'
-import { Heading } from '@/components/atoms'
-import { Button } from '@/comp'
+import { Button, Heading } from '@/components/atoms'
 import { header, navigation } from './Header.css'
 
 export function Header() {
