@@ -10,14 +10,8 @@ import {
     heroImage,
     distantCloudsBackground
 } from './page.css'
-import {
-    COLOR_VARIANTS,
-    LAYERS_VARIANTS,
-    SHADE_VARIANTS,
-    SIZE_VARIANTS
-} from '@/constants'
+import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { BoxedHeading } from '@/components'
-import { Heading } from '@/components/atoms'
 import { BoxedParagraph, BoxedSubheading, InfoSection } from '@/comp'
 
 export default function Home() {
