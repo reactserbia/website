@@ -13,7 +13,7 @@ import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 
 export function AboutSection() {
     return (
-        <div className={infoContainer}>
+        <section className={infoContainer}>
             <Image
                 width={1024}
                 height={420}
@@ -69,6 +69,6 @@ export function AboutSection() {
                     collective advancement of our community.
                 </InfoSection>
             </div>
-        </div>
+        </section>
     )
 }

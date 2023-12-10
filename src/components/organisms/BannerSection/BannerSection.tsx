@@ -5,7 +5,7 @@ import { BoxedSubheading } from '@/components'
 
 export function BannerSection() {
     return (
-        <div className={bannerContainer}>
+        <section className={bannerContainer}>
             <Image
                 width={857}
                 height={216}
@@ -13,6 +13,6 @@ export function BannerSection() {
                 alt='banner'
             />
             <BoxedSubheading>Super-charging React Community</BoxedSubheading>
-        </div>
+        </section>
     )
 }

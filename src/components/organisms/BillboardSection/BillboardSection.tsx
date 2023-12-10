@@ -4,7 +4,7 @@ import { billboardContainer } from './BillboardSection.css'
 
 export function BillboardSection() {
     return (
-        <div className={billboardContainer}>
+        <section className={billboardContainer}>
             <BoxedHeading
                 colorVariant={COLOR_VARIANTS.TERTIARY}
                 shadeVariant={SHADE_VARIANTS.DARK}
@@ -18,6 +18,6 @@ export function BillboardSection() {
                 things relevant to the work of the organisation and our
                 community.
             </BoxedParagraph>
-        </div>
+        </section>
     )
 }
