@@ -1,6 +1,4 @@
 export * from './Button/Button'
 export * from './Logo/Logo'
 export * from './NavigationButton/NavigationButton'
-export * from './Note/Note'
-export * from './Paragraph/Paragraph'
 export * from './Subheading/Subheading'
