@@ -18,7 +18,7 @@ import {
 } from '@/constants'
 import { BoxedHeading } from '@/components'
 import { Heading } from '@/components/atoms'
-import { BoxedSubheading, InfoSection } from '@/comp'
+import { BoxedParagraph, BoxedSubheading, InfoSection } from '@/comp'
 
 export default function Home() {
     return (
@@ -100,6 +100,12 @@ export default function Home() {
                 >
                     BILLBOARD
                 </Heading>
+                <BoxedParagraph>
+                    The billboard section is the place where we will report. We
+                    plan to share information about the ongoing events and
+                    interesting things relevant to the work of the organisation
+                    and our community.
+                </BoxedParagraph>
             </div>
         </>
     )
