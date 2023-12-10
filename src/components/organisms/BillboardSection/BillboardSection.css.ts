@@ -12,3 +12,10 @@ export const billboardContainer = style({
     border: theme.border,
     backgroundImage: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no04} 100%)`
 })
+
+export const billboardContent = style({
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: '2rem'
+})

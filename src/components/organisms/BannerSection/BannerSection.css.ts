@@ -13,3 +13,8 @@ export const bannerContainer = style({
     border: theme.border,
     background: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no03} 100%)`
 })
+
+export const banner = style({
+    width: '100%',
+    maxWidth: 857
+})
