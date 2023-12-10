@@ -1,5 +1,6 @@
-import { theme } from '@/style/theme.css'
 import { style, styleVariants } from '@vanilla-extract/css'
+
+import { theme } from '@/style/theme.css'
 
 import {
     COLOR_VARIANTS,

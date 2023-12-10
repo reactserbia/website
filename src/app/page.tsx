@@ -11,8 +11,12 @@ import {
     distantCloudsBackground
 } from './page.css'
 import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
-import { BoxedHeading } from '@/components'
-import { BoxedParagraph, BoxedSubheading, InfoSection } from '@/comp'
+import {
+    BoxedHeading,
+    BoxedParagraph,
+    BoxedSubheading,
+    InfoSection
+} from '@/comp'
 
 export default function Home() {
     return (
