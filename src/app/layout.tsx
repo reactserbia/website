@@ -1,9 +1,22 @@
 import '@/style/CSSReset.css'
 
 import type { Metadata } from 'next'
-import { Rubik } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const rubik = Rubik({ subsets: ['latin'] })
+const komika = localFont({
+    src: [
+        {
+            path: '../assets/fonts/KomikaHand.ttf',
+            weight: '400',
+            style: 'normal'
+        },
+        {
+            path: '../assets/fonts/KomikaHandBold.ttf',
+            weight: '700',
+            style: 'normal'
+        }
+    ]
+})
 
 import { Header } from '@/components'
 
@@ -22,7 +35,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang='en'>
-            <body className={`${rubik.className} ${lightTheme}`}>
+            <body className={`${komika.className} ${lightTheme}`}>
                 <main className={container}>
                     <Header />
                     {children}

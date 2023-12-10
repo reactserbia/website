@@ -1,7 +1,4 @@
 import { ReactNode } from 'react'
-import localFont from 'next/font/local'
-
-const komika = localFont({ src: '../../../assets/fonts/KomikaHandBold.ttf' })
 
 import { subheading } from './BoxedSubheading.css'
 
@@ -10,5 +7,5 @@ type BoxedSubheadingProps = {
 }
 
 export function BoxedSubheading({ children }: BoxedSubheadingProps) {
-    return <h2 className={`${subheading} ${komika.className}`}>{children}</h2>
+    return <h2 className={subheading}>{children}</h2>
 }

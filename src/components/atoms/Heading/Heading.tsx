@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import { Rubik } from 'next/font/google'
 
 import {
     COLOR_VARIANTS,
@@ -18,6 +19,8 @@ import {
     spanTwoColorVariants
 } from './Heading.css'
 
+const rubik = Rubik({ subsets: ['latin'] })
+
 export type HeadingProps = {
     children: ReactNode
     colorVariant?: COLOR_VARIANTS
@@ -35,7 +38,7 @@ export function Heading({
 }: HeadingProps) {
     return (
         <h1
-            className={`${base} ${
+            className={`${rubik.className} ${base} ${
                 textColorVariants[`${colorVariant}-${shadeVariant}`]
             } ${sizeVariants[sizeVariant]} ${
                 strokeColorVariants[`${colorVariant}-${layers}`]
