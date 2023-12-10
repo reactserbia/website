@@ -1,7 +1,6 @@
 import { ReactNode } from 'react'
 
-import { Box } from '../Box/Box'
-import { Paragraph } from '../Paragraph/Paragraph'
+import { Box, Paragraph } from '@/components/atoms'
 import { SIZE_VARIANTS } from '@/constants'
 
 type BoxedParagraphProps = {

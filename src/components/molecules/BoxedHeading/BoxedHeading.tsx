@@ -1,5 +1,4 @@
-import { Heading, HeadingProps } from '../Heading/Heading'
-import { ShadeBox } from '../ShadeBox/ShadeBox'
+import { Heading, HeadingProps, ShadeBox } from '@/components/atoms'
 
 type BoxedHeadingProps = HeadingProps
 

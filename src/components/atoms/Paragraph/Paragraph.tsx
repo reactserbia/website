@@ -3,7 +3,7 @@ import localFont from 'next/font/local'
 
 import { paragraph } from './Paragraph.css'
 
-const komika = localFont({ src: '../../assets/fonts/KomikaHand.ttf' })
+const komika = localFont({ src: '../../../assets/fonts/KomikaHand.ttf' })
 
 type ParagraphProps = {
     children: ReactNode

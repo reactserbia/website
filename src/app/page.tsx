@@ -16,7 +16,7 @@ import {
     BoxedParagraph,
     BoxedSubheading,
     InfoSection
-} from '@/comp'
+} from '@/components'
 
 export default function Home() {
     return (

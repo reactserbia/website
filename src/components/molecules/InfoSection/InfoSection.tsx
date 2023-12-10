@@ -4,8 +4,10 @@ import localFont from 'next/font/local'
 
 import { container, headingStyles, paragraph } from './InfoSection.css'
 
-const komika = localFont({ src: '../../assets/fonts/KomikaHand.ttf' })
-const komikaBold = localFont({ src: '../../assets/fonts/KomikaHandBold.ttf' })
+const komika = localFont({ src: '../../../assets/fonts/KomikaHand.ttf' })
+const komikaBold = localFont({
+    src: '../../../assets/fonts/KomikaHandBold.ttf'
+})
 
 type InfoSectionProps = {
     heading: string
