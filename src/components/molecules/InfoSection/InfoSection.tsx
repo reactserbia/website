@@ -1,7 +1,8 @@
 import { ReactNode } from 'react'
 import Image from 'next/image'
 
-import { container, headingStyles, paragraph } from './InfoSection.css'
+import { container, headingStyles } from './InfoSection.css'
+import { Paragraph } from '@/components'
 
 type InfoSectionProps = {
     heading: string
@@ -18,7 +19,7 @@ export function InfoSection({ heading, children }: InfoSectionProps) {
                 src='/images/stars.svg'
                 alt='stars'
             />
-            <p className={paragraph}>{children}</p>
+            <Paragraph>{children}</Paragraph>
             <Image
                 width={104}
                 height={22}

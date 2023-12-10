@@ -24,7 +24,3 @@ export const headingStyles = style({
     color: theme.colors.black,
     margin: 0
 })
-
-export const paragraph = style({
-    color: theme.colors.black
-})
