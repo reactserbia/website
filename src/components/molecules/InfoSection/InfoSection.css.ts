@@ -20,6 +20,7 @@ export const container = style({
 export const headingStyles = style({
     lineHeight: 1,
     fontSize: '2rem',
+    fontWeight: 700,
     color: theme.colors.black,
     margin: 0
 })
