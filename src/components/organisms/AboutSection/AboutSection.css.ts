@@ -1,17 +1,21 @@
-import { theme } from '@/style'
+import { sectionBorder, theme } from '@/style'
 
 import { style } from '@vanilla-extract/css'
 
-export const infoContainer = style({
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '1rem',
-    position: 'relative',
-    padding: theme.dimensions.sectionPadding,
-    border: theme.border,
-    background: `linear-gradient(180deg, ${theme.colors.tertiary.no03} 0%, rgba(105, 217, 193, 0.00) 100%)`
-})
+export const infoContainer = style([
+    sectionBorder,
+    {
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        gap: '1rem',
+        position: 'relative',
+        padding: theme.dimensions.sectionPadding,
+        background: `linear-gradient(180deg, ${theme.colors.tertiary.no03} 0%, rgba(105, 217, 193, 0.00) 100%)`,
+        overflow: 'hidden'
+    }
+])
 
 export const distantCloudsBackground = style({
     position: 'absolute',
@@ -28,20 +32,28 @@ export const cloudsBackground = style({
 })
 
 export const infoSideBase = style({
-    width: '50%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex-start',
-    position: 'relative'
+    position: 'relative',
+
+    backgroundColor: 'red'
 })
 
-export const infoLeftSide = style([infoSideBase, {}])
+export const infoLeftSide = style([
+    infoSideBase,
+    {
+        minHeight: '40rem'
+    }
+])
 
 export const infoRightSide = style([infoSideBase, {}])
 
 export const heroImage = style({
+    width: '100%',
+    height: 'auto',
     position: 'absolute',
-    left: 0,
+    left: '50%',
     bottom: 0,
-    right: 0
+    transform: 'translateX(-50%)'
 })

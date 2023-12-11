@@ -14,7 +14,7 @@ type InfoSectionProps = {
 export function InfoSection({
     heading,
     children,
-    sizeVariant = SIZE_VARIANTS.SMALL
+    sizeVariant = SIZE_VARIANTS.MEDIUM
 }: InfoSectionProps) {
     return (
         <Box sizeVariant={sizeVariant}>
