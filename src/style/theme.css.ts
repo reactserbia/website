@@ -1,4 +1,4 @@
-import { createTheme, createThemeContract } from '@vanilla-extract/css'
+import { createTheme, createThemeContract, style } from '@vanilla-extract/css'
 
 import { mint, sky, yellow } from '@radix-ui/colors'
 
@@ -123,6 +123,16 @@ export const lightTheme = createTheme(theme, {
             no10: yellow.yellow10,
             no11: yellow.yellow11,
             no12: yellow.yellow12
+        }
+    }
+})
+
+export const sectionBorder = style({
+    border: 'none',
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            border: theme.border
         }
     }
 })
