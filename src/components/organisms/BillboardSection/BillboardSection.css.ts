@@ -11,8 +11,13 @@ export const billboardContainer = style([
         flexDirection: 'column',
         gap: '2rem',
         padding: theme.dimensions.sectionPadding,
-        backgroundImage: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no04} 100%)`,
-        overflow: 'hidden'
+        overflow: 'hidden',
+
+        '@media': {
+            'screen and (min-width: 576px)': {
+                backgroundImage: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no04} 100%)`
+            }
+        }
     }
 ])
 

@@ -10,9 +10,14 @@ export const header = style([
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: '1rem 1.5rem',
-        backgroundColor: theme.colors.tertiary.no02,
         overflow: 'hidden',
-        margin: '0 auto'
+        margin: '0 auto',
+
+        '@media': {
+            'screen and (min-width: 576px)': {
+                backgroundColor: theme.colors.tertiary.no02
+            }
+        }
     }
 ])
 
