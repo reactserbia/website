@@ -1,17 +1,23 @@
 import { ReactNode } from 'react'
 import Image from 'next/image'
 
-import { container, headingStyles } from './InfoSection.css'
-import { Paragraph } from '@/components'
+import { headingStyles } from './InfoSection.css'
+import { Box, Paragraph } from '@/components'
+import { SIZE_VARIANTS } from '@/constants'
 
 type InfoSectionProps = {
     heading: string
     children: ReactNode
+    sizeVariant?: SIZE_VARIANTS
 }
 
-export function InfoSection({ heading, children }: InfoSectionProps) {
+export function InfoSection({
+    heading,
+    children,
+    sizeVariant = SIZE_VARIANTS.SMALL
+}: InfoSectionProps) {
     return (
-        <div className={container}>
+        <Box sizeVariant={sizeVariant}>
             <h1 className={headingStyles}>{heading}</h1>
             <Image
                 width={104}
@@ -26,6 +32,6 @@ export function InfoSection({ heading, children }: InfoSectionProps) {
                 src='/images/stars.svg'
                 alt='stars'
             />
-        </div>
+        </Box>
     )
 }
