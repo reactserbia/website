@@ -12,6 +12,7 @@ globalStyle('body', {
     width: '100vw',
     minHeight: '100vh',
     position: 'relative',
+    padding: '0.5rem',
     background: theme.colors.tertiary.no02,
     boxShadow:
         '1px 1px 10px 0px #00000045 inset, 0px 0px 60px 0px #8A4D0F8A inset',

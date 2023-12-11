@@ -128,7 +128,7 @@ export const lightTheme = createTheme(theme, {
 })
 
 export const sectionBorder = style({
-    border: 'none',
+    border: `2px solid ${theme.colors.black}`,
 
     '@media': {
         'screen and (min-width: 576px)': {

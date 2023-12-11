@@ -40,25 +40,25 @@ export const infoSideBase = style({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex-start',
-    position: 'relative',
-
-    backgroundColor: 'red'
+    gap: '4rem',
+    flexDirection: 'column',
+    position: 'relative'
 })
 
-export const infoLeftSide = style([
-    infoSideBase,
-    {
-        minHeight: '40rem'
-    }
-])
+export const infoLeftSide = style([infoSideBase, {}])
 
 export const infoRightSide = style([infoSideBase, {}])
 
 export const heroImage = style({
     width: '100%',
     height: 'auto',
-    position: 'absolute',
-    left: '50%',
-    bottom: 0,
-    transform: 'translateX(-50%)'
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            position: 'absolute',
+            left: '50%',
+            bottom: 0,
+            transform: 'translateX(-50%)'
+        }
+    }
 })
