@@ -22,13 +22,13 @@ export const sizeVariants = styleVariants({
     [SIZE_VARIANTS.SMALL]: [
         containerBase,
         {
-            maxWidth: '450px'
+            maxWidth: '300px'
         }
     ],
     [SIZE_VARIANTS.MEDIUM]: [
         containerBase,
         {
-            maxWidth: '640px'
+            maxWidth: '450px'
         }
     ],
     [SIZE_VARIANTS.LARGE]: [
