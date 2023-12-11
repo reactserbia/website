@@ -12,11 +12,16 @@ globalStyle('body', {
     width: '100vw',
     minHeight: '100vh',
     position: 'relative',
-    padding: '1.5rem 0',
     background: theme.colors.tertiary.no02,
     boxShadow:
         '1px 1px 10px 0px #00000045 inset, 0px 0px 60px 0px #8A4D0F8A inset',
-    overflowX: 'hidden'
+    overflowX: 'hidden',
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            padding: '1rem'
+        }
+    }
 })
 
 globalStyle(':root', {
