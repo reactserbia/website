@@ -12,6 +12,7 @@ const base = style({
     fontSize: '2rem',
     fontWeight: 900,
     WebkitTextStrokeWidth: '1px',
+    WebkitTextStrokeColor: theme.colors.black,
     margin: 0,
 
     '@media': {
@@ -28,51 +29,48 @@ export const textColorVariants = styleVariants({
     [`${COLOR_VARIANTS.PRIMARY}-${SHADE_VARIANTS.LIGHT}`]: [
         base,
         {
-            color: theme.colors.primary.no03,
-            WebkitTextStrokeColor: theme.colors.primary.no12
+            color: theme.colors.primary.no03
         }
     ],
     [`${COLOR_VARIANTS.PRIMARY}-${SHADE_VARIANTS.DARK}`]: [
         base,
         {
-            color: theme.colors.primary.no06,
-            WebkitTextStrokeColor: theme.colors.primary.no12
+            color: theme.colors.primary.no06
         }
     ],
     [`${COLOR_VARIANTS.SECONDARY}-${SHADE_VARIANTS.LIGHT}`]: [
         base,
         {
-            color: theme.colors.secondary.no03,
-            WebkitTextStrokeColor: theme.colors.secondary.no12
+            color: theme.colors.secondary.no03
         }
     ],
     [`${COLOR_VARIANTS.SECONDARY}-${SHADE_VARIANTS.DARK}`]: [
         base,
         {
-            color: theme.colors.secondary.no06,
-            WebkitTextStrokeColor: theme.colors.secondary.no12
+            color: theme.colors.secondary.no06
         }
     ],
     [`${COLOR_VARIANTS.TERTIARY}-${SHADE_VARIANTS.LIGHT}`]: [
         base,
         {
-            color: theme.colors.tertiary.no03,
-            WebkitTextStrokeColor: theme.colors.tertiary.no12
+            color: theme.colors.tertiary.no03
         }
     ],
     [`${COLOR_VARIANTS.TERTIARY}-${SHADE_VARIANTS.DARK}`]: [
         base,
         {
-            color: theme.colors.tertiary.no06,
-            WebkitTextStrokeColor: theme.colors.tertiary.no12
+            color: theme.colors.tertiary.no06
         }
     ]
 })
 
-const spanBase = style({
+export const span = style({
     position: 'absolute',
     left: 3,
     top: 3,
+    zIndex: -1,
+    color: theme.colors.black,
+    WebkitTextStrokeColor: theme.colors.black,
     whiteSpace: 'nowrap',
     userSelect: 'none',
 
@@ -86,31 +84,4 @@ const spanBase = style({
             top: 5
         }
     }
-})
-
-export const spanColorVariants = styleVariants({
-    [COLOR_VARIANTS.PRIMARY]: [
-        spanBase,
-        {
-            zIndex: -1,
-            color: theme.colors.primary.no12,
-            WebkitTextStrokeColor: theme.colors.primary.no12
-        }
-    ],
-    [COLOR_VARIANTS.SECONDARY]: [
-        spanBase,
-        {
-            zIndex: -1,
-            color: theme.colors.secondary.no12,
-            WebkitTextStrokeColor: theme.colors.secondary.no12
-        }
-    ],
-    [COLOR_VARIANTS.TERTIARY]: [
-        spanBase,
-        {
-            zIndex: -1,
-            color: theme.colors.tertiary.no12,
-            WebkitTextStrokeColor: theme.colors.tertiary.no12
-        }
-    ]
 })

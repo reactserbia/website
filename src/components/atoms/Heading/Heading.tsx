@@ -3,7 +3,7 @@ import { Rubik } from 'next/font/google'
 
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
 
-import { textColorVariants, spanColorVariants } from './Heading.css'
+import { textColorVariants, span } from './Heading.css'
 
 const rubik = Rubik({ subsets: ['latin'] })
 
@@ -25,7 +25,7 @@ export function Heading({
             }`}
         >
             {children}
-            <span className={spanColorVariants[colorVariant]}>{children}</span>
+            <span className={span}>{children}</span>
         </h1>
     )
 }
