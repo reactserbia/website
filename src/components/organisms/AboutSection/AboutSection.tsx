@@ -32,7 +32,6 @@ export function AboutSection() {
                 <BoxedHeading
                     colorVariant={COLOR_VARIANTS.TERTIARY}
                     shadeVariant={SHADE_VARIANTS.DARK}
-                    sizeVariant={SIZE_VARIANTS.LARGE}
                 >
                     WELCOME!
                 </BoxedHeading>
