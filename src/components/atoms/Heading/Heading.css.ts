@@ -9,7 +9,7 @@ const base = style({
     position: 'relative',
     zIndex: 3,
     lineHeight: 1,
-    fontSize: '2rem',
+    fontSize: '2.5rem',
     fontWeight: 900,
     WebkitTextStrokeWidth: '1px',
     WebkitTextStrokeColor: theme.colors.black,
