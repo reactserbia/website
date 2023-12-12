@@ -10,7 +10,7 @@ export const infoContainer = style([
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
-        gap: '1rem',
+        gap: '2rem',
         position: 'relative',
         overflow: 'hidden',
 
