@@ -7,6 +7,6 @@ export const container = style({
     maxWidth: theme.dimensions.contentMaxWidth,
     display: 'flex',
     flexDirection: 'column',
-    gap: '1rem',
+    gap: theme.dimensions.sectionGap,
     margin: '0 auto'
 })

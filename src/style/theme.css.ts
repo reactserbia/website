@@ -4,6 +4,7 @@ import { mint, sky, yellow } from '@radix-ui/colors'
 
 const spacingUnit = '4px'
 const contentMaxWidth = '1024px'
+const sectionVerticalPadding = '4rem'
 const headerHeight = '64px'
 const black = '#000'
 
@@ -11,7 +12,9 @@ export const theme = createThemeContract({
     dimensions: {
         spacingUnit: null,
         contentMaxWidth: null,
-        headerHeight: null
+        sectionVerticalPadding: null,
+        headerHeight: null,
+        sectionGap: null
     },
     border: {
         small: null,
@@ -73,7 +76,9 @@ export const lightTheme = createTheme(theme, {
     dimensions: {
         spacingUnit,
         contentMaxWidth,
-        headerHeight
+        sectionVerticalPadding,
+        headerHeight,
+        sectionGap: '1rem'
     },
     border: {
         small: `2px solid ${black}`,
@@ -142,11 +147,11 @@ export const sectionBorder = style({
 })
 
 export const sectionPadding = style({
-    padding: '2rem 1rem',
+    padding: `${sectionVerticalPadding} 1rem`,
 
     '@media': {
         'screen and (min-width: 576px)': {
-            padding: '4rem 1.5rem'
+            padding: `${sectionVerticalPadding} 1.5rem`
         }
     }
 })

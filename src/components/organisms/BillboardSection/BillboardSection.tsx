@@ -8,7 +8,6 @@ export function BillboardSection() {
             <BoxedHeading
                 colorVariant={COLOR_VARIANTS.TERTIARY}
                 shadeVariant={SHADE_VARIANTS.DARK}
-                sizeVariant={SIZE_VARIANTS.LARGE}
             >
                 BILLBOARD
             </BoxedHeading>
@@ -36,19 +35,20 @@ export function BillboardSection() {
                     <br />
                     🍀
                 </InfoSection>
-                <InfoSection heading='Meeting #1'>
-                    We are planning to meet monthly and we are starting in
-                    January of 2024! 🚀
+                <InfoSection heading='Lorem Ipsum'>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industrys
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged.
                     <br />
                     <br />
-                    The agenda for the first meeting is to clarify the ideology
-                    of the organization, meet with the same-minded people, get
-                    to know each other, maybe have some casual talks and
-                    definitely have a good time sharing love and positivity.
-                    <br />
-                    <br />
-                    We still do not have all the details figured out but we will
-                    eventually and we will post them here. Stay tuned.
+                    It was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software like Aldus PageMaker
+                    including versions of Lorem Ipsum.
                     <br />
                     <br />
                     🍀

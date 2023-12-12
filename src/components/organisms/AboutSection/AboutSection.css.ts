@@ -26,7 +26,7 @@ export const distantCloudsBackground = style({
     width: '100%',
     position: 'absolute',
     left: 0,
-    top: '4rem',
+    top: theme.dimensions.sectionVerticalPadding,
     right: 0,
 
     '@media': {
@@ -40,7 +40,7 @@ export const cloudsBackground = style({
     width: '100%',
     position: 'absolute',
     left: 0,
-    top: '1.5rem',
+    top: `calc(${theme.dimensions.sectionVerticalPadding} - 0.5rem)`,
     zIndex: 3,
 
     '@media': {
