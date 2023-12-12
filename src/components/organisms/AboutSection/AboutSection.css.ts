@@ -26,10 +26,13 @@ export const distantCloudsBackground = style({
     width: '100%',
     position: 'absolute',
     left: 0,
-    top: theme.dimensions.sectionVerticalPadding,
+    top: `calc(${theme.dimensions.sectionVerticalPadding} + 2rem)`,
     right: 0,
 
     '@media': {
+        'screen and (min-width: 448px)': {
+            top: `calc(${theme.dimensions.sectionVerticalPadding} + 4rem)`
+        },
         'screen and (min-width: 576px)': {
             top: '8rem'
         }
@@ -40,12 +43,15 @@ export const cloudsBackground = style({
     width: '100%',
     position: 'absolute',
     left: 0,
-    top: `calc(${theme.dimensions.sectionVerticalPadding} - 0.5rem)`,
+    top: theme.dimensions.sectionVerticalPadding,
     zIndex: 3,
 
     '@media': {
+        'screen and (min-width: 448px)': {
+            top: `calc(${theme.dimensions.sectionVerticalPadding} + 1rem)`
+        },
         'screen and (min-width: 576px)': {
-            left: -90
+            // TODO: POSITIONING
         }
     }
 })
@@ -65,14 +71,6 @@ export const infoRightSide = style([infoSideBase, {}])
 
 export const heroImage = style({
     width: '100%',
-    height: 'auto',
-
-    '@media': {
-        'screen and (min-width: 576px)': {
-            position: 'absolute',
-            left: '50%',
-            bottom: 0,
-            transform: 'translateX(-50%)'
-        }
-    }
+    maxWidth: '36rem',
+    height: 'auto'
 })
