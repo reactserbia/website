@@ -8,8 +8,8 @@ export const infoContainer = style([
     {
         width: '100%',
         display: 'flex',
+        flexFlow: 'row wrap',
         justifyContent: 'center',
-        flexDirection: 'column',
         gap: '2rem',
         position: 'relative',
         overflow: 'hidden',
@@ -24,15 +24,13 @@ export const infoContainer = style([
 
 export const distantCloudsBackground = style({
     width: '100%',
+    height: 'auto',
     position: 'absolute',
+    top: '6rem',
     left: 0,
-    top: `calc(${theme.dimensions.sectionVerticalPadding} + 2rem)`,
     right: 0,
 
     '@media': {
-        'screen and (min-width: 448px)': {
-            top: `calc(${theme.dimensions.sectionVerticalPadding} + 4rem)`
-        },
         'screen and (min-width: 576px)': {
             top: '8rem'
         }
@@ -41,28 +39,32 @@ export const distantCloudsBackground = style({
 
 export const cloudsBackground = style({
     width: '100%',
+    height: 'auto',
     position: 'absolute',
     left: 0,
-    top: theme.dimensions.sectionVerticalPadding,
+    top: '2rem',
     zIndex: 3,
+    margin: '0 auto',
 
     '@media': {
-        'screen and (min-width: 448px)': {
-            top: `calc(${theme.dimensions.sectionVerticalPadding} + 1rem)`
-        },
-        'screen and (min-width: 576px)': {
-            // TODO: POSITIONING
+        'screen and (min-width: 896px)': {
+            top: '3rem'
         }
     }
 })
 
 export const infoSideBase = style({
     display: 'flex',
-    justifyContent: 'center',
+    flex: '1 1 400px',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    gap: '10rem',
     flexDirection: 'column',
-    position: 'relative'
+    gap: '10rem',
+    position: 'relative',
+
+    '@media': {
+        'screen and (min-width: 768px)': {}
+    }
 })
 
 export const infoLeftSide = style([infoSideBase, {}])
@@ -72,5 +74,6 @@ export const infoRightSide = style([infoSideBase, {}])
 export const heroImage = style({
     width: '100%',
     maxWidth: '36rem',
-    height: 'auto'
+    height: 'auto',
+    position: 'relative'
 })

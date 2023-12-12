@@ -14,21 +14,21 @@ import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 export function AboutSection() {
     return (
         <section className={infoContainer}>
-            <Image
-                width={550}
-                height={251}
-                src='/images/clouds-bg.svg'
-                alt='clouds'
-                className={distantCloudsBackground}
-            />
-            <Image
-                width={589}
-                height={174}
-                src='/images/clouds.svg'
-                alt='clouds'
-                className={cloudsBackground}
-            />
             <div className={infoLeftSide}>
+                <Image
+                    width={550}
+                    height={251}
+                    src='/images/clouds-bg.svg'
+                    alt='clouds'
+                    className={distantCloudsBackground}
+                />
+                <Image
+                    width={589}
+                    height={174}
+                    src='/images/clouds.svg'
+                    alt='clouds'
+                    className={cloudsBackground}
+                />
                 <BoxedHeading
                     colorVariant={COLOR_VARIANTS.TERTIARY}
                     shadeVariant={SHADE_VARIANTS.DARK}

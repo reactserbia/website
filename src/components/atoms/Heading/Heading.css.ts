@@ -19,7 +19,7 @@ const base = style({
         'screen and (min-width: 576px)': {
             fontSize: '3rem'
         },
-        'screen and (min-width: 1024px)': {
+        'screen and (min-width: 768px)': {
             fontSize: '4rem'
         }
     }
