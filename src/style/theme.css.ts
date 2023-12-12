@@ -11,10 +11,12 @@ export const theme = createThemeContract({
     dimensions: {
         spacingUnit: null,
         contentMaxWidth: null,
-        headerHeight: null,
-        sectionPadding: null
+        headerHeight: null
     },
-    border: null,
+    border: {
+        small: null,
+        large: null
+    },
     boxShadow: {
         small: null,
         medium: null,
@@ -71,10 +73,12 @@ export const lightTheme = createTheme(theme, {
     dimensions: {
         spacingUnit,
         contentMaxWidth,
-        headerHeight,
-        sectionPadding: '4rem 1.5rem'
+        headerHeight
     },
-    border: `3px solid ${black}`,
+    border: {
+        small: `2px solid ${black}`,
+        large: `3px solid ${black}`
+    },
     boxShadow: {
         small: `3px 3px ${black}`,
         medium: `4px 4px ${black}`,
@@ -128,11 +132,21 @@ export const lightTheme = createTheme(theme, {
 })
 
 export const sectionBorder = style({
-    border: `2px solid ${theme.colors.black}`,
+    border: theme.border.small,
 
     '@media': {
         'screen and (min-width: 576px)': {
-            border: theme.border
+            border: theme.border.large
+        }
+    }
+})
+
+export const sectionPadding = style({
+    padding: '2rem 1rem',
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            padding: '4rem 1.5rem'
         }
     }
 })

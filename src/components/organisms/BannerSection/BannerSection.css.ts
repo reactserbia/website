@@ -1,8 +1,9 @@
 import { style } from '@vanilla-extract/css'
 
-import { sectionBorder, theme } from '@/style'
+import { sectionBorder, sectionPadding, theme } from '@/style'
 
 export const bannerContainer = style([
+    sectionPadding,
     sectionBorder,
     {
         width: '100%',
@@ -11,7 +12,6 @@ export const bannerContainer = style([
         alignItems: 'center',
         gap: '1rem',
         flexDirection: 'column',
-        padding: theme.dimensions.sectionPadding,
 
         '@media': {
             'screen and (min-width: 576px)': {

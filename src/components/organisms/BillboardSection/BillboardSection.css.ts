@@ -1,8 +1,9 @@
 import { style } from '@vanilla-extract/css'
 
-import { sectionBorder, theme } from '@/style'
+import { sectionBorder, sectionPadding, theme } from '@/style'
 
 export const billboardContainer = style([
+    sectionPadding,
     sectionBorder,
     {
         display: 'flex',
@@ -10,7 +11,6 @@ export const billboardContainer = style([
         alignItems: 'center',
         flexDirection: 'column',
         gap: '2rem',
-        padding: theme.dimensions.sectionPadding,
         overflow: 'hidden',
 
         '@media': {

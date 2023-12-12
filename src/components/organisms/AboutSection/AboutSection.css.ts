@@ -1,8 +1,9 @@
-import { sectionBorder, theme } from '@/style'
+import { sectionBorder, sectionPadding, theme } from '@/style'
 
 import { style } from '@vanilla-extract/css'
 
 export const infoContainer = style([
+    sectionPadding,
     sectionBorder,
     {
         width: '100%',
@@ -11,7 +12,6 @@ export const infoContainer = style([
         flexDirection: 'column',
         gap: '1rem',
         position: 'relative',
-        padding: theme.dimensions.sectionPadding,
         overflow: 'hidden',
 
         '@media': {

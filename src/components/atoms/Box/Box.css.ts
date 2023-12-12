@@ -12,7 +12,7 @@ export const containerBase = style({
     gap: '1rem',
     padding: '1.5rem',
     borderRadius: '1rem',
-    border: theme.border,
+    border: theme.border.small,
     backgroundColor: theme.colors.tertiary.no02,
     textAlign: 'center',
     boxShadow: theme.boxShadow.medium,
