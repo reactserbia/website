@@ -1,15 +1,14 @@
 import Image from 'next/image'
 import { link } from './SocialLink.css'
 
-export function SocialLink() {
+type SocialLinkProps = {
+    src: string
+}
+
+export function SocialLink({ src }: SocialLinkProps) {
     return (
         <a className={link}>
-            <Image
-                width={20}
-                height={20}
-                src='/images/github.svg'
-                alt='Github'
-            />
+            <Image width={20} height={20} src={src} alt='Github' />
         </a>
     )
 }
