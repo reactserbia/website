@@ -1,41 +1,20 @@
-import { style, styleVariants } from '@vanilla-extract/css'
+import { style } from '@vanilla-extract/css'
 
-import { COLOR_VARIANTS } from '@/constants'
 import { theme } from '@/style/theme.css'
 
-const containerBase = style({
+export const container = style({
     display: 'inline-block',
     position: 'relative',
     zIndex: 1,
     padding: '0.25rem 1.75rem',
-    borderWidth: '2px',
-    borderStyle: 'solid',
-    borderRadius: '999px'
-})
+    border: `2px solid ${theme.colors.black}`,
+    borderRadius: '999px',
+    backgroundColor: theme.colors.tertiary.no02,
+    boxShadow: `4px 4px ${theme.colors.black}`,
 
-export const container = styleVariants({
-    [COLOR_VARIANTS.PRIMARY]: [
-        containerBase,
-        {
-            borderColor: theme.colors.primary.no12,
-            backgroundColor: theme.colors.primary.no02,
-            boxShadow: `6px 6px ${theme.colors.primary.no12}`
+    '@media': {
+        'screen and (min-width: 576px)': {
+            boxShadow: `6px 6px ${theme.colors.black}`
         }
-    ],
-    [COLOR_VARIANTS.SECONDARY]: [
-        containerBase,
-        {
-            borderColor: theme.colors.secondary.no12,
-            backgroundColor: theme.colors.secondary.no02,
-            boxShadow: `6px 6px ${theme.colors.secondary.no12}`
-        }
-    ],
-    [COLOR_VARIANTS.TERTIARY]: [
-        containerBase,
-        {
-            borderColor: theme.colors.tertiary.no12,
-            backgroundColor: theme.colors.tertiary.no02,
-            boxShadow: `6px 6px ${theme.colors.tertiary.no12}`
-        }
-    ]
+    }
 })
