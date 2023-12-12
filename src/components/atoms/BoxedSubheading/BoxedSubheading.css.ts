@@ -16,8 +16,8 @@ export const subheading = style({
 
     '@media': {
         'screen and (min-width: 576px)': {
-            border: theme.border,
-            fontSize: '1.25rem'
+            fontSize: '1.25rem',
+            boxShadow: theme.boxShadow.medium
         }
     }
 })
