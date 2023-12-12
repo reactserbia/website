@@ -23,24 +23,38 @@ export const infoContainer = style([
 ])
 
 export const distantCloudsBackground = style({
+    width: '100%',
     position: 'absolute',
     left: 0,
-    top: 0,
-    right: 0
+    top: '4rem',
+    right: 0,
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            top: '8rem'
+        }
+    }
 })
 
 export const cloudsBackground = style({
+    width: '100%',
     position: 'absolute',
-    left: -90,
-    top: 110,
-    zIndex: 3
+    left: 0,
+    top: '1.5rem',
+    zIndex: 3,
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            left: -90
+        }
+    }
 })
 
 export const infoSideBase = style({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: '4rem',
+    gap: '10rem',
     flexDirection: 'column',
     position: 'relative'
 })

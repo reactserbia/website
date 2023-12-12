@@ -15,14 +15,14 @@ export function AboutSection() {
     return (
         <section className={infoContainer}>
             <Image
-                width={1024}
-                height={420}
+                width={550}
+                height={251}
                 src='/images/clouds-bg.svg'
                 alt='clouds'
                 className={distantCloudsBackground}
             />
             <Image
-                width={655}
+                width={589}
                 height={174}
                 src='/images/clouds.svg'
                 alt='clouds'
