@@ -25,7 +25,10 @@ import { container } from './layout.css'
 
 export const metadata: Metadata = {
     title: 'React Serbia',
-    description: 'Super-Charging React Community'
+    description: 'Super-Charging React Community',
+    icons: {
+        icon: '/images/favicon.svg'
+    }
 }
 
 export default function RootLayout({
