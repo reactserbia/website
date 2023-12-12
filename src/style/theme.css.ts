@@ -1,9 +1,10 @@
-import { createTheme, createThemeContract } from '@vanilla-extract/css'
+import { createTheme, createThemeContract, style } from '@vanilla-extract/css'
 
 import { mint, sky, yellow } from '@radix-ui/colors'
 
 const spacingUnit = '4px'
 const contentMaxWidth = '1024px'
+const sectionVerticalPadding = '4rem'
 const headerHeight = '64px'
 const black = '#000'
 
@@ -11,10 +12,14 @@ export const theme = createThemeContract({
     dimensions: {
         spacingUnit: null,
         contentMaxWidth: null,
+        sectionVerticalPadding: null,
         headerHeight: null,
-        sectionPadding: null
+        sectionGap: null
     },
-    border: null,
+    border: {
+        small: null,
+        large: null
+    },
     boxShadow: {
         small: null,
         medium: null,
@@ -71,10 +76,14 @@ export const lightTheme = createTheme(theme, {
     dimensions: {
         spacingUnit,
         contentMaxWidth,
+        sectionVerticalPadding,
         headerHeight,
-        sectionPadding: '4rem 1.5rem'
+        sectionGap: '1rem'
     },
-    border: `3px solid ${black}`,
+    border: {
+        small: `2px solid ${black}`,
+        large: `3px solid ${black}`
+    },
     boxShadow: {
         small: `3px 3px ${black}`,
         medium: `4px 4px ${black}`,
@@ -123,6 +132,26 @@ export const lightTheme = createTheme(theme, {
             no10: yellow.yellow10,
             no11: yellow.yellow11,
             no12: yellow.yellow12
+        }
+    }
+})
+
+export const sectionBorder = style({
+    border: theme.border.small,
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            border: theme.border.large
+        }
+    }
+})
+
+export const sectionPadding = style({
+    padding: `${sectionVerticalPadding} 1rem`,
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            padding: `${sectionVerticalPadding} 1.5rem`
         }
     }
 })

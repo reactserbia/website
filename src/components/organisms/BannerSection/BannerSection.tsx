@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { bannerContainer } from './BannerSection.css'
+import { bannerContainer, banner, linebreak } from './BannerSection.css'
 import { BoxedSubheading } from '@/components'
 
 export function BannerSection() {
@@ -9,10 +9,15 @@ export function BannerSection() {
             <Image
                 width={857}
                 height={216}
-                src='/images/big-banner.svg'
+                src='/images/react-serbia.svg'
                 alt='banner'
+                className={banner}
             />
-            <BoxedSubheading>Super-charging React Community</BoxedSubheading>
+            <BoxedSubheading>
+                Super-charging
+                <br className={linebreak} />
+                React Community
+            </BoxedSubheading>
         </section>
     )
 }

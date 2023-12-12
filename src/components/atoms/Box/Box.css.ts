@@ -12,23 +12,29 @@ export const containerBase = style({
     gap: '1rem',
     padding: '1.5rem',
     borderRadius: '1rem',
-    border: theme.border,
+    border: theme.border.small,
     backgroundColor: theme.colors.tertiary.no02,
-    boxShadow: theme.boxShadow.large,
-    textAlign: 'center'
+    textAlign: 'center',
+    boxShadow: theme.boxShadow.medium,
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            boxShadow: theme.boxShadow.large
+        }
+    }
 })
 
 export const sizeVariants = styleVariants({
     [SIZE_VARIANTS.SMALL]: [
         containerBase,
         {
-            maxWidth: '450px'
+            maxWidth: '300px'
         }
     ],
     [SIZE_VARIANTS.MEDIUM]: [
         containerBase,
         {
-            maxWidth: '640px'
+            maxWidth: '450px'
         }
     ],
     [SIZE_VARIANTS.LARGE]: [

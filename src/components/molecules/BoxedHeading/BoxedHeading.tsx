@@ -5,18 +5,11 @@ type BoxedHeadingProps = HeadingProps
 export function BoxedHeading({
     children,
     colorVariant,
-    sizeVariant,
-    layers,
     shadeVariant
 }: BoxedHeadingProps) {
     return (
-        <ShadeBox colorVariant={colorVariant}>
-            <Heading
-                colorVariant={colorVariant}
-                sizeVariant={sizeVariant}
-                layers={layers}
-                shadeVariant={shadeVariant}
-            >
+        <ShadeBox>
+            <Heading colorVariant={colorVariant} shadeVariant={shadeVariant}>
                 {children}
             </Heading>
         </ShadeBox>
