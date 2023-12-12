@@ -4,7 +4,7 @@ import { theme } from '@/style/theme.css'
 
 export const paragraph = style({
     lineHeight: 1.5,
-    fontSize: '0.75rem',
+    fontSize: '0.875rem',
     color: theme.colors.black,
 
     '@media': {
