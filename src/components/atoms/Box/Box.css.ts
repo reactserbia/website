@@ -14,8 +14,14 @@ export const containerBase = style({
     borderRadius: '1rem',
     border: theme.border,
     backgroundColor: theme.colors.tertiary.no02,
-    boxShadow: theme.boxShadow.large,
-    textAlign: 'center'
+    textAlign: 'center',
+    boxShadow: theme.boxShadow.medium,
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            boxShadow: theme.boxShadow.large
+        }
+    }
 })
 
 export const sizeVariants = styleVariants({
