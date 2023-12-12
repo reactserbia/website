@@ -39,7 +39,7 @@ export const cloudsBackground = style({
 export const infoSideBase = style({
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     gap: '4rem',
     flexDirection: 'column',
     position: 'relative'
