@@ -33,3 +33,10 @@ export const linebreak = style({
         }
     }
 })
+
+export const navigation = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '0.5rem'
+})
