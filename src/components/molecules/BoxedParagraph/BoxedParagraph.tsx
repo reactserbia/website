@@ -10,7 +10,7 @@ type BoxedParagraphProps = {
 export function BoxedParagraph({ children }: BoxedParagraphProps) {
     return (
         <Box sizeVariant={SIZE_VARIANTS.LARGE}>
-            <Paragraph>{children}</Paragraph>
+            <Paragraph sizeVariant={SIZE_VARIANTS.SMALL}>{children}</Paragraph>
         </Box>
     )
 }
