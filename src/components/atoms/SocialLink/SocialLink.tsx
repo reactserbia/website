@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { link } from './SocialLink.css'
+import { link, networkLogo } from './SocialLink.css'
 
 type SocialLinkProps = {
     src: string
@@ -7,8 +7,14 @@ type SocialLinkProps = {
 
 export function SocialLink({ src }: SocialLinkProps) {
     return (
-        <a className={link}>
-            <Image width={20} height={20} src={src} alt='Github' />
-        </a>
+        <div className={link}>
+            <Image
+                width={20}
+                height={20}
+                src={src}
+                alt='Github'
+                className={networkLogo}
+            />
+        </div>
     )
 }
