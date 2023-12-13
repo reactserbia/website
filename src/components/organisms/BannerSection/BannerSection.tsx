@@ -8,6 +8,32 @@ import {
 } from './BannerSection.css'
 import { BoxedSubheading, SocialLink } from '@/components'
 
+enum SOCIAL_LINK_TYPE {
+    GITHUB = 'github',
+    TWITTER = 'twitter',
+    TELEGRAM = 'telegram'
+}
+
+type SocialLink = {
+    type: SOCIAL_LINK_TYPE
+    url: string
+}
+
+const socialLinks: SocialLink[] = [
+    {
+        type: SOCIAL_LINK_TYPE.GITHUB,
+        url: 'https://github.com/ReactSerbia'
+    },
+    {
+        type: SOCIAL_LINK_TYPE.TWITTER,
+        url: 'https://twitter.com/reactserbia'
+    },
+    {
+        type: SOCIAL_LINK_TYPE.TELEGRAM,
+        url: 'https://t.me/+puv-aR71sU1iNTlk'
+    }
+]
+
 export function BannerSection() {
     return (
         <section className={bannerContainer}>
@@ -24,9 +50,13 @@ export function BannerSection() {
                 React Community
             </BoxedSubheading>
             <div className={navigation}>
-                <SocialLink src='/images/github.svg' />
-                <SocialLink src='/images/twitter.svg' />
-                <SocialLink src='/images/telegram.svg' />
+                {socialLinks.map(({ type, url }) => (
+                    <SocialLink
+                        key={type}
+                        imageSrc={`/images/${type}.svg`}
+                        href={url}
+                    />
+                ))}
             </div>
         </section>
     )

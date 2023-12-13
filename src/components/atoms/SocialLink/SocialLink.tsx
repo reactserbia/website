@@ -2,19 +2,20 @@ import Image from 'next/image'
 import { link, networkLogo } from './SocialLink.css'
 
 type SocialLinkProps = {
-    src: string
+    imageSrc: string
+    href: string
 }
 
-export function SocialLink({ src }: SocialLinkProps) {
+export function SocialLink({ imageSrc, href }: SocialLinkProps) {
     return (
-        <div className={link}>
+        <a className={link} href={href} target='_blank'>
             <Image
                 width={20}
                 height={20}
-                src={src}
+                src={imageSrc}
                 alt='Github'
                 className={networkLogo}
             />
-        </div>
+        </a>
     )
 }
