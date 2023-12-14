@@ -6,8 +6,8 @@ export function Header() {
         <header className={header}>
             <Logo />
             <nav className={navigation}>
-                <Button>Home</Button>
-                <Button>Ideology</Button>
+                <Button href='/'>Home</Button>
+                <Button href='/ideology'>Ideology</Button>
             </nav>
         </header>
     )
