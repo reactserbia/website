@@ -1,6 +1,7 @@
 import { Button, Logo } from '@/components/atoms'
-import { header, navigation } from './Header.css'
 import { LINK_TYPE, LinkType } from '@/models'
+
+import { header, navigation } from './Header.css'
 
 const links: LinkType[] = [
     {

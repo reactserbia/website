@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+import { BoxedHeading, InfoSection } from '@/components'
+import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
+
 import {
     cloudsBackground,
     distantCloudsBackground,
@@ -8,8 +11,6 @@ import {
     infoLeftSide,
     infoRightSide
 } from './AboutSection.css'
-import { BoxedHeading, InfoSection } from '@/components'
-import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 
 export function AboutSection() {
     return (

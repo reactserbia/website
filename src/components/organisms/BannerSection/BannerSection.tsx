@@ -1,12 +1,13 @@
 import Image from 'next/image'
 
+import { BoxedSubheading, SocialLink } from '@/components'
+
 import {
-    bannerContainer,
     banner,
+    bannerContainer,
     linebreak,
     navigation
 } from './BannerSection.css'
-import { BoxedSubheading, SocialLink } from '@/components'
 
 enum SOCIAL_LINK_TYPE {
     GITHUB = 'github',

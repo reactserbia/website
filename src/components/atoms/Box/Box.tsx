@@ -1,7 +1,8 @@
 import { ReactNode } from 'react'
 
-import { sizeVariants } from './Box.css'
 import { SIZE_VARIANTS } from '@/constants'
+
+import { sizeVariants } from './Box.css'
 
 type BoxProps = {
     children: ReactNode | ReactNode[]

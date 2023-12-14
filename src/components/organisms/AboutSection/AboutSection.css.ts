@@ -1,6 +1,6 @@
-import { sectionBorder, sectionPadding, theme } from '@/style'
-
 import { style } from '@vanilla-extract/css'
+
+import { sectionBorder, sectionPadding, theme } from '@/style'
 
 export const infoContainer = style([
     sectionPadding,

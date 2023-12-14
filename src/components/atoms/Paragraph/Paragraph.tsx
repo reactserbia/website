@@ -1,7 +1,8 @@
 import { ReactNode } from 'react'
 
-import { paragraphSizes } from './Paragraph.css'
 import { SIZE_VARIANTS } from '@/constants'
+
+import { paragraphSizes } from './Paragraph.css'
 
 type ParagraphProps = {
     children: ReactNode

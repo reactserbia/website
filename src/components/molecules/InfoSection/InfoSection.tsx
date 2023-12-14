@@ -1,9 +1,11 @@
 import { ReactNode } from 'react'
+
 import Image from 'next/image'
 
-import { headingStyles } from './InfoSection.css'
 import { Box, Paragraph } from '@/components'
 import { SIZE_VARIANTS } from '@/constants'
+
+import { headingStyles } from './InfoSection.css'
 
 type InfoSectionProps = {
     heading: string

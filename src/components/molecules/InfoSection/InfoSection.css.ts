@@ -1,5 +1,6 @@
-import { theme } from '@/style/theme.css'
 import { style } from '@vanilla-extract/css'
+
+import { theme } from '@/style/theme.css'
 
 export const headingStyles = style({
     lineHeight: 1,
