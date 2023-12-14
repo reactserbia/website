@@ -2,6 +2,14 @@
     "extends": "next/core-web-vitals",
     "plugins": ["import"],
     "rules": {
+        "no-duplicate-imports": "error",
+        "sort-imports": [
+            "error",
+            {
+                "ignoreCase": true,
+                "allowSeparatedGroups": true
+            }
+        ],
         "import/order": [
             "error",
             {
