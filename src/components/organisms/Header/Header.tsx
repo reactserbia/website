@@ -1,12 +1,8 @@
 import { Button, Logo } from '@/components/atoms'
 import { header, navigation } from './Header.css'
+import { LINK_TYPE, LinkType } from '@/models'
 
-enum LINK_TYPE {
-    HOME = 'Home',
-    IDEOLOGY = 'Ideology'
-}
-
-const links = [
+const links: LinkType[] = [
     {
         href: '/',
         label: LINK_TYPE.HOME
