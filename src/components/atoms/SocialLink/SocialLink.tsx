@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import { link, networkLogo } from './SocialLink.css'
 
 type SocialLinkProps = {

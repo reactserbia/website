@@ -1,7 +1,7 @@
 import { style, styleVariants } from '@vanilla-extract/css'
 
-import { theme } from '@/style/theme.css'
 import { SIZE_VARIANTS } from '@/constants'
+import { theme } from '@/style/theme.css'
 
 export const containerBase = style({
     width: '100%',

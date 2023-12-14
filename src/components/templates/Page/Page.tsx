@@ -1,8 +1,9 @@
 import { ReactNode } from 'react'
 
 import { Header } from '@/components'
-import { container } from './Page.css'
 import { LINK_TYPE } from '@/models'
+
+import { container } from './Page.css'
 
 type PageProps = {
     children: ReactNode

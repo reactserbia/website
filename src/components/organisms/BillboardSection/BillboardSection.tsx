@@ -1,5 +1,6 @@
 import { BoxedHeading, BoxedParagraph, InfoSection } from '@/components'
-import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
+import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
+
 import { billboardContainer, billboardContent } from './BillboardSection.css'
 
 export function BillboardSection() {

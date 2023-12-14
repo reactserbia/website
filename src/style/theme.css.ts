@@ -1,6 +1,5 @@
-import { createTheme, createThemeContract, style } from '@vanilla-extract/css'
-
 import { mint, sky, yellow } from '@radix-ui/colors'
+import { createTheme, createThemeContract, style } from '@vanilla-extract/css'
 
 const spacingUnit = '4px'
 const contentMaxWidth = '1024px'

@@ -1,8 +1,7 @@
 import { style, styleVariants } from '@vanilla-extract/css'
 
-import { theme } from '@/style/theme.css'
-
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
+import { theme } from '@/style/theme.css'
 
 const base = style({
     display: 'inline-block',
