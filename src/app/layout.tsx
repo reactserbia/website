@@ -18,10 +18,7 @@ const komika = localFont({
     ]
 })
 
-import { Header } from '@/components'
-
 import { lightTheme } from '@/style/theme.css'
-import { container } from './layout.css'
 
 export const metadata: Metadata = {
     title: 'React Serbia',
@@ -39,10 +36,7 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body className={`${komika.className} ${lightTheme}`}>
-                <main className={container}>
-                    <Header />
-                    {children}
-                </main>
+                {children}
             </body>
         </html>
     )
