@@ -12,6 +12,7 @@ export const button = style({
     fontFamily: 'inherit',
     fontWeight: 700,
     color: theme.colors.black,
+    textDecoration: 'none',
     boxShadow: theme.boxShadow.small,
     cursor: 'pointer',
 
