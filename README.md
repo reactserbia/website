@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align='center'><img src='https://raw.githubusercontent.com/reactserbia/website/2588235b79e5c40272e319799a20a3c94a7d0035/public/images/react-serbia.svg?token=AF442C3ZYC5IZV6DJHYXQXLFPLUNW'>
+<div>
 
-## Getting Started
+## Welcome Friends 👋
 
-First, run the development server:
+This is the official webpage of React Serbia organization.
+https://www.reactserbia.com/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies 💻
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This application is built with [**React**](https://github.com/facebook/react) and [**Next.js**](https://github.com/vercel/next.js) with [**TypeScript**](https://github.com/microsoft/TypeScript). [**Vanilla Extract**](https://github.com/vanilla-extract-css/vanilla-extract) is used for styling the application. Components are organized by Atomic Design methodology.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Start the Project 🏃
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Clone this repository.
 
-## Learn More
+HTTP ➡️ `https://github.com/reactserbia/website.git`
 
-To learn more about Next.js, take a look at the following resources:
+SSH ➡️ `git@github.com:reactserbia/website.git`
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Install the dependencies ➡️ `yarn`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Run the application ➡️ `yarn dev`
 
-## Deploy on Vercel
+In browser, open [http://localhost:3000](http://localhost:3000). 🚀
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+🍀
