@@ -10,7 +10,7 @@ export const container = style([
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
-        gap: '2rem',
+        gap: '1.5rem',
         position: 'relative',
         background: `linear-gradient(180deg, ${theme.colors.secondary.no03} 0%, ${theme.colors.tertiary.no06} 100%)`
     }

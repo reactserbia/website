@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { BoxedHeading, BoxedParagraph } from '@/components'
+import { BoxedHeading, BoxedParagraph, Subheading } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
 
 import { clouds, container, imagesContainer } from './Footer.css'
@@ -45,6 +45,9 @@ export function Footer() {
                     alt='hero-girl'
                 />
             </div>
+            <Subheading>
+                Devised, bootstrapped, designed and coded by Mirko Basic
+            </Subheading>
         </section>
     )
 }
