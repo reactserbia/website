@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { Header } from '@/components'
+import { Footer, Header } from '@/components'
 import { LINK_TYPE } from '@/models'
 
 import { container } from './Page.css'
@@ -15,6 +15,7 @@ export function Page({ children, page }: PageProps) {
         <main className={container}>
             <Header page={page} />
             {children}
+            <Footer />
         </main>
     )
 }
