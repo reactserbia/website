@@ -14,6 +14,7 @@ import {
     bangImage,
     clouds,
     container,
+    heroImage,
     imagesContainer,
     navigation
 } from './Footer.css'
@@ -72,6 +73,7 @@ export function Footer() {
                     height={223}
                     src='/images/heroes/girl-1.svg'
                     alt='hero-girl'
+                    className={heroImage}
                 />
             </div>
             <div className={author}>

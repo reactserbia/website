@@ -17,6 +17,29 @@ export const container = style([
     }
 ])
 
+export const clouds = style({
+    width: '150%',
+    height: 'auto',
+    position: 'absolute',
+    top: '30rem',
+    left: 0,
+
+    '@media': {
+        '(min-width: 384px)': {
+            width: '100%',
+            top: '28rem'
+        },
+
+        '(min-width: 448px)': {
+            top: '25rem'
+        },
+
+        '(min-width: 768px)': {
+            top: '20rem'
+        }
+    }
+})
+
 export const imagesContainer = style({
     display: 'flex',
     justifyContent: 'center',
@@ -41,10 +64,16 @@ export const bangImage = style({
     }
 })
 
-export const clouds = style({
-    position: 'absolute',
-    top: '20rem',
-    left: 0
+export const heroImage = style({
+    width: '80%',
+    height: 'auto',
+    position: 'relative',
+
+    '@media': {
+        '(min-width: 576px)': {
+            width: '100%'
+        }
+    }
 })
 
 export const author = style({
