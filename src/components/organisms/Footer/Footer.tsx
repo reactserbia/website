@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { BoxedHeading, BoxedParagraph } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
 
@@ -22,7 +24,20 @@ export function Footer() {
                 not hesitate to reach out, give your contribution and write this
                 story with us! Let us make a change together. 🍀
             </BoxedParagraph>
-            <div className={imagesContainer}></div>
+            <div className={imagesContainer}>
+                <Image
+                    width={438}
+                    height={245}
+                    src='/images/effects/bang.svg'
+                    alt='explosion'
+                />
+                <Image
+                    width={142}
+                    height={223}
+                    src='/images/heroes/girl-1.svg'
+                    alt='hero-girl'
+                />
+            </div>
         </section>
     )
 }
