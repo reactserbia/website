@@ -1,7 +1,7 @@
 import { BoxedHeading, BoxedParagraph } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
 
-import { container } from './Footer.css'
+import { container, imagesContainer } from './Footer.css'
 
 export function Footer() {
     return (
@@ -22,6 +22,7 @@ export function Footer() {
                 not hesitate to reach out, give your contribution and write this
                 story with us! Let us make a change together. 🍀
             </BoxedParagraph>
+            <div className={imagesContainer}></div>
         </section>
     )
 }
