@@ -1,9 +1,30 @@
 import Image from 'next/image'
 
-import { BoxedHeading, BoxedParagraph, Subheading } from '@/components'
+import {
+    BoxedHeading,
+    BoxedParagraph,
+    SocialLink,
+    Subheading
+} from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
+import { SOCIAL_LINK_TYPE, SocialLinkType } from '@/models'
 
-import { clouds, container, imagesContainer } from './Footer.css'
+import { clouds, container, imagesContainer, navigation } from './Footer.css'
+
+const socialLinks: SocialLinkType[] = [
+    {
+        type: SOCIAL_LINK_TYPE.GITHUB,
+        url: 'https://github.com/bejzik8'
+    },
+    {
+        type: SOCIAL_LINK_TYPE.TWITTER,
+        url: 'https://twitter.com/bejzik8'
+    },
+    {
+        type: SOCIAL_LINK_TYPE.TELEGRAM,
+        url: 'https://t.me/bejzik'
+    }
+]
 
 export function Footer() {
     return (
@@ -48,6 +69,15 @@ export function Footer() {
             <Subheading>
                 Devised, bootstrapped, designed and coded by Mirko Basic
             </Subheading>
+            <div className={navigation}>
+                {socialLinks.map(({ type, url }) => (
+                    <SocialLink
+                        key={type}
+                        imageSrc={`/images/${type}.svg`}
+                        href={url}
+                    />
+                ))}
+            </div>
         </section>
     )
 }

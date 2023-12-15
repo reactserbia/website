@@ -28,3 +28,10 @@ export const clouds = style({
     top: '20rem',
     left: '3rem'
 })
+
+export const navigation = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '0.5rem'
+})
