@@ -24,6 +24,23 @@ export const imagesContainer = style({
     gap: '1rem'
 })
 
+export const bangImage = style({
+    display: 'none',
+
+    '@media': {
+        '(min-width: 576px)': {
+            width: '70%',
+            height: 'auto',
+            display: 'block'
+        },
+
+        '(min-width: 768px)': {
+            width: '100%',
+            height: '100%'
+        }
+    }
+})
+
 export const clouds = style({
     position: 'absolute',
     top: '20rem',

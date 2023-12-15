@@ -11,6 +11,7 @@ import { SOCIAL_LINK_TYPE, SocialLinkType } from '@/models'
 
 import {
     author,
+    bangImage,
     clouds,
     container,
     imagesContainer,
@@ -64,6 +65,7 @@ export function Footer() {
                     height={245}
                     src='/images/effects/bang.svg'
                     alt='explosion'
+                    className={bangImage}
                 />
                 <Image
                     width={142}
