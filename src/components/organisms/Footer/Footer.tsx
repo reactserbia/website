@@ -3,11 +3,18 @@ import Image from 'next/image'
 import { BoxedHeading, BoxedParagraph } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
 
-import { container, imagesContainer } from './Footer.css'
+import { clouds, container, imagesContainer } from './Footer.css'
 
 export function Footer() {
     return (
         <section className={container}>
+            <Image
+                width={902}
+                height={123}
+                src='/images/clouds/contact-clouds.svg'
+                alt='clouds'
+                className={clouds}
+            />
             <BoxedHeading
                 colorVariant={COLOR_VARIANTS.TERTIARY}
                 shadeVariant={SHADE_VARIANTS.DARK}
