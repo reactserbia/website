@@ -1,9 +1,20 @@
-export enum LINK_TYPE {
+export enum NAVIGATION_LINK_TYPE {
     HOME = 'Home',
     IDEOLOGY = 'Ideology'
 }
 
-export type LinkType = {
+export type NavigationLinkType = {
     href: string
-    label: LINK_TYPE
+    label: NAVIGATION_LINK_TYPE
+}
+
+export enum SOCIAL_LINK_TYPE {
+    GITHUB = 'github',
+    TWITTER = 'twitter',
+    TELEGRAM = 'telegram'
+}
+
+export type SocialLinkType = {
+    type: SOCIAL_LINK_TYPE
+    url: string
 }
