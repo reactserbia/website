@@ -4,11 +4,11 @@ import {
     BillboardSection,
     Page
 } from '@/components'
-import { LINK_TYPE } from '@/models'
+import { NAVIGATION_LINK_TYPE } from '@/models'
 
 export default function Home() {
     return (
-        <Page page={LINK_TYPE.HOME}>
+        <Page page={NAVIGATION_LINK_TYPE.HOME}>
             <BannerSection />
             <AboutSection />
             <BillboardSection />

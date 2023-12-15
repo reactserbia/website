@@ -1,21 +1,21 @@
 import { Button, Logo } from '@/components/atoms'
-import { LINK_TYPE, LinkType } from '@/models'
+import { NAVIGATION_LINK_TYPE, NavigationLinkType } from '@/models'
 
 import { header, navigation } from './Header.css'
 
-const links: LinkType[] = [
+const links: NavigationLinkType[] = [
     {
         href: '/',
-        label: LINK_TYPE.HOME
+        label: NAVIGATION_LINK_TYPE.HOME
     },
     {
         href: '/ideology',
-        label: LINK_TYPE.IDEOLOGY
+        label: NAVIGATION_LINK_TYPE.IDEOLOGY
     }
 ]
 
 type HeaderProps = {
-    page: LINK_TYPE
+    page: NAVIGATION_LINK_TYPE
 }
 
 export function Header({ page }: HeaderProps) {

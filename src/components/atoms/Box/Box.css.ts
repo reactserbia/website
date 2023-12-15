@@ -10,6 +10,7 @@ export const containerBase = style({
     justifyContent: 'center',
     flexDirection: 'column',
     gap: '1rem',
+    position: 'relative',
     padding: '1.5rem',
     borderRadius: '1rem',
     border: theme.border.small,

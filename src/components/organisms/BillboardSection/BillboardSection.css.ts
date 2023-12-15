@@ -15,7 +15,7 @@ export const billboardContainer = style([
 
         '@media': {
             'screen and (min-width: 576px)': {
-                backgroundImage: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no04} 100%)`
+                backgroundImage: `linear-gradient(180deg, ${theme.colors.tertiary.no02} 0%, ${theme.colors.secondary.no03} 100%)`
             }
         }
     }

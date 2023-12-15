@@ -1,13 +1,13 @@
 import { ReactNode } from 'react'
 
-import { Header } from '@/components'
-import { LINK_TYPE } from '@/models'
+import { Footer, Header } from '@/components'
+import { NAVIGATION_LINK_TYPE } from '@/models'
 
 import { container } from './Page.css'
 
 type PageProps = {
     children: ReactNode
-    page: LINK_TYPE
+    page: NAVIGATION_LINK_TYPE
 }
 
 export function Page({ children, page }: PageProps) {
@@ -15,6 +15,7 @@ export function Page({ children, page }: PageProps) {
         <main className={container}>
             <Header page={page} />
             {children}
+            <Footer />
         </main>
     )
 }
