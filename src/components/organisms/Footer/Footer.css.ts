@@ -10,9 +10,10 @@ export const container = style([
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
-        gap: '1.5rem',
+        gap: '2rem',
         position: 'relative',
-        background: `linear-gradient(180deg, ${theme.colors.secondary.no03} 0%, ${theme.colors.tertiary.no06} 100%)`
+        background: `linear-gradient(180deg, ${theme.colors.secondary.no03} 0%, ${theme.colors.tertiary.no06} 100%)`,
+        overflow: 'hidden'
     }
 ])
 
@@ -26,7 +27,15 @@ export const imagesContainer = style({
 export const clouds = style({
     position: 'absolute',
     top: '20rem',
-    left: '3rem'
+    left: 0
+})
+
+export const author = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    gap: '0.5rem'
 })
 
 export const navigation = style({

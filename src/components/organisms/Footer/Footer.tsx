@@ -9,7 +9,13 @@ import {
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
 import { SOCIAL_LINK_TYPE, SocialLinkType } from '@/models'
 
-import { clouds, container, imagesContainer, navigation } from './Footer.css'
+import {
+    author,
+    clouds,
+    container,
+    imagesContainer,
+    navigation
+} from './Footer.css'
 
 const socialLinks: SocialLinkType[] = [
     {
@@ -66,17 +72,19 @@ export function Footer() {
                     alt='hero-girl'
                 />
             </div>
-            <Subheading>
-                Devised, bootstrapped, designed and coded by Mirko Basic
-            </Subheading>
-            <div className={navigation}>
-                {socialLinks.map(({ type, url }) => (
-                    <SocialLink
-                        key={type}
-                        imageSrc={`/images/${type}.svg`}
-                        href={url}
-                    />
-                ))}
+            <div className={author}>
+                <Subheading>
+                    Devised, bootstrapped, designed and coded by Mirko Basic
+                </Subheading>
+                <div className={navigation}>
+                    {socialLinks.map(({ type, url }) => (
+                        <SocialLink
+                            key={type}
+                            imageSrc={`/images/${type}.svg`}
+                            href={url}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     )
