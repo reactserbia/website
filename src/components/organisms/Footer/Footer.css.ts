@@ -12,7 +12,7 @@ export const container = style([
         flexDirection: 'column',
         gap: '2rem',
         position: 'relative',
-        background: `linear-gradient(180deg, ${theme.colors.secondary.no03} 0%, ${theme.colors.tertiary.no06} 100%)`,
+        background: `linear-gradient(180deg, ${theme.colors.secondary.no03} 0%, ${theme.colors.tertiary.no03} 100%)`,
         overflow: 'hidden'
     }
 ])

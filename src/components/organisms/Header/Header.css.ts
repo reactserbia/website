@@ -10,14 +10,9 @@ export const header = style([
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: '1rem 1.5rem',
+        background: `linear-gradient(180deg, ${theme.colors.tertiary.no02} 0%, ${theme.colors.primary.no03} 100%)`,
         overflow: 'hidden',
-        margin: '0 auto',
-
-        '@media': {
-            'screen and (min-width: 576px)': {
-                backgroundColor: theme.colors.tertiary.no02
-            }
-        }
+        margin: '0 auto'
     }
 ])
 
