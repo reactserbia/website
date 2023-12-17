@@ -12,13 +12,8 @@ export const infoContainer = style([
         justifyContent: 'center',
         gap: '2rem',
         position: 'relative',
-        overflow: 'hidden',
-
-        '@media': {
-            'screen and (min-width: 576px)': {
-                background: `linear-gradient(180deg, ${theme.colors.tertiary.no03} 0%, rgba(105, 217, 193, 0.00) 100%)`
-            }
-        }
+        background: `linear-gradient(180deg, ${theme.colors.tertiary.no03} 0%, ${theme.colors.primary.no04} 100%)`,
+        overflow: 'hidden'
     }
 ])
 

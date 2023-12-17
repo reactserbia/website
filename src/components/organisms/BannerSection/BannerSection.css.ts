@@ -12,12 +12,7 @@ export const bannerContainer = style([
         alignItems: 'center',
         gap: '1rem',
         flexDirection: 'column',
-
-        '@media': {
-            'screen and (min-width: 576px)': {
-                background: `linear-gradient(180deg, ${theme.colors.tertiary.no01} 0%, ${theme.colors.tertiary.no03} 100%)`
-            }
-        }
+        background: `linear-gradient(180deg, ${theme.colors.primary.no03} 0%, ${theme.colors.tertiary.no03} 100%)`
     }
 ])
 
