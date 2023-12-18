@@ -1,8 +1,6 @@
 import { ReactNode } from 'react'
 
-import Image from 'next/image'
-
-import { Box, Paragraph } from '@/components'
+import { Box, Paragraph, Stars } from '@/components'
 import { SIZE_VARIANTS } from '@/constants'
 
 import { headingStyles } from './InfoSection.css'
@@ -21,19 +19,9 @@ export function InfoSection({
     return (
         <Box sizeVariant={sizeVariant}>
             <h1 className={headingStyles}>{heading}</h1>
-            <Image
-                width={104}
-                height={22}
-                src='/images/stars.svg'
-                alt='stars'
-            />
+            <Stars />
             <Paragraph>{children}</Paragraph>
-            <Image
-                width={104}
-                height={22}
-                src='/images/stars.svg'
-                alt='stars'
-            />
+            <Stars />
         </Box>
     )
 }
