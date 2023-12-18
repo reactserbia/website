@@ -31,6 +31,14 @@ const socialLinks: SocialLinkType[] = [
     {
         type: SOCIAL_NETWORK_ICONS.TELEGRAM,
         url: 'https://t.me/bejzik'
+    },
+    {
+        type: SOCIAL_NETWORK_ICONS.LINKEDIN,
+        url: 'https://www.linkedin.com/in/mirkobasic'
+    },
+    {
+        type: SOCIAL_NETWORK_ICONS.INSTAGRAM,
+        url: 'https://www.instagram.com/b8zeek'
     }
 ]
 
