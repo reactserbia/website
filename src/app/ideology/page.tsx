@@ -1,5 +1,5 @@
 import { BoxedHeading, BoxedParagraph, InfoSection, Page } from '@/components'
-import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
+import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { NAVIGATION_LINK_TYPE } from '@/models'
 
 import { sectionContainer } from './page.css'
@@ -23,7 +23,10 @@ export default function Ideology() {
                     about the organization, see if you like the idea and whether
                     you want to be a part of it or not. We hope you do! 🍀
                 </BoxedParagraph>
-                <InfoSection heading='About Us 💡'>
+                <InfoSection
+                    sizeVariant={SIZE_VARIANTS.LARGE}
+                    heading='About Us 💡'
+                >
                     React Serbia serves as a unifying platform for passionate
                     React enthusiasts, striving to empower and elevate their
                     expertise. Our mission is to establish React Serbia as the
@@ -46,7 +49,10 @@ export default function Ideology() {
                     development but also contributes significantly to the
                     collective advancement of our community.
                 </InfoSection>
-                <InfoSection heading='Sponsorship 🎗️'>
+                <InfoSection
+                    sizeVariant={SIZE_VARIANTS.LARGE}
+                    heading='Sponsorship 🎗️'
+                >
                     The organization is open for sponsorship. We will use all
                     the resources we get to enable proper functioning and
                     enjoyable experience.
@@ -70,6 +76,21 @@ export default function Ideology() {
                     and explanation in case of a rejection. Everyone deserves a
                     proper treatment and candidate&apos;s effort for the mutual
                     benefit should be appreciated! We value good manners!
+                </InfoSection>
+                <InfoSection
+                    sizeVariant={SIZE_VARIANTS.LARGE}
+                    heading='Financial Transparency 📊'
+                >
+                    The organization is financially transparent. People should
+                    be able to see the income and outcome lists and see what was
+                    done with the money. Everyone should be able to evaluate
+                    organization&apos;s work, the way things function and draw a
+                    conclustion for themselves whether we are doing a good thing
+                    or not.
+                    <br />
+                    <br />
+                    This will be one of the proofs for organization&#39;s
+                    legitimacy and whitness about our non-profit nature.
                 </InfoSection>
             </section>
         </Page>
