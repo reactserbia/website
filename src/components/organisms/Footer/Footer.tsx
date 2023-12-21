@@ -7,7 +7,7 @@ import {
     Subheading
 } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
-import { SOCIAL_LINK_TYPE, SocialLinkType } from '@/models'
+import { SOCIAL_NETWORK_ICONS, SocialLinkType } from '@/models'
 
 import {
     author,
@@ -21,16 +21,24 @@ import {
 
 const socialLinks: SocialLinkType[] = [
     {
-        type: SOCIAL_LINK_TYPE.GITHUB,
+        type: SOCIAL_NETWORK_ICONS.GITHUB,
         url: 'https://github.com/bejzik8'
     },
     {
-        type: SOCIAL_LINK_TYPE.TWITTER,
+        type: SOCIAL_NETWORK_ICONS.TWITTER,
         url: 'https://twitter.com/bejzik8'
     },
     {
-        type: SOCIAL_LINK_TYPE.TELEGRAM,
+        type: SOCIAL_NETWORK_ICONS.TELEGRAM,
         url: 'https://t.me/bejzik'
+    },
+    {
+        type: SOCIAL_NETWORK_ICONS.LINKEDIN,
+        url: 'https://www.linkedin.com/in/mirkobasic'
+    },
+    {
+        type: SOCIAL_NETWORK_ICONS.INSTAGRAM,
+        url: 'https://www.instagram.com/b8zeek'
     }
 ]
 
@@ -84,7 +92,7 @@ export function Footer() {
                     {socialLinks.map(({ type, url }) => (
                         <SocialLink
                             key={type}
-                            imageSrc={`/images/${type}.svg`}
+                            socialNetworkType={type}
                             href={url}
                         />
                     ))}

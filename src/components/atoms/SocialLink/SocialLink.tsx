@@ -1,22 +1,17 @@
-import Image from 'next/image'
+import { SOCIAL_NETWORK_ICONS } from '@/models'
 
-import { link, networkLogo } from './SocialLink.css'
+import { link } from './SocialLink.css'
+import { SocialNetworkIcon } from '../SocialNetworkIcon/SocialNetworkIcon'
 
 type SocialLinkProps = {
-    imageSrc: string
+    socialNetworkType: SOCIAL_NETWORK_ICONS
     href: string
 }
 
-export function SocialLink({ imageSrc, href }: SocialLinkProps) {
+export function SocialLink({ socialNetworkType, href }: SocialLinkProps) {
     return (
         <a className={link} href={href} target='_blank'>
-            <Image
-                width={20}
-                height={20}
-                src={imageSrc}
-                alt='Github'
-                className={networkLogo}
-            />
+            <SocialNetworkIcon type={socialNetworkType} />
         </a>
     )
 }

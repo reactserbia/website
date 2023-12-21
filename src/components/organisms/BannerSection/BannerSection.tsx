@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import { BoxedSubheading, SocialLink } from '@/components'
-import { SOCIAL_LINK_TYPE, SocialLinkType } from '@/models'
+import { SOCIAL_NETWORK_ICONS, SocialLinkType } from '@/models'
 
 import {
     banner,
@@ -12,15 +12,15 @@ import {
 
 const socialLinks: SocialLinkType[] = [
     {
-        type: SOCIAL_LINK_TYPE.GITHUB,
+        type: SOCIAL_NETWORK_ICONS.GITHUB,
         url: 'https://github.com/ReactSerbia'
     },
     {
-        type: SOCIAL_LINK_TYPE.TWITTER,
+        type: SOCIAL_NETWORK_ICONS.TWITTER,
         url: 'https://twitter.com/reactserbia'
     },
     {
-        type: SOCIAL_LINK_TYPE.TELEGRAM,
+        type: SOCIAL_NETWORK_ICONS.TELEGRAM,
         url: 'https://t.me/+puv-aR71sU1iNTlk'
     }
 ]
@@ -44,7 +44,7 @@ export function BannerSection() {
                 {socialLinks.map(({ type, url }) => (
                     <SocialLink
                         key={type}
-                        imageSrc={`/images/${type}.svg`}
+                        socialNetworkType={type}
                         href={url}
                     />
                 ))}

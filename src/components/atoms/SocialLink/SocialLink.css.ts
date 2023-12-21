@@ -3,7 +3,10 @@ import { style } from '@vanilla-extract/css'
 import { theme } from '@/style'
 
 export const link = style({
-    display: 'inline-block',
+    height: '2rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: '0.25rem',
     border: `2px solid ${theme.colors.black}`,
     borderRadius: '0.5rem',
