@@ -1,9 +1,16 @@
 import { style } from '@vanilla-extract/css'
 
-import { sectionBorder, sectionPadding, theme } from '@/style'
+import { footerConstriction, sectionPadding, theme } from '@/style'
 
 export const container = style([
-    sectionBorder,
+    footerConstriction,
+    {
+        marginTop: theme.dimensions.sectionGap
+    }
+])
+
+export const content = style([
+    footerConstriction,
     sectionPadding,
     {
         display: 'flex',
