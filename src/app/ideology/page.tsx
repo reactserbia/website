@@ -124,6 +124,20 @@ export default function Ideology() {
                     open positions
                     <br />• we are planning to have a merch in the future.
                 </InfoSection>
+                <InfoSection
+                    sizeVariant={SIZE_VARIANTS.LARGE}
+                    heading='Feedback 🧑‍🍼'
+                >
+                    We need the community in order to make the best framweork
+                    for everyone; we are aware of the fact that together we can
+                    do much more and that two brains outsmart one. We are open
+                    for any kind of feedback and we are asking for it. We are
+                    here to answer the questions, discuss the ideas, wishes like
+                    what would the people love to see on the next meetup, what
+                    did they like the most, which speaker would they love to see
+                    again, which topic should we cover in the future, how can we
+                    improve, etc. You get the idea...
+                </InfoSection>
             </section>
         </Page>
     )
