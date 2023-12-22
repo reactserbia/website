@@ -1,10 +1,17 @@
 import { style } from '@vanilla-extract/css'
 
-import { sectionBorder, sectionPadding, theme } from '@/style'
-
-export const bannerContainer = style([
+import {
+    bannerConstriction,
+    containerBorder,
     sectionPadding,
-    sectionBorder,
+    theme
+} from '@/style'
+
+export const bannerContainer = style([containerBorder, bannerConstriction])
+
+export const bannerContent = style([
+    bannerConstriction,
+    sectionPadding,
     {
         width: '100%',
         display: 'flex',

@@ -12,7 +12,7 @@ export const header = style([
         padding: '1rem 1.5rem',
         background: `linear-gradient(180deg, ${theme.colors.tertiary.no02} 0%, ${theme.colors.primary.no03} 100%)`,
         overflow: 'hidden',
-        margin: '0 auto'
+        margin: `0 auto ${theme.dimensions.sectionGap}`
     }
 ])
 
