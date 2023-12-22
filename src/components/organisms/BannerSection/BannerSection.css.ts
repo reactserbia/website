@@ -1,14 +1,16 @@
 import { style } from '@vanilla-extract/css'
 
-import { sectionPadding, theme } from '@/style'
+import {
+    bannerConstriction,
+    containerBorder,
+    sectionPadding,
+    theme
+} from '@/style'
 
-export const bannerContainer = style({
-    padding: 3,
-    backgroundColor: theme.colors.black,
-    clipPath: 'polygon(0 0, 100% 0,100% calc(100% - 20px), 0 100%)'
-})
+export const bannerContainer = style([containerBorder, bannerConstriction])
 
 export const bannerContent = style([
+    bannerConstriction,
     sectionPadding,
     {
         width: '100%',
@@ -17,8 +19,7 @@ export const bannerContent = style([
         alignItems: 'center',
         gap: '1rem',
         flexDirection: 'column',
-        background: `linear-gradient(180deg, ${theme.colors.primary.no03} 0%, ${theme.colors.tertiary.no03} 100%)`,
-        clipPath: 'polygon(0 0, 100% 0,100% calc(100% - 20px), 0 100%)'
+        background: `linear-gradient(180deg, ${theme.colors.primary.no03} 0%, ${theme.colors.tertiary.no03} 100%)`
     }
 ])
 
