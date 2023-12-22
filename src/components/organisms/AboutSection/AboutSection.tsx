@@ -2,21 +2,21 @@ import Image from 'next/image'
 
 import { BoxedHeading, InfoSection } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
-import { leftConstriction } from '@/style'
 
 import {
     cloudsBackground,
+    container,
+    content,
     distantCloudsBackground,
     heroImage,
-    infoContent,
     infoLeftSide,
     infoRightSide
 } from './AboutSection.css'
 
 export function AboutSection() {
     return (
-        <section className={leftConstriction}>
-            <div className={infoContent}>
+        <section className={container}>
+            <div className={content}>
                 <div className={infoLeftSide}>
                     <Image
                         width={550}
