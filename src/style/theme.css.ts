@@ -182,3 +182,7 @@ export const leftConstriction = style({
 export const footerConstriction = style({
     clipPath: `polygon(0 ${sectionGap}, 100% 0, 100% 100%, 0 100%)`
 })
+
+export const ideologyConstriction = style({
+    clipPath: `polygon(0 0, 100% 0, 100% calc(100% - ${sectionGap}), 0 100%)`
+})
