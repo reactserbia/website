@@ -156,20 +156,23 @@ export const sectionPadding = style({
     }
 })
 
-export const rightConstriction = style({
+export const containerBorder = style({
     padding: 3,
-    clipPath: `polygon(0 0, 100% ${sectionGap}, 100% calc(100% - ${sectionGap}), 0 100%)`,
     backgroundColor: theme.colors.black
+})
+
+export const bannerConstriction = style({
+    clipPath: 'polygon(0 0, 100% 0,100% calc(100% - 20px), 0 100%)'
+})
+
+export const rightConstriction = style({
+    clipPath: `polygon(0 0, 100% ${sectionGap}, 100% calc(100% - ${sectionGap}), 0 100%)`
 })
 
 export const leftConstriction = style({
-    padding: 3,
-    clipPath: `polygon(0 ${sectionGap}, 100% 0, 100% 100%, 0 calc(100% - ${sectionGap}))`,
-    backgroundColor: theme.colors.black
+    clipPath: `polygon(0 ${sectionGap}, 100% 0, 100% 100%, 0 calc(100% - ${sectionGap}))`
 })
 
 export const footerConstriction = style({
-    padding: 3,
-    clipPath: `polygon(0 ${sectionGap}, 100% 0, 100% 100%, 0 100%)`,
-    backgroundColor: theme.colors.black
+    clipPath: `polygon(0 ${sectionGap}, 100% 0, 100% 100%, 0 100%)`
 })
