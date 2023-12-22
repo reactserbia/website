@@ -1,10 +1,10 @@
 import { style } from '@vanilla-extract/css'
 
-import { sectionBorder, sectionPadding, theme } from '@/style'
+import { leftConstriction, sectionPadding, theme } from '@/style'
 
-export const infoContainer = style([
+export const infoContent = style([
+    leftConstriction,
     sectionPadding,
-    sectionBorder,
     {
         width: '100%',
         display: 'flex',
