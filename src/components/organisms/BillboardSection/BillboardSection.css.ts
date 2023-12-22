@@ -1,10 +1,10 @@
 import { style } from '@vanilla-extract/css'
 
-import { sectionBorder, sectionPadding, theme } from '@/style'
+import { rightConstriction, sectionPadding, theme } from '@/style'
 
-export const billboardContainer = style([
+export const billboardContent = style([
+    rightConstriction,
     sectionPadding,
-    sectionBorder,
     {
         display: 'flex',
         justifyContent: 'center',
@@ -16,7 +16,7 @@ export const billboardContainer = style([
     }
 ])
 
-export const billboardContent = style({
+export const content = style({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
