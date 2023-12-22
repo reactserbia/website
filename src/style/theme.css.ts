@@ -6,6 +6,7 @@ const contentMaxWidth = '1024px'
 const sectionVerticalPadding = '4rem'
 const headerHeight = '64px'
 const black = '#000'
+const sectionGap = '1rem'
 
 export const theme = createThemeContract({
     dimensions: {
@@ -77,7 +78,7 @@ export const lightTheme = createTheme(theme, {
         contentMaxWidth,
         sectionVerticalPadding,
         headerHeight,
-        sectionGap: '1rem'
+        sectionGap
     },
     border: {
         small: `2px solid ${black}`,
@@ -153,4 +154,22 @@ export const sectionPadding = style({
             padding: `${sectionVerticalPadding} 1.5rem`
         }
     }
+})
+
+export const rightConstriction = style({
+    padding: 3,
+    clipPath: `polygon(0 0, 100% ${sectionGap}, 100% calc(100% - ${sectionGap}), 0 100%)`,
+    backgroundColor: theme.colors.black
+})
+
+export const leftConstriction = style({
+    padding: 3,
+    clipPath: `polygon(0 ${sectionGap}, 100% 0, 100% 100%, 0 calc(100% - ${sectionGap}))`,
+    backgroundColor: theme.colors.black
+})
+
+export const footerConstriction = style({
+    padding: 3,
+    clipPath: `polygon(0 ${sectionGap}, 100% 0, 100% 100%, 0 100%)`,
+    backgroundColor: theme.colors.black
 })
