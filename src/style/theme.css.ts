@@ -157,8 +157,14 @@ export const sectionPadding = style({
 })
 
 export const containerBorder = style({
-    padding: 3,
-    backgroundColor: theme.colors.black
+    padding: 2,
+    backgroundColor: theme.colors.black,
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            padding: 3
+        }
+    }
 })
 
 export const bannerConstriction = style({
