@@ -92,6 +92,38 @@ export default function Ideology() {
                     This will be one of the proofs for organization&#39;s
                     legitimacy and whitness about our non-profit nature.
                 </InfoSection>
+                <InfoSection
+                    sizeVariant={SIZE_VARIANTS.LARGE}
+                    heading='Meetup Outlines 🗓️'
+                >
+                    The idea is to meet monthly. The meetups will have a certain
+                    structure.
+                    <br />
+                    <br />
+                    We will try to list meetup agenda in advance and meetup
+                    summary should be written and posted publicly.
+                    <br />
+                    <br />
+                    The ideas:
+                    <br />• atendees should be registered prior to the meetup in
+                    order to properly plan the event
+                    <br />• we will have talks; those can be of a random topics
+                    but later we might have the whole event focused on a certain
+                    topic
+                    <br />• we will have a panel discussions
+                    <br />• we plan to do workshops
+                    <br />• we will cover non-tech topics, as well
+                    <br />• we will collect the data about atendees and if
+                    they&apos;re compliant publish it publicly to show the
+                    effort; we can list the people&apos;s socials, GitHub,
+                    Twitter, LinkedIn, email, etc.
+                    <br />• we will list the people seeking for a job
+                    <br />• we are open for sponsorship in order to create
+                    quality events
+                    <br />• we will list sponsors currently hiring and their
+                    open positions
+                    <br />• we are planning to have a merch in the future.
+                </InfoSection>
             </section>
         </Page>
     )
