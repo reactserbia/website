@@ -1,13 +1,12 @@
 import { BoxedHeading, BoxedParagraph, InfoSection } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
-import { rightConstriction } from '@/style'
 
-import { billboardContent, content } from './BillboardSection.css'
+import { billboardContent, container, content } from './BillboardSection.css'
 
 export function BillboardSection() {
     return (
-        <section className={rightConstriction}>
-            <div className={billboardContent}>
+        <section className={container}>
+            <div className={content}>
                 <BoxedHeading
                     colorVariant={COLOR_VARIANTS.TERTIARY}
                     shadeVariant={SHADE_VARIANTS.DARK}
@@ -20,7 +19,7 @@ export function BillboardSection() {
                     interesting things relevant to the work of the organisation
                     and our community.
                 </BoxedParagraph>
-                <div className={content}>
+                <div className={billboardContent}>
                     <InfoSection heading='Meeting #1'>
                         We are planning to meet monthly and we are starting in
                         January of 2024! 🚀
