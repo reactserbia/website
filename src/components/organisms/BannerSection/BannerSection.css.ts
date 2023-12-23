@@ -23,9 +23,28 @@ export const bannerContent = style([
     }
 ])
 
+export const bannerBig = style({
+    width: '100%',
+    maxWidth: 857,
+    display: 'none',
+
+    '@media': {
+        'screen and (min-width: 768px)': {
+            display: 'block'
+        }
+    }
+})
+
 export const banner = style({
     width: '100%',
-    maxWidth: 857
+    maxWidth: 857,
+    display: 'block',
+
+    '@media': {
+        'screen and (min-width: 768px)': {
+            display: 'none'
+        }
+    }
 })
 
 export const linebreak = style({
