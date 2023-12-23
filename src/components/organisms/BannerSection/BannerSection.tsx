@@ -5,10 +5,12 @@ import { SOCIAL_NETWORK_ICONS, SocialLinkType } from '@/models'
 
 import {
     banner,
+    bannerBig,
     bannerContainer,
     bannerContent,
     linebreak,
-    navigation
+    navigation,
+    space
 } from './BannerSection.css'
 
 const socialLinks: SocialLinkType[] = [
@@ -37,8 +39,16 @@ export function BannerSection() {
                     alt='banner'
                     className={banner}
                 />
+                <Image
+                    width={800}
+                    height={215}
+                    src='/images/banner-big.svg'
+                    alt='banner'
+                    className={bannerBig}
+                />
                 <BoxedSubheading>
                     Super-charging
+                    <span className={space}> </span>
                     <br className={linebreak} />
                     React Community
                 </BoxedSubheading>
