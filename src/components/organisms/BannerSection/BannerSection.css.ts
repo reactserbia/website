@@ -48,6 +48,16 @@ export const banner = style({
     }
 })
 
+export const space = style({
+    display: 'none',
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            display: 'inline'
+        }
+    }
+})
+
 export const linebreak = style({
     '@media': {
         'screen and (min-width: 576px)': {
