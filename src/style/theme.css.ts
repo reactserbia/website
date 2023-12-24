@@ -167,6 +167,14 @@ export const containerBorder = style({
     }
 })
 
+export const headingContainer = style({
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    gap: '2rem'
+})
+
 export const bannerConstriction = style({
     clipPath: 'polygon(0 0, 100% 0,100% calc(100% - 20px), 0 100%)'
 })
