@@ -1,4 +1,4 @@
-import { Button, Logo } from '@/components/atoms'
+import { Logo, NavigationLink } from '@/components/atoms'
 import { NAVIGATION_LINK_TYPE, NavigationLinkType } from '@/models'
 
 import { header, navigation } from './Header.css'
@@ -26,9 +26,9 @@ export function Header({ page }: HeaderProps) {
                 {links
                     .filter(link => link.label !== page)
                     .map(link => (
-                        <Button key={link.label} href={link.href}>
+                        <NavigationLink key={link.label} href={link.href}>
                             {link.label}
-                        </Button>
+                        </NavigationLink>
                     ))}
             </nav>
         </header>
