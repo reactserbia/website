@@ -1,23 +1,20 @@
-import { ChangeHandler } from 'react-hook-form'
+import { FieldValues, UseFormRegister } from 'react-hook-form'
 
 import { input } from './Input.css'
 
 type InputProps = {
     placeholder: string
     name: string
-    onBlur: ChangeHandler
-    onChange: ChangeHandler
+    register: UseFormRegister<FieldValues>
 }
 
-export function Input({ placeholder, name, onBlur, onChange }: InputProps) {
+export function Input({ placeholder, name, register }: InputProps) {
     return (
         <input
             className={input}
-            name={name}
             placeholder={placeholder}
             spellCheck={false}
-            onBlur={onBlur}
-            onChange={onChange}
+            {...register(name)}
         />
     )
 }
