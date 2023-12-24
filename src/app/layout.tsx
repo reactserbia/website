@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Toaster } from 'react-hot-toast'
 
 import { lightTheme } from '@/style/theme.css'
 import '@/style/CSSReset.css'
@@ -31,12 +32,17 @@ export const metadata: Metadata = {
     }
 }
 
+type RootLayoutProps = {
+    children: ReactNode
+}
+
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
-        <>
-            <div className={`${komika.className} ${lightTheme}`}>
+        <html lang='en'>
+            <body className={`${komika.className} ${lightTheme}`}>
                 {children}
-            </div>
-        </>
+                <Toaster />
+            </body>
+        </html>
     )
 }
