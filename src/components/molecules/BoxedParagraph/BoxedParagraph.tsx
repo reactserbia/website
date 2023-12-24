@@ -5,11 +5,15 @@ import { SIZE_VARIANTS } from '@/constants'
 
 type BoxedParagraphProps = {
     children: ReactNode
+    sizeVariant?: SIZE_VARIANTS
 }
 
-export function BoxedParagraph({ children }: BoxedParagraphProps) {
+export function BoxedParagraph({
+    children,
+    sizeVariant = SIZE_VARIANTS.LARGE
+}: BoxedParagraphProps) {
     return (
-        <Box sizeVariant={SIZE_VARIANTS.LARGE}>
+        <Box sizeVariant={sizeVariant}>
             <Paragraph sizeVariant={SIZE_VARIANTS.SMALL}>{children}</Paragraph>
         </Box>
     )
