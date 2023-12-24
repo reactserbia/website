@@ -28,7 +28,7 @@ export const clouds = style({
     width: '150%',
     height: 'auto',
     position: 'absolute',
-    top: '30rem',
+    top: '32rem',
     left: 0,
 
     '@media': {
@@ -42,7 +42,7 @@ export const clouds = style({
         },
 
         '(min-width: 768px)': {
-            top: '20rem'
+            top: '22rem'
         }
     }
 })
@@ -111,6 +111,13 @@ export const socialNetworks = style({
     justifyContent: 'center',
     alignItems: 'center',
     gap: '0.5rem'
+})
+
+export const logoContainer = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '1rem'
 })
 
 export const author = style({
