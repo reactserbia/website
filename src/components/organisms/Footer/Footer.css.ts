@@ -87,10 +87,12 @@ export const connectSection = style({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    flexDirection: 'column',
     gap: '2rem'
 })
 
 export const connectContent = style({
+    width: '100%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
