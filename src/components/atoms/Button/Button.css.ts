@@ -3,6 +3,7 @@ import { style } from '@vanilla-extract/css'
 import { theme } from '@/style/theme.css'
 
 export const button = style({
+    width: '100%',
     padding: '0.5rem 1.25rem',
     border: `2px solid ${theme.colors.black}`,
     borderRadius: 999,

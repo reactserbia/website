@@ -74,11 +74,17 @@ export function Footer() {
                     />
                 </div>
                 <div className={connectSection}>
-                    <BoxedParagraph sizeVariant={SIZE_VARIANTS.SMALL}>
+                    <BoxedParagraph sizeVariant={SIZE_VARIANTS.MEDIUM}>
                         If this seems interesting to you and want to stay up to
                         date, make sure to follow us on social networks,
-                        Subscribe to the newsletter and be notified every time
-                        something interested is happening. 🚀
+                        subscribe to the newsletter and be notified every time
+                        something interested is happening.
+                        <br />
+                        <br />
+                        We promise not to spam you with unnecessary information!
+                        <br />
+                        <br />
+                        🚀
                     </BoxedParagraph>
                     <div className={connectContent}>
                         <div className={socialNetworks}>
