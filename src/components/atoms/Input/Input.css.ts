@@ -10,7 +10,15 @@ export const input = style({
     borderRadius: 999,
     outline: 'none',
     backgroundColor: theme.colors.tertiary.no02,
+    lineHeight: '16px',
+    fontSize: '0.75rem',
     fontFamily: 'inherit',
     textAlign: 'center',
-    boxShadow: theme.boxShadow.small
+    boxShadow: theme.boxShadow.small,
+
+    '@media': {
+        'screen and (min-width: 576px)': {
+            fontSize: '0.875rem'
+        }
+    }
 })
