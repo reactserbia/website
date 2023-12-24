@@ -27,6 +27,7 @@ export const bannerContent = style([
 export const bannerBig = style({
     width: '100%',
     maxWidth: 857,
+    height: 'auto',
     display: 'none',
 
     '@media': {
