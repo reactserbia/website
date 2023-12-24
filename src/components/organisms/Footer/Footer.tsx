@@ -6,18 +6,21 @@ import {
     SocialLink,
     Subheading
 } from '@/components'
-import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
+import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { SOCIAL_NETWORK_ICONS, SocialLinkType } from '@/models'
 
 import {
     author,
     bangImage,
     clouds,
+    connectContent,
+    connectSection,
     container,
     content,
     heroImage,
     imagesContainer,
-    navigation
+    navigation,
+    socialNetworks
 } from './Footer.css'
 
 const socialLinks: SocialLinkType[] = [
@@ -87,9 +90,21 @@ export function Footer() {
                         className={heroImage}
                     />
                 </div>
+                <div className={connectSection}>
+                    <BoxedParagraph sizeVariant={SIZE_VARIANTS.MEDIUM}>
+                        If this seems interesting to you and want to stay up to
+                        date, make sure to follow us on social networks,
+                        Subscribe to the newsletter and be notified every time
+                        something interested is happening. 🚀
+                    </BoxedParagraph>
+                    <div className={connectContent}>
+                        <div className={socialNetworks}></div>
+                    </div>
+                </div>
                 <div className={author}>
                     <Subheading>
                         Devised, bootstrapped, designed and coded by Mirko Basic
+                        🍀
                     </Subheading>
                     <div className={navigation}>
                         {socialLinks.map(({ type, url }) => (
