@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "@hookform/resolvers": "^3.3.2",
+        "@mailchimp/mailchimp_marketing": "^3.0.80",
         "@radix-ui/colors": "^3.0.0",
         "@vanilla-extract/css": "^1.14.0",
         "next": "14.0.3",
