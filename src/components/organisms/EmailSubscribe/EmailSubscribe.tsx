@@ -15,8 +15,6 @@ export function EmailSubscribe() {
         formState: { isValid }
     } = useForm({ resolver: zodResolver(emailSubscribeSchema) })
 
-    console.log('isvalid', isValid)
-
     return (
         <form
             className={container}
@@ -33,7 +31,7 @@ export function EmailSubscribe() {
                 register={register}
             />
             <Input placeholder='Email' name='email' register={register} />
-            <Button type='submit' disabled={!isValid}>
+            <Button type='submit' disabled={!isValid} marginTop='1rem'>
                 Subscribe to Email
             </Button>
         </form>
