@@ -4,6 +4,7 @@ import {
     BoxedHeading,
     BoxedParagraph,
     EmailSubscribe,
+    Logo,
     SocialLink,
     Subheading
 } from '@/components'
@@ -26,6 +27,7 @@ import {
     content,
     heroImage,
     imagesContainer,
+    logoContainer,
     navigation,
     socialNetworks
 } from './Footer.css'
@@ -101,6 +103,13 @@ export function Footer() {
                         </div>
                         <EmailSubscribe />
                     </div>
+                </div>
+                <div className={logoContainer}>
+                    <Logo sizeVariant={SIZE_VARIANTS.SMALL} />
+                    <Logo sizeVariant={SIZE_VARIANTS.MEDIUM} />
+                    <Logo />
+                    <Logo sizeVariant={SIZE_VARIANTS.MEDIUM} />
+                    <Logo sizeVariant={SIZE_VARIANTS.SMALL} />
                 </div>
                 <div className={author}>
                     <Subheading>
