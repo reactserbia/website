@@ -7,13 +7,15 @@ type ButtonProps = {
     type?: 'button' | 'submit'
     onClick?: () => void
     disabled?: boolean
+    marginTop?: string
 }
 
 export function Button({
     children,
     type = 'button',
     onClick,
-    disabled
+    disabled,
+    marginTop = '0'
 }: ButtonProps) {
     return (
         <button
@@ -21,6 +23,7 @@ export function Button({
             type={type}
             onClick={onClick}
             disabled={disabled}
+            style={{ marginTop }}
         >
             {children}
         </button>
