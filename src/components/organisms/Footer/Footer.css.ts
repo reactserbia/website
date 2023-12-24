@@ -88,7 +88,13 @@ export const connectSection = style({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    gap: '2rem'
+    gap: '4rem',
+
+    '@media': {
+        '(min-width: 768px)': {
+            flexDirection: 'row'
+        }
+    }
 })
 
 export const connectContent = style({
