@@ -19,6 +19,12 @@ export const button = style({
     selectors: {
         '&:hover': {
             backgroundColor: theme.colors.tertiary.no03
+        },
+
+        '&:disabled': {
+            opacity: 0.3,
+            boxShadow: 'none',
+            cursor: 'not-allowed'
         }
     }
 })

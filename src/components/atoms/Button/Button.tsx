@@ -1,18 +1,28 @@
 import { ReactNode } from 'react'
 
-import Link from 'next/link'
-
 import { button } from './Button.css'
 
 type ButtonProps = {
     children: ReactNode
-    href: string
+    type?: 'button' | 'submit'
+    onClick?: () => void
+    disabled?: boolean
 }
 
-export function Button({ children, href }: ButtonProps) {
+export function Button({
+    children,
+    type = 'button',
+    onClick,
+    disabled
+}: ButtonProps) {
     return (
-        <Link href={href} className={button}>
+        <button
+            className={button}
+            type={type}
+            onClick={onClick}
+            disabled={disabled}
+        >
             {children}
-        </Link>
+        </button>
     )
 }
