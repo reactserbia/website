@@ -35,10 +35,8 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang='en'>
-            <body>
-                <div className={`${komika.className} ${lightTheme}`}>
-                    {children}
-                </div>
+            <body className={`${komika.className} ${lightTheme}`}>
+                {children}
             </body>
         </html>
     )
