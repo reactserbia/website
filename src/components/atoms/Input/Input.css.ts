@@ -8,5 +8,9 @@ export const input = style({
     padding: '0.5rem 1rem',
     border: theme.border.small,
     borderRadius: 999,
+    outline: 'none',
+    backgroundColor: theme.colors.tertiary.no02,
+    fontFamily: 'inherit',
+    textAlign: 'center',
     boxShadow: theme.boxShadow.small
 })
