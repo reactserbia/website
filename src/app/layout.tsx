@@ -1,7 +1,11 @@
 import '@/style/CSSReset.css'
 
+import { ReactNode } from 'react'
+
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+
+import { lightTheme } from '@/style/theme.css'
 
 const komika = localFont({
     src: [
@@ -18,8 +22,6 @@ const komika = localFont({
     ]
 })
 
-import { lightTheme } from '@/style/theme.css'
-
 export const metadata: Metadata = {
     title: 'React Serbia',
     description: 'Super-Charging React Community',
@@ -28,11 +30,11 @@ export const metadata: Metadata = {
     }
 }
 
-export default function RootLayout({
-    children
-}: {
-    children: React.ReactNode
-}) {
+type RootLayoutProps = {
+    children: ReactNode
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang='en'>
             <body className={`${komika.className} ${lightTheme}`}>
