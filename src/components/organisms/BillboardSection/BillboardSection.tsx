@@ -1,5 +1,6 @@
 import { BoxedHeading, BoxedParagraph, InfoSection } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
+import { headingContainer } from '@/style'
 
 import { billboardContent, container, content } from './BillboardSection.css'
 
@@ -7,18 +8,20 @@ export function BillboardSection() {
     return (
         <section className={container}>
             <div className={content}>
-                <BoxedHeading
-                    colorVariant={COLOR_VARIANTS.TERTIARY}
-                    shadeVariant={SHADE_VARIANTS.DARK}
-                >
-                    BILLBOARD
-                </BoxedHeading>
-                <BoxedParagraph>
-                    The billboard section is the place where we will report. We
-                    plan to share information about the ongoing events and
-                    interesting things relevant to the work of the organisation
-                    and our community.
-                </BoxedParagraph>
+                <div className={headingContainer}>
+                    <BoxedHeading
+                        colorVariant={COLOR_VARIANTS.TERTIARY}
+                        shadeVariant={SHADE_VARIANTS.DARK}
+                    >
+                        BILLBOARD
+                    </BoxedHeading>
+                    <BoxedParagraph>
+                        The billboard section is the place where we will report.
+                        We plan to share information about the ongoing events
+                        and interesting things relevant to the work of the
+                        organisation and our community.
+                    </BoxedParagraph>
+                </div>
                 <div className={billboardContent}>
                     <InfoSection heading='Meeting #1'>
                         We are planning to meet monthly and we are starting in
