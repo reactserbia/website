@@ -2,6 +2,7 @@
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
+import toast from 'react-hot-toast'
 
 import { Button, Input } from '@/components'
 import { emailSubscribeSchema } from '@/models'
@@ -14,6 +15,8 @@ export function EmailSubscribe() {
         handleSubmit,
         formState: { isValid }
     } = useForm({ resolver: zodResolver(emailSubscribeSchema) })
+
+    const onClickHandler = () => toast.error('Implementation in progress...')
 
     return (
         <form
@@ -31,7 +34,12 @@ export function EmailSubscribe() {
                 register={register}
             />
             <Input placeholder='Email' name='email' register={register} />
-            <Button type='submit' disabled={!isValid} marginTop='1rem'>
+            <Button
+                type='submit'
+                disabled={!isValid}
+                marginTop='1rem'
+                onClick={onClickHandler}
+            >
                 Subscribe to Email
             </Button>
         </form>
