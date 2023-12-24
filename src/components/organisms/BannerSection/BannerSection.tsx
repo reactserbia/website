@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import { BoxedSubheading, SocialLink } from '@/components'
-import { socialLinks } from '@/constants'
+import { socialLinksReactSerbia } from '@/constants'
 
 import {
     banner,
@@ -38,7 +38,7 @@ export function BannerSection() {
                     React Community
                 </BoxedSubheading>
                 <div className={navigation}>
-                    {socialLinks.map(({ type, url }) => (
+                    {socialLinksReactSerbia.map(({ type, url }) => (
                         <SocialLink
                             key={type}
                             socialNetworkType={type}

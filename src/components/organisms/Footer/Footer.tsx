@@ -6,8 +6,13 @@ import {
     SocialLink,
     Subheading
 } from '@/components'
-import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
-import { SOCIAL_NETWORK_ICONS, SocialLinkType } from '@/models'
+import {
+    COLOR_VARIANTS,
+    SHADE_VARIANTS,
+    SIZE_VARIANTS,
+    socialLinksMirko,
+    socialLinksReactSerbia
+} from '@/constants'
 
 import {
     author,
@@ -22,29 +27,6 @@ import {
     navigation,
     socialNetworks
 } from './Footer.css'
-
-const socialLinks: SocialLinkType[] = [
-    {
-        type: SOCIAL_NETWORK_ICONS.GITHUB,
-        url: 'https://github.com/bejzik8'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.TWITTER,
-        url: 'https://twitter.com/bejzik8'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.TELEGRAM,
-        url: 'https://t.me/bejzik'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.LINKEDIN,
-        url: 'https://www.linkedin.com/in/mirkobasic'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.INSTAGRAM,
-        url: 'https://www.instagram.com/b8zeek'
-    }
-]
 
 export function Footer() {
     return (
@@ -91,14 +73,22 @@ export function Footer() {
                     />
                 </div>
                 <div className={connectSection}>
-                    <BoxedParagraph sizeVariant={SIZE_VARIANTS.MEDIUM}>
+                    <BoxedParagraph sizeVariant={SIZE_VARIANTS.SMALL}>
                         If this seems interesting to you and want to stay up to
                         date, make sure to follow us on social networks,
                         Subscribe to the newsletter and be notified every time
                         something interested is happening. 🚀
                     </BoxedParagraph>
                     <div className={connectContent}>
-                        <div className={socialNetworks}></div>
+                        <div className={socialNetworks}>
+                            {socialLinksReactSerbia.map(({ type, url }) => (
+                                <SocialLink
+                                    key={type}
+                                    socialNetworkType={type}
+                                    href={url}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div className={author}>
@@ -107,7 +97,7 @@ export function Footer() {
                         🍀
                     </Subheading>
                     <div className={navigation}>
-                        {socialLinks.map(({ type, url }) => (
+                        {socialLinksMirko.map(({ type, url }) => (
                             <SocialLink
                                 key={type}
                                 socialNetworkType={type}
