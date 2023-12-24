@@ -91,7 +91,13 @@ export const connectSection = style({
     gap: '2rem'
 })
 
-export const connectContent = style({})
+export const connectContent = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    gap: '2rem'
+})
 
 export const socialNetworks = style({
     display: 'flex',

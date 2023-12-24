@@ -3,6 +3,7 @@ import Image from 'next/image'
 import {
     BoxedHeading,
     BoxedParagraph,
+    EmailSubscribe,
     SocialLink,
     Subheading
 } from '@/components'
@@ -89,6 +90,7 @@ export function Footer() {
                                 />
                             ))}
                         </div>
+                        <EmailSubscribe />
                     </div>
                 </div>
                 <div className={author}>
