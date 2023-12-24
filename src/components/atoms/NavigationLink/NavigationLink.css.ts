@@ -1,9 +1,8 @@
 import { style } from '@vanilla-extract/css'
 
-import { theme } from '@/style/theme.css'
+import { theme } from '@/style'
 
-export const button = style({
-    width: '100%',
+export const navigationLink = style({
     padding: '0.5rem 1.25rem',
     border: `2px solid ${theme.colors.black}`,
     borderRadius: 999,
@@ -20,12 +19,6 @@ export const button = style({
     selectors: {
         '&:hover': {
             backgroundColor: theme.colors.tertiary.no03
-        },
-
-        '&:disabled': {
-            opacity: 0.3,
-            boxShadow: 'none',
-            cursor: 'not-allowed'
         }
     }
 })

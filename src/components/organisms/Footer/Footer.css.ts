@@ -17,7 +17,7 @@ export const content = style([
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
-        gap: '2rem',
+        gap: '4rem',
         position: 'relative',
         background: `linear-gradient(180deg, ${theme.colors.secondary.no03} 0%, ${theme.colors.tertiary.no03} 100%)`,
         overflow: 'hidden'
@@ -28,7 +28,7 @@ export const clouds = style({
     width: '150%',
     height: 'auto',
     position: 'absolute',
-    top: '30rem',
+    top: '32rem',
     left: 0,
 
     '@media': {
@@ -42,7 +42,7 @@ export const clouds = style({
         },
 
         '(min-width: 768px)': {
-            top: '20rem'
+            top: '22rem'
         }
     }
 })
@@ -81,6 +81,43 @@ export const heroImage = style({
             width: '100%'
         }
     }
+})
+
+export const connectSection = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    gap: '4rem',
+
+    '@media': {
+        '(min-width: 768px)': {
+            flexDirection: 'row'
+        }
+    }
+})
+
+export const connectContent = style({
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    gap: '2rem'
+})
+
+export const socialNetworks = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '0.5rem'
+})
+
+export const logoContainer = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '1rem'
 })
 
 export const author = style({

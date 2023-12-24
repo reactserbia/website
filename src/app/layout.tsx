@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Toaster } from 'react-hot-toast'
 
 import { lightTheme } from '@/style/theme.css'
 
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <html lang='en'>
             <body className={`${komika.className} ${lightTheme}`}>
                 {children}
+                <Toaster />
             </body>
         </html>
     )

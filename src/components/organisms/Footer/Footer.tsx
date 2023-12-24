@@ -3,45 +3,34 @@ import Image from 'next/image'
 import {
     BoxedHeading,
     BoxedParagraph,
+    EmailSubscribe,
+    Logo,
     SocialLink,
     Subheading
 } from '@/components'
-import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
-import { SOCIAL_NETWORK_ICONS, SocialLinkType } from '@/models'
+import {
+    COLOR_VARIANTS,
+    SHADE_VARIANTS,
+    SIZE_VARIANTS,
+    socialLinksMirko,
+    socialLinksReactSerbia
+} from '@/constants'
+import { headingContainer } from '@/style'
 
 import {
     author,
     bangImage,
     clouds,
+    connectContent,
+    connectSection,
     container,
     content,
     heroImage,
     imagesContainer,
-    navigation
+    logoContainer,
+    navigation,
+    socialNetworks
 } from './Footer.css'
-
-const socialLinks: SocialLinkType[] = [
-    {
-        type: SOCIAL_NETWORK_ICONS.GITHUB,
-        url: 'https://github.com/bejzik8'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.TWITTER,
-        url: 'https://twitter.com/bejzik8'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.TELEGRAM,
-        url: 'https://t.me/bejzik'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.LINKEDIN,
-        url: 'https://www.linkedin.com/in/mirkobasic'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.INSTAGRAM,
-        url: 'https://www.instagram.com/b8zeek'
-    }
-]
 
 export function Footer() {
     return (
@@ -54,23 +43,25 @@ export function Footer() {
                     alt='clouds'
                     className={clouds}
                 />
-                <BoxedHeading
-                    colorVariant={COLOR_VARIANTS.TERTIARY}
-                    shadeVariant={SHADE_VARIANTS.DARK}
-                >
-                    CONTACT
-                </BoxedHeading>
-                <BoxedParagraph>
-                    We are most definitely open to all ideas! We love negative
-                    criticism more than positive and very much appreciate the
-                    ones who are willing to share it with us; we know it is for
-                    the better. We need you, to engage in order to grow
-                    together, in order to create the big things. We know that
-                    together, we are more than capable of doing it otherwise we
-                    would not be here. Do not hesitate to reach out, give your
-                    contribution and write this story with us! Let us make a
-                    change together. 🍀
-                </BoxedParagraph>
+                <div className={headingContainer}>
+                    <BoxedHeading
+                        colorVariant={COLOR_VARIANTS.TERTIARY}
+                        shadeVariant={SHADE_VARIANTS.DARK}
+                    >
+                        CONTACT
+                    </BoxedHeading>
+                    <BoxedParagraph>
+                        We are most definitely open to all ideas! We love
+                        negative criticism more than positive and very much
+                        appreciate the ones who are willing to share it with us;
+                        we know it is for the better. We need you, to engage in
+                        order to grow together, in order to create the big
+                        things. We know that together, we are more than capable
+                        of doing it otherwise we would not be here. Do not
+                        hesitate to reach out, give your contribution and write
+                        this story with us! Let us make a change together. 🍀
+                    </BoxedParagraph>
+                </div>
                 <div className={imagesContainer}>
                     <Image
                         width={438}
@@ -87,12 +78,46 @@ export function Footer() {
                         className={heroImage}
                     />
                 </div>
+                <div className={connectSection}>
+                    <BoxedParagraph sizeVariant={SIZE_VARIANTS.MEDIUM}>
+                        If this seems interesting to you and want to stay up to
+                        date, make sure to follow us on social networks,
+                        subscribe to the newsletter and be notified every time
+                        something interested is happening.
+                        <br />
+                        <br />
+                        We promise not to spam you with unnecessary information!
+                        <br />
+                        <br />
+                        🚀
+                    </BoxedParagraph>
+                    <div className={connectContent}>
+                        <div className={socialNetworks}>
+                            {socialLinksReactSerbia.map(({ type, url }) => (
+                                <SocialLink
+                                    key={type}
+                                    socialNetworkType={type}
+                                    href={url}
+                                />
+                            ))}
+                        </div>
+                        <EmailSubscribe />
+                    </div>
+                </div>
+                <div className={logoContainer}>
+                    <Logo sizeVariant={SIZE_VARIANTS.SMALL} />
+                    <Logo sizeVariant={SIZE_VARIANTS.MEDIUM} />
+                    <Logo />
+                    <Logo sizeVariant={SIZE_VARIANTS.MEDIUM} />
+                    <Logo sizeVariant={SIZE_VARIANTS.SMALL} />
+                </div>
                 <div className={author}>
                     <Subheading>
                         Devised, bootstrapped, designed and coded by Mirko Basic
+                        🍀
                     </Subheading>
                     <div className={navigation}>
-                        {socialLinks.map(({ type, url }) => (
+                        {socialLinksMirko.map(({ type, url }) => (
                             <SocialLink
                                 key={type}
                                 socialNetworkType={type}

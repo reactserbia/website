@@ -17,7 +17,7 @@ export const content = style([
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
-        gap: '2rem',
+        gap: '4rem',
         backgroundImage: `linear-gradient(180deg, ${theme.colors.primary.no04} 0%, ${theme.colors.secondary.no03} 100%)`,
         overflow: 'hidden'
     }
