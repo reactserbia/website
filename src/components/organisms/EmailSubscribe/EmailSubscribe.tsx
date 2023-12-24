@@ -41,15 +41,16 @@ export function EmailSubscribe() {
         >
             <Input
                 placeholder='First Name'
-                name='firstName'
+                name='FIRST_NAME'
                 register={register}
             />
             <Input
                 placeholder='Last Name'
-                name='lastName'
+                name='LAST_NAME'
                 register={register}
             />
-            <Input placeholder='Email' name='email' register={register} />
+            <Input placeholder='City' name='CITY' register={register} />
+            <Input placeholder='Email' name='EMAIL' register={register} />
             <Button type='submit' disabled={!isValid} marginTop='1rem'>
                 Subscribe to Email
             </Button>
