@@ -1,19 +1,23 @@
-import { ChangeEvent } from 'react'
+import { ChangeHandler } from 'react-hook-form'
 
 import { input } from './Input.css'
 
 type InputProps = {
     placeholder: string
-    onChange: (event: ChangeEvent<HTMLInputElement>) => void
+    name: string
+    onBlur: ChangeHandler
+    onChange: ChangeHandler
 }
 
-export function Input({ placeholder, onChange }: InputProps) {
+export function Input({ placeholder, name, onBlur, onChange }: InputProps) {
     return (
         <input
             className={input}
+            name={name}
             placeholder={placeholder}
-            onChange={onChange}
             spellCheck={false}
+            onBlur={onBlur}
+            onChange={onChange}
         />
     )
 }
