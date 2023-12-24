@@ -9,19 +9,24 @@ mailchimp.setConfig({
 })
 
 export async function POST(request: NextRequest) {
-    const { firstName, lastName, email } = await request.json()
+    const { FIRST_NAME, LAST_NAME, CITY, EMAIL } = await request.json()
 
     try {
-        if (firstName.trim() && lastName.trim() && email.trim()) {
+        if (
+            FIRST_NAME.trim() &&
+            LAST_NAME.trim() &&
+            CITY.trim() &&
+            EMAIL.trim()
+        ) {
             await mailchimp.lists.addListMember(
                 process.env.MAILCHIMP_AUDIENCE_ID,
                 {
-                    email_address: email,
+                    email_address: EMAIL,
                     status: 'subscribed',
                     merge_fields: {
-                        FIRST_NAME: firstName,
-                        LAST_NAME: lastName
-                        // CITY: 'Sid'
+                        FIRST_NAME,
+                        LAST_NAME,
+                        CITY
                     }
                 }
             )
