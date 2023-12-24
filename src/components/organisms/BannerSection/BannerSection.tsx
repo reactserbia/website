@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import { BoxedSubheading, SocialLink } from '@/components'
-import { SOCIAL_NETWORK_ICONS, SocialLinkType } from '@/models'
+import { socialLinks } from '@/constants'
 
 import {
     banner,
@@ -12,21 +12,6 @@ import {
     navigation,
     space
 } from './BannerSection.css'
-
-const socialLinks: SocialLinkType[] = [
-    {
-        type: SOCIAL_NETWORK_ICONS.GITHUB,
-        url: 'https://github.com/ReactSerbia'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.TWITTER,
-        url: 'https://twitter.com/reactserbia'
-    },
-    {
-        type: SOCIAL_NETWORK_ICONS.TELEGRAM,
-        url: 'https://t.me/+puv-aR71sU1iNTlk'
-    }
-]
 
 export function BannerSection() {
     return (
