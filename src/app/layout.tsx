@@ -1,12 +1,9 @@
+import '@/style/CSSReset.css'
+
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
 import { lightTheme } from '@/style/theme.css'
-import '@/style/CSSReset.css'
-
-type RootLayoutProps = {
-    children: React.ReactNode
-}
 
 const komika = localFont({
     src: [
@@ -31,12 +28,18 @@ export const metadata: Metadata = {
     }
 }
 
+type RootLayoutProps = {
+    children: React.ReactNode
+}
+
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
-        <>
-            <div className={`${komika.className} ${lightTheme}`}>
-                {children}
-            </div>
-        </>
+        <html lang='en'>
+            <body>
+                <div className={`${komika.className} ${lightTheme}`}>
+                    {children}
+                </div>
+            </body>
+        </html>
     )
 }
