@@ -84,6 +84,16 @@ export const heroImage = style({
     }
 })
 
+export const connectSection = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+})
+
+export const connectContent = style({})
+
+export const socialNetworks = style({})
+
 export const author = style({
     ...flexCenter,
     flexDirection: 'column',
