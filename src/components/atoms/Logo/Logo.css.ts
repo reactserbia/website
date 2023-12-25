@@ -1,13 +1,12 @@
 import { style } from '@vanilla-extract/css'
 
 import { theme } from '@/style'
+import { flexCenter } from '@/style/utils'
 
 export const container = style({
     width: '3rem',
     height: '3rem',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    ...flexCenter,
     border: theme.border.small,
     borderRadius: 999,
     backgroundColor: theme.colors.tertiary.no03,

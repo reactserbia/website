@@ -6,6 +6,7 @@ import {
     sectionPadding,
     theme
 } from '@/style'
+import { flexCenter } from '@/style/utils'
 
 export const bannerContainer = style([containerBorder, bannerConstriction])
 
@@ -37,8 +38,6 @@ export const linebreak = style({
 })
 
 export const navigation = style({
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    ...flexCenter,
     gap: '0.5rem'
 })

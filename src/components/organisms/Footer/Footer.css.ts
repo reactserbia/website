@@ -6,6 +6,7 @@ import {
     sectionPadding,
     theme
 } from '@/style'
+import { flexCenter } from '@/style/utils'
 
 export const container = style([containerBorder, footerConstriction])
 
@@ -84,16 +85,12 @@ export const heroImage = style({
 })
 
 export const author = style({
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    ...flexCenter,
     flexDirection: 'column',
     gap: '0.5rem'
 })
 
 export const navigation = style({
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    ...flexCenter,
     gap: '0.5rem'
 })
