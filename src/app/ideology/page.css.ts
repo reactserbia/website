@@ -51,7 +51,17 @@ export const graphic = style({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex-end',
-    position: 'relative'
+    position: 'relative',
+
+    '@media': {
+        '(min-width: 448px)': {
+            gap: '4rem'
+        },
+
+        '(min-width: 672px)': {
+            gap: '2rem'
+        }
+    }
 })
 
 export const yellowHero = style({
@@ -60,7 +70,7 @@ export const yellowHero = style({
     position: 'relative',
 
     '@media': {
-        '(min-width: 576px)': {
+        '(min-width: 672px)': {
             width: '100%'
         }
     }
@@ -75,7 +85,7 @@ export const blueHero = style({
             display: 'inline-block'
         },
 
-        '(min-width: 576px)': {
+        '(min-width: 672px)': {
             width: '100%'
         }
     }
@@ -85,7 +95,7 @@ export const bang = style({
     display: 'none',
 
     '@media': {
-        '(min-width: 576px)': {
+        '(min-width: 672px)': {
             width: '70%',
             height: 'auto',
             display: 'block'
