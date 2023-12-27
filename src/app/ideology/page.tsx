@@ -1,15 +1,32 @@
+import Image from 'next/image'
+
 import { BoxedHeading, BoxedParagraph, InfoSection, Page } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { NAVIGATION_LINK_TYPE } from '@/models'
 import { headingContainer } from '@/style'
 
-import { container, content } from './page.css'
+import {
+    bang,
+    blueHero,
+    clouds,
+    container,
+    content,
+    graphic,
+    yellowHero
+} from './page.css'
 
 export default function Ideology() {
     return (
         <Page page={NAVIGATION_LINK_TYPE.IDEOLOGY}>
             <section className={container}>
                 <div className={content}>
+                    <Image
+                        width={902}
+                        height={123}
+                        src='/images/clouds/contact-clouds.svg'
+                        alt='clouds'
+                        className={clouds}
+                    />
                     <div className={headingContainer}>
                         <BoxedHeading
                             colorVariant={COLOR_VARIANTS.TERTIARY}
@@ -28,6 +45,29 @@ export default function Ideology() {
                             you want to be a part of it or not. We hope you do!
                             🍀
                         </BoxedParagraph>
+                    </div>
+                    <div className={graphic}>
+                        <Image
+                            width={168}
+                            height={213}
+                            src='/images/heroes/yellow.svg'
+                            alt='yellow-hero'
+                            className={yellowHero}
+                        />
+                        <Image
+                            width={243}
+                            height={314}
+                            src='/images/effects/explosion.svg'
+                            alt='explosion'
+                            className={bang}
+                        />
+                        <Image
+                            width={127}
+                            height={236}
+                            src='/images/heroes/blue.svg'
+                            alt='blue-hero'
+                            className={blueHero}
+                        />
                     </div>
                     <InfoSection
                         sizeVariant={SIZE_VARIANTS.LARGE}
