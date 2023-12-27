@@ -1,9 +1,11 @@
+import Image from 'next/image'
+
 import { BoxedHeading, BoxedParagraph, InfoSection, Page } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { NAVIGATION_LINK_TYPE } from '@/models'
 import { headingContainer } from '@/style'
 
-import { container, content } from './page.css'
+import { container, content, graphic } from './page.css'
 
 export default function Ideology() {
     return (
@@ -28,6 +30,14 @@ export default function Ideology() {
                             you want to be a part of it or not. We hope you do!
                             🍀
                         </BoxedParagraph>
+                    </div>
+                    <div className={graphic}>
+                        <Image
+                            width={168}
+                            height={213}
+                            src='/images/heroes/yellow.svg'
+                            alt='yellow-hero'
+                        />
                     </div>
                     <InfoSection
                         sizeVariant={SIZE_VARIANTS.LARGE}

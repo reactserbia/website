@@ -22,3 +22,9 @@ export const content = style([
         overflow: 'hidden'
     }
 ])
+
+export const graphic = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'flex-end'
+})
