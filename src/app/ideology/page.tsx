@@ -38,6 +38,18 @@ export default function Ideology() {
                             src='/images/heroes/yellow.svg'
                             alt='yellow-hero'
                         />
+                        <Image
+                            width={243}
+                            height={314}
+                            src='/images/effects/explosion.svg'
+                            alt='explosion'
+                        />
+                        <Image
+                            width={127}
+                            height={236}
+                            src='/images/heroes/blue.svg'
+                            alt='blue-hero'
+                        />
                     </div>
                     <InfoSection
                         sizeVariant={SIZE_VARIANTS.LARGE}
