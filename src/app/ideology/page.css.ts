@@ -18,13 +18,38 @@ export const content = style([
         alignItems: 'center',
         flexDirection: 'column',
         gap: '4rem',
+        position: 'relative',
         backgroundImage: `linear-gradient(180deg, ${theme.colors.primary.no04} 0%, ${theme.colors.secondary.no03} 100%)`,
         overflow: 'hidden'
     }
 ])
 
+export const clouds = style({
+    width: '150%',
+    height: 'auto',
+    position: 'absolute',
+    top: '32rem',
+    left: 0,
+
+    '@media': {
+        '(min-width: 384px)': {
+            width: '100%',
+            top: '28rem'
+        },
+
+        '(min-width: 448px)': {
+            top: '25rem'
+        },
+
+        '(min-width: 768px)': {
+            top: '20rem'
+        }
+    }
+})
+
 export const graphic = style({
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
+    position: 'relative'
 })

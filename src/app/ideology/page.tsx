@@ -5,13 +5,20 @@ import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { NAVIGATION_LINK_TYPE } from '@/models'
 import { headingContainer } from '@/style'
 
-import { container, content, graphic } from './page.css'
+import { clouds, container, content, graphic } from './page.css'
 
 export default function Ideology() {
     return (
         <Page page={NAVIGATION_LINK_TYPE.IDEOLOGY}>
             <section className={container}>
                 <div className={content}>
+                    <Image
+                        width={902}
+                        height={123}
+                        src='/images/clouds/contact-clouds.svg'
+                        alt='clouds'
+                        className={clouds}
+                    />
                     <div className={headingContainer}>
                         <BoxedHeading
                             colorVariant={COLOR_VARIANTS.TERTIARY}
