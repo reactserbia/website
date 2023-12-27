@@ -20,7 +20,7 @@ export function BannerSection() {
                 <Image
                     width={857}
                     height={216}
-                    src='/images/react-serbia.svg'
+                    src='/images/rs-logo-small.svg'
                     alt='banner'
                     className={banner}
                 />
