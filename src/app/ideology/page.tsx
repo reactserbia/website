@@ -5,7 +5,15 @@ import { COLOR_VARIANTS, SHADE_VARIANTS, SIZE_VARIANTS } from '@/constants'
 import { NAVIGATION_LINK_TYPE } from '@/models'
 import { headingContainer } from '@/style'
 
-import { clouds, container, content, graphic } from './page.css'
+import {
+    bang,
+    blueHero,
+    clouds,
+    container,
+    content,
+    graphic,
+    yellowHero
+} from './page.css'
 
 export default function Ideology() {
     return (
@@ -44,18 +52,21 @@ export default function Ideology() {
                             height={213}
                             src='/images/heroes/yellow.svg'
                             alt='yellow-hero'
+                            className={yellowHero}
                         />
                         <Image
                             width={243}
                             height={314}
                             src='/images/effects/explosion.svg'
                             alt='explosion'
+                            className={bang}
                         />
                         <Image
                             width={127}
                             height={236}
                             src='/images/heroes/blue.svg'
                             alt='blue-hero'
+                            className={blueHero}
                         />
                     </div>
                     <InfoSection

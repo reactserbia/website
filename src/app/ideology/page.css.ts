@@ -28,17 +28,17 @@ export const clouds = style({
     width: '150%',
     height: 'auto',
     position: 'absolute',
-    top: '32rem',
+    top: '29rem',
     left: 0,
 
     '@media': {
         '(min-width: 384px)': {
             width: '100%',
-            top: '28rem'
+            top: '25rem'
         },
 
         '(min-width: 448px)': {
-            top: '25rem'
+            top: '22rem'
         },
 
         '(min-width: 768px)': {
@@ -52,4 +52,48 @@ export const graphic = style({
     justifyContent: 'center',
     alignItems: 'flex-end',
     position: 'relative'
+})
+
+export const yellowHero = style({
+    width: '80%',
+    height: 'auto',
+    position: 'relative',
+
+    '@media': {
+        '(min-width: 576px)': {
+            width: '100%'
+        }
+    }
+})
+
+export const blueHero = style({
+    display: 'none',
+
+    '@media': {
+        '(min-width: 448px)': {
+            width: '80%',
+            display: 'inline-block'
+        },
+
+        '(min-width: 576px)': {
+            width: '100%'
+        }
+    }
+})
+
+export const bang = style({
+    display: 'none',
+
+    '@media': {
+        '(min-width: 576px)': {
+            width: '70%',
+            height: 'auto',
+            display: 'block'
+        },
+
+        '(min-width: 768px)': {
+            width: '100%',
+            height: '100%'
+        }
+    }
 })
