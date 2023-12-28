@@ -23,6 +23,7 @@ export function BannerSection() {
                     src='/images/rs-logo-small.svg'
                     alt='banner'
                     className={banner}
+                    priority
                 />
                 <Image
                     width={800}
@@ -30,6 +31,7 @@ export function BannerSection() {
                     src='/images/banner-big.svg'
                     alt='banner'
                     className={bannerBig}
+                    priority
                 />
                 <BoxedSubheading>
                     Super-charging
