@@ -176,7 +176,7 @@ export const headingContainer = style({
 })
 
 export const bannerConstriction = style({
-    clipPath: 'polygon(0 0, 100% 0,100% calc(100% - 20px), 0 100%)'
+    clipPath: `polygon(0 0, 100% 0,100% calc(100% - ${sectionGap}), 0 100%)`
 })
 
 export const rightConstriction = style({
