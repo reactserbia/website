@@ -1,11 +1,13 @@
-import { FieldValues, UseFormRegister } from 'react-hook-form'
+import { UseFormRegister } from 'react-hook-form'
+
+import { EmailSubscriber } from '@/models'
 
 import { input } from './Input.css'
 
 type InputProps = {
     placeholder: string
-    name: string
-    register: UseFormRegister<FieldValues>
+    name: 'FIRST_NAME' | 'LAST_NAME' | 'CITY' | 'EMAIL'
+    register: UseFormRegister<EmailSubscriber>
 }
 
 export function Input({ placeholder, name, register }: InputProps) {
