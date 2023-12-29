@@ -19,6 +19,18 @@ export const paragraphSizes = styleVariants({
     [SIZE_VARIANTS.SMALL]: [
         paragraphBase,
         {
+            fontSize: '0.625rem',
+
+            '@media': {
+                'screen and (min-width: 576px)': {
+                    fontSize: '0.75rem'
+                }
+            }
+        }
+    ],
+    [SIZE_VARIANTS.MEDIUM]: [
+        paragraphBase,
+        {
             fontSize: '0.75rem',
 
             '@media': {
@@ -28,7 +40,7 @@ export const paragraphSizes = styleVariants({
             }
         }
     ],
-    [SIZE_VARIANTS.MEDIUM]: [
+    [SIZE_VARIANTS.LARGE]: [
         paragraphBase,
         {
             fontSize: '0.875rem',
@@ -36,18 +48,6 @@ export const paragraphSizes = styleVariants({
             '@media': {
                 'screen and (min-width: 576px)': {
                     fontSize: '1rem'
-                }
-            }
-        }
-    ],
-    [SIZE_VARIANTS.LARGE]: [
-        paragraphBase,
-        {
-            fontSize: '1rem',
-
-            '@media': {
-                'screen and (min-width: 576px)': {
-                    fontSize: '1.25rem'
                 }
             }
         }
