@@ -6,6 +6,7 @@ import toast from 'react-hot-toast'
 
 import { Button, Input } from '@/components'
 import { EmailSubscriber, emailSubscribeSchema } from '@/models'
+import { formatText } from '@/utils'
 
 import { container } from './EmailSubscribe.css'
 
@@ -27,10 +28,20 @@ export function EmailSubscribe() {
         resolver: zodResolver(emailSubscribeSchema)
     })
 
-    const onClick = async (data: EmailSubscriber) => {
+    const onClick = async ({
+        FIRST_NAME,
+        LAST_NAME,
+        CITY,
+        EMAIL
+    }: EmailSubscriber) => {
         const response = await fetch('/api/subscribe', {
             method: 'POST',
-            body: JSON.stringify(data)
+            body: JSON.stringify({
+                FIRST_NAME: formatText(FIRST_NAME.trim()),
+                LAST_NAME: formatText(LAST_NAME.trim()),
+                CITY: formatText(CITY.trim()),
+                EMAIL: EMAIL.trim().toLowerCase()
+            })
         })
 
         const resdata = await response.json()
