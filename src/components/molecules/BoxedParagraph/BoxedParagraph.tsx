@@ -14,7 +14,7 @@ export function BoxedParagraph({
 }: BoxedParagraphProps) {
     return (
         <Box sizeVariant={sizeVariant}>
-            <Paragraph sizeVariant={SIZE_VARIANTS.SMALL}>{children}</Paragraph>
+            <Paragraph>{children}</Paragraph>
         </Box>
     )
 }
