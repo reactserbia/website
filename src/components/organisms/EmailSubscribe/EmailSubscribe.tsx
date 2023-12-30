@@ -3,26 +3,45 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
-import { z } from 'zod'
 
 import { Button, Input } from '@/components'
-import { emailSubscribeSchema } from '@/models'
+import { EmailSubscriber, emailSubscribeSchema } from '@/models'
+import { formatText } from '@/utils'
 
 import { container } from './EmailSubscribe.css'
 
-type EmailSubscriber = z.infer<typeof emailSubscribeSchema>
+const defaultValues = {
+    FIRST_NAME: '',
+    LAST_NAME: '',
+    CITY: '',
+    EMAIL: ''
+}
 
 export function EmailSubscribe() {
     const {
         register,
         handleSubmit,
-        formState: { isValid }
-    } = useForm({ resolver: zodResolver(emailSubscribeSchema) })
+        formState: { isValid },
+        reset
+    } = useForm({
+        defaultValues,
+        resolver: zodResolver(emailSubscribeSchema)
+    })
 
-    const onClick = async (data: EmailSubscriber) => {
+    const onClick = async ({
+        FIRST_NAME,
+        LAST_NAME,
+        CITY,
+        EMAIL
+    }: EmailSubscriber) => {
         const response = await fetch('/api/subscribe', {
             method: 'POST',
-            body: JSON.stringify(data)
+            body: JSON.stringify({
+                FIRST_NAME: formatText(FIRST_NAME.trim()),
+                LAST_NAME: formatText(LAST_NAME.trim()),
+                CITY: formatText(CITY.trim()),
+                EMAIL: EMAIL.trim().toLowerCase()
+            })
         })
 
         const resdata = await response.json()
@@ -30,6 +49,7 @@ export function EmailSubscribe() {
         if (!response.ok) {
             toast.error(resdata.message)
         } else {
+            reset(defaultValues)
             toast.success(resdata.message)
         }
     }

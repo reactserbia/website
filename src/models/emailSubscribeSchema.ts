@@ -6,3 +6,5 @@ export const emailSubscribeSchema = z.object({
     CITY: z.string().min(2).max(50),
     EMAIL: z.string().email()
 })
+
+export type EmailSubscriber = z.infer<typeof emailSubscribeSchema>
