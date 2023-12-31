@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { SOCIAL_NETWORK_ICONS } from '@/models'
 
 import { link } from './SocialLink.css'
@@ -10,8 +12,8 @@ type SocialLinkProps = {
 
 export function SocialLink({ socialNetworkType, href }: SocialLinkProps) {
     return (
-        <a className={link} href={href} target='_blank'>
+        <Link className={link} href={href} target='_blank'>
             <SocialNetworkIcon type={socialNetworkType} />
-        </a>
+        </Link>
     )
 }

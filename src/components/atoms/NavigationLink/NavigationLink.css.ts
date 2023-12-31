@@ -19,6 +19,10 @@ export const navigationLink = style({
     selectors: {
         '&:hover': {
             backgroundColor: theme.colors.tertiary.no03
+        },
+
+        '&:active': {
+            backgroundColor: theme.colors.tertiary.no04
         }
     }
 })
