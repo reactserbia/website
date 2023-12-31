@@ -17,6 +17,10 @@ export const link = style({
     selectors: {
         '&:hover': {
             backgroundColor: theme.colors.tertiary.no03
+        },
+
+        '&:active': {
+            backgroundColor: theme.colors.tertiary.no04
         }
     }
 })
