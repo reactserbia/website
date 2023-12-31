@@ -12,7 +12,13 @@ export const link = style({
     borderRadius: '0.5rem',
     backgroundColor: theme.colors.tertiary.no02,
     boxShadow: theme.boxShadow.small,
-    cursor: 'pointer'
+    cursor: 'pointer',
+
+    selectors: {
+        '&:hover': {
+            backgroundColor: theme.colors.tertiary.no03
+        }
+    }
 })
 
 export const networkLogo = style({
