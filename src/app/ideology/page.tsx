@@ -53,6 +53,7 @@ export default function Ideology() {
                             src='/images/heroes/yellow.svg'
                             alt='yellow-hero'
                             className={yellowHero}
+                            priority
                         />
                         <Image
                             width={243}
@@ -60,6 +61,7 @@ export default function Ideology() {
                             src='/images/effects/explosion.svg'
                             alt='explosion'
                             className={bang}
+                            priority
                         />
                         <Image
                             width={127}
@@ -67,6 +69,7 @@ export default function Ideology() {
                             src='/images/heroes/blue.svg'
                             alt='blue-hero'
                             className={blueHero}
+                            priority
                         />
                     </div>
                     <InfoSection
