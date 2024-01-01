@@ -1,3 +1,4 @@
+export * from './BackgroundClouds/BackgroundClouds'
 export * from './Box/Box'
 export * from './BoxedSubheading/BoxedSubheading'
 export * from './Button/Button'
