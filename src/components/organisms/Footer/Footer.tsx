@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import {
+    BackgroundClouds,
     BoxedHeading,
     BoxedParagraph,
     EmailSubscribe,
@@ -20,7 +21,6 @@ import { headingContainer } from '@/style'
 import {
     author,
     bangImage,
-    clouds,
     connectContent,
     connectSection,
     container,
@@ -36,13 +36,7 @@ export function Footer() {
     return (
         <section className={container}>
             <div className={content}>
-                <Image
-                    width={902}
-                    height={123}
-                    src='/images/clouds/contact-clouds.svg'
-                    alt='clouds'
-                    className={clouds}
-                />
+                <BackgroundClouds />
                 <div className={headingContainer}>
                     <BoxedHeading
                         colorVariant={COLOR_VARIANTS.TERTIARY}
