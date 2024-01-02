@@ -24,21 +24,6 @@ export const content = style([
     }
 ])
 
-export const distantCloudsBackground = style({
-    width: '100%',
-    height: 'auto',
-    position: 'absolute',
-    top: '6rem',
-    left: 0,
-    right: 0,
-
-    '@media': {
-        'screen and (min-width: 576px)': {
-            top: '8rem'
-        }
-    }
-})
-
 export const cloudsBackground = style({
     width: '100%',
     height: 'auto',
