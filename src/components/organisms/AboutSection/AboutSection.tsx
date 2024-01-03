@@ -3,12 +3,12 @@ import Image from 'next/image'
 import {
     BackgroundCloudsSecondary,
     BoxedHeading,
+    Clouds,
     InfoSection
 } from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
 
 import {
-    cloudsBackground,
     container,
     content,
     heroImage,
@@ -22,13 +22,7 @@ export function AboutSection() {
             <div className={content}>
                 <div className={infoLeftSide}>
                     <BackgroundCloudsSecondary />
-                    <Image
-                        width={589}
-                        height={174}
-                        src='/images/clouds.svg'
-                        alt='clouds'
-                        className={cloudsBackground}
-                    />
+                    <Clouds />
                     <BoxedHeading
                         colorVariant={COLOR_VARIANTS.TERTIARY}
                         shadeVariant={SHADE_VARIANTS.DARK}
