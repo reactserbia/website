@@ -41,10 +41,3 @@ export const infoSideBase = style({
 export const infoLeftSide = style([infoSideBase, {}])
 
 export const infoRightSide = style([infoSideBase, {}])
-
-export const heroImage = style({
-    width: '100%',
-    maxWidth: '36rem',
-    height: 'auto',
-    position: 'relative'
-})
