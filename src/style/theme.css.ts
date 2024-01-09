@@ -5,7 +5,7 @@ const spacingUnit = '4px'
 const contentMaxWidth = '1024px'
 const sectionVerticalPadding = '4rem'
 const headerHeight = '64px'
-const black = 'red'
+const black = 'black'
 const sectionGap = '1rem'
 
 export const theme = createThemeContract({
