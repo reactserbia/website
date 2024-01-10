@@ -23,18 +23,6 @@ export const bannerContent = style([
     }
 ])
 
-export const banner = style({
-    width: '100%',
-    maxWidth: 857,
-    display: 'block',
-
-    '@media': {
-        'screen and (min-width: 768px)': {
-            display: 'none'
-        }
-    }
-})
-
 export const space = style({
     display: 'none',
 

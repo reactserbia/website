@@ -1,10 +1,12 @@
-import Image from 'next/image'
-
-import { BannerBig, BoxedSubheading, SocialLink } from '@/components'
+import {
+    BannerBig,
+    BannerSmall,
+    BoxedSubheading,
+    SocialLink
+} from '@/components'
 import { socialLinksReactSerbia } from '@/constants'
 
 import {
-    banner,
     bannerContainer,
     bannerContent,
     linebreak,
@@ -17,14 +19,7 @@ export function BannerSection() {
         <section className={bannerContainer}>
             <div className={bannerContent}>
                 <BannerBig />
-                <Image
-                    width={857}
-                    height={216}
-                    src='/images/rs-logo-small.svg'
-                    alt='banner'
-                    className={banner}
-                    priority
-                />
+                <BannerSmall />
                 <BoxedSubheading>
                     Super-charging
                     <span className={space}> </span>

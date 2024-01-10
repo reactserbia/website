@@ -1,6 +1,7 @@
 export * from './BackgroundClouds/BackgroundClouds'
 export * from './BackgroundCloudsSecondary/BackgroundCloudsSecondary'
 export * from './BannerBig/BannerBig'
+export * from './BannerSmall/BannerSmall'
 export * from './Box/Box'
 export * from './BoxedSubheading/BoxedSubheading'
 export * from './Button/Button'
