@@ -53,7 +53,10 @@ export function Footer() {
                         things. We know that together, we are more than capable
                         of doing it otherwise we would not be here. Do not
                         hesitate to reach out, give your contribution and write
-                        this story with us! Let us make a change together. 🍀
+                        this story with us! Let us make a change together.
+                        <br />
+                        <br />
+                        <span>🍀</span>
                     </BoxedParagraph>
                 </div>
                 <div className={imagesContainer}>
@@ -83,7 +86,7 @@ export function Footer() {
                         We promise not to spam you with unnecessary information!
                         <br />
                         <br />
-                        🚀
+                        <span>🚀</span>
                     </BoxedParagraph>
                     <div className={connectContent}>
                         <div className={socialNetworks}>

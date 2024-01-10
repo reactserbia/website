@@ -39,7 +39,7 @@ export function BillboardSection() {
                         will eventually and we will post them here. Stay tuned.
                         <br />
                         <br />
-                        🍀
+                        <span>🍀</span>
                     </InfoSection>
                 </div>
             </div>
