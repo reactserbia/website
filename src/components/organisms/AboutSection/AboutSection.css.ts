@@ -24,37 +24,6 @@ export const content = style([
     }
 ])
 
-export const distantCloudsBackground = style({
-    width: '100%',
-    height: 'auto',
-    position: 'absolute',
-    top: '6rem',
-    left: 0,
-    right: 0,
-
-    '@media': {
-        'screen and (min-width: 576px)': {
-            top: '8rem'
-        }
-    }
-})
-
-export const cloudsBackground = style({
-    width: '100%',
-    height: 'auto',
-    position: 'absolute',
-    left: 0,
-    top: '2rem',
-    zIndex: 3,
-    margin: '0 auto',
-
-    '@media': {
-        'screen and (min-width: 896px)': {
-            top: '3rem'
-        }
-    }
-})
-
 export const infoSideBase = style({
     display: 'flex',
     flex: '1 1 400px',
@@ -72,10 +41,3 @@ export const infoSideBase = style({
 export const infoLeftSide = style([infoSideBase, {}])
 
 export const infoRightSide = style([infoSideBase, {}])
-
-export const heroImage = style({
-    width: '100%',
-    maxWidth: '36rem',
-    height: 'auto',
-    position: 'relative'
-})

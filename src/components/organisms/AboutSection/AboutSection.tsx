@@ -1,14 +1,15 @@
-import Image from 'next/image'
-
-import { BoxedHeading, InfoSection } from '@/components'
+import {
+    BackgroundCloudsSecondary,
+    BoxedHeading,
+    Clouds,
+    HeroMain,
+    InfoSection
+} from '@/components'
 import { COLOR_VARIANTS, SHADE_VARIANTS } from '@/constants'
 
 import {
-    cloudsBackground,
     container,
     content,
-    distantCloudsBackground,
-    heroImage,
     infoLeftSide,
     infoRightSide
 } from './AboutSection.css'
@@ -18,33 +19,15 @@ export function AboutSection() {
         <section className={container}>
             <div className={content}>
                 <div className={infoLeftSide}>
-                    <Image
-                        width={550}
-                        height={251}
-                        src='/images/clouds-bg.svg'
-                        alt='clouds'
-                        className={distantCloudsBackground}
-                    />
-                    <Image
-                        width={589}
-                        height={174}
-                        src='/images/clouds.svg'
-                        alt='clouds'
-                        className={cloudsBackground}
-                    />
+                    <BackgroundCloudsSecondary />
+                    <Clouds />
                     <BoxedHeading
                         colorVariant={COLOR_VARIANTS.TERTIARY}
                         shadeVariant={SHADE_VARIANTS.DARK}
                     >
                         WELCOME!
                     </BoxedHeading>
-                    <Image
-                        width={502}
-                        height={436}
-                        src='/images/hero.svg'
-                        alt='hero'
-                        className={heroImage}
-                    />
+                    <HeroMain />
                 </div>
                 <div className={infoRightSide}>
                     <InfoSection heading='About Us'>

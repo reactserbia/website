@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import {
+    BackgroundClouds,
     BoxedHeading,
     BoxedParagraph,
     EmailSubscribe,
@@ -20,7 +21,6 @@ import { headingContainer } from '@/style'
 import {
     author,
     bangImage,
-    clouds,
     connectContent,
     connectSection,
     container,
@@ -36,13 +36,7 @@ export function Footer() {
     return (
         <section className={container}>
             <div className={content}>
-                <Image
-                    width={902}
-                    height={123}
-                    src='/images/clouds/contact-clouds.svg'
-                    alt='clouds'
-                    className={clouds}
-                />
+                <BackgroundClouds />
                 <div className={headingContainer}>
                     <BoxedHeading
                         colorVariant={COLOR_VARIANTS.TERTIARY}
@@ -59,7 +53,10 @@ export function Footer() {
                         things. We know that together, we are more than capable
                         of doing it otherwise we would not be here. Do not
                         hesitate to reach out, give your contribution and write
-                        this story with us! Let us make a change together. 🍀
+                        this story with us! Let us make a change together.
+                        <br />
+                        <br />
+                        <span>🍀</span>
                     </BoxedParagraph>
                 </div>
                 <div className={imagesContainer}>
@@ -89,7 +86,7 @@ export function Footer() {
                         We promise not to spam you with unnecessary information!
                         <br />
                         <br />
-                        🚀
+                        <span>🚀</span>
                     </BoxedParagraph>
                     <div className={connectContent}>
                         <div className={socialNetworks}>

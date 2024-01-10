@@ -21,9 +21,17 @@ export const paragraphSizes = styleVariants({
         {
             fontSize: '0.625rem',
 
+            '& span': {
+                fontSize: '1.125rem'
+            },
+
             '@media': {
                 'screen and (min-width: 576px)': {
-                    fontSize: '0.75rem'
+                    fontSize: '0.75rem',
+
+                    '& span': {
+                        fontSize: '1.25rem'
+                    }
                 }
             }
         }
@@ -33,9 +41,17 @@ export const paragraphSizes = styleVariants({
         {
             fontSize: '0.75rem',
 
+            '& span': {
+                fontSize: '1.25rem'
+            },
+
             '@media': {
                 'screen and (min-width: 576px)': {
-                    fontSize: '0.875rem'
+                    fontSize: '0.875rem',
+
+                    '& span': {
+                        fontSize: '1.375rem'
+                    }
                 }
             }
         }
@@ -45,9 +61,17 @@ export const paragraphSizes = styleVariants({
         {
             fontSize: '0.875rem',
 
+            '& span': {
+                fontSize: '1.375rem'
+            },
+
             '@media': {
                 'screen and (min-width: 576px)': {
-                    fontSize: '1rem'
+                    fontSize: '1rem',
+
+                    '& span': {
+                        fontSize: '1.5rem'
+                    }
                 }
             }
         }
